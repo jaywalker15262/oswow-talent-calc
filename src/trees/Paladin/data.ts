@@ -331,7 +331,9 @@ export const data: TalentData = {
         pos: "c3", 
         icon: icons["inv_shield_06"],
         maxRank: 3, 
-        reqPoints: 10, 
+        reqPoints: 10,
+        prereq: "Redoubt", 
+        arrows: [{ dir: "down", from: "a3", to: "c3"}], 
         description: talentText`Increases the amount of damage absorbed by your shield by ${[
           10,
           20,

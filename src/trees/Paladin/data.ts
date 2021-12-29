@@ -686,9 +686,7 @@ export const data: TalentData = {
         pos: "f2", 
         icon: icons["spell_holy_mindvision"], 
         maxRank: 2, 
-        reqPoints: 25, 
-        prereq: "Sanctity Aura", 
-        arrows: [{ dir: "down", from: "e2", to: "f2" }], 
+        reqPoints: 25,  
         description: talentText`Increases the effect of your Sanctity Aura by ${[
           3,
           5,

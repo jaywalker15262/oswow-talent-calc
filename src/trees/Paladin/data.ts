@@ -437,6 +437,7 @@ export const data: TalentData = {
         pos: "e4", 
         icon: icons["spell_shadow_darksummoning"], 
         maxRank: 2, 
+        reqPoints: 20,
         description: talentText`Reduces the casting time of your Exorcism spell by ${[
           0.75,
           1.5,

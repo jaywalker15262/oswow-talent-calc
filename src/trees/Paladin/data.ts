@@ -28,7 +28,7 @@ export const data: TalentData = {
       },
       "Benediction": {
         name: "Benediction", 
-        pos: "a2",
+        pos: "a3",
         icon: icons["spell_frost_windwalkon"], 
         maxRank: 5, 
         reqPoints: 0, 

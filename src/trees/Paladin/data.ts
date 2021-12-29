@@ -95,7 +95,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_mindvision"], 
         maxRank: 1, 
         reqPoints: 10, 
-        description: talentText`Increases Holy damage done by party members within 30 yards by 10%.  Players may only have on Aura on them per Paladin at any one time.`, 
+        description: talentText`Increases Holy damage done by party members within 30 yards by 10%.  Players may only have one Aura on them per Paladin at any one time.`, 
       },
       "Improved Lay on Hands": {
         name: "Improved Lay on Hands", 

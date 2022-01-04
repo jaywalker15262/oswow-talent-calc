@@ -656,7 +656,7 @@ export const data: TalentData = {
         name: "Improved Hammer of Wrath", 
         pos: "e3", 
         icon: icons["spell_holy_ashestoashes"], 
-        maxRank: 3, 
+        maxRank: 2, 
         reqPoints: 20, 
         description: talentText`Reduces the casting time of your Hammer of Wrath spell by ${[
           0.5,

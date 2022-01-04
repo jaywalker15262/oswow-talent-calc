@@ -569,8 +569,8 @@ export const data: TalentData = {
         maxRank: 2, 
         reqPoints: 10, 
         description: talentText`Increases the movement speed and mounted movement speed by ${[
-          6,
-          12,
+          5,
+          10,
         ]}%.  This does not stack with other movement speed increasing effects.`, 
       },
       "Seal of Command": {

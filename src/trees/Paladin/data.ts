@@ -655,7 +655,7 @@ export const data: TalentData = {
       "Improved Hammer of Wrath": {
         name: "Improved Hammer of Wrath", 
         pos: "e3", 
-        icon: icons["spell_holy_ashestoashes"], 
+        icon: icons["ability_thunderclap"], 
         maxRank: 2, 
         reqPoints: 20, 
         description: talentText`Reduces the casting time of your Hammer of Wrath spell by ${[
@@ -666,7 +666,7 @@ export const data: TalentData = {
       "Templar's Judgement": {
         name: "Templar's Judgement", 
         pos: "e4", 
-        icon: icons["spell_holy_blessedarm"], 
+        icon: icons["ability_paladin_bluejudgement"], 
         maxRank: 3,
         reqPoints: 20,
         prereq: "Improved Judgement", 
@@ -704,7 +704,7 @@ export const data: TalentData = {
       "Crusader Strike": {
         name: "Crusader Strike", 
         pos: "g2", 
-        icon: icons["spell_holy_crusaderstrike2"], 
+        icon: icons["spell_holy_crusaderstrike"], 
         maxRank: 1, 
         reqPoints: 30,
         prereq: "Repentance", 

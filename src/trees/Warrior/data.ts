@@ -668,13 +668,21 @@ This chance is increased to ${[
           8,
         ]}%.`,
       },
-      "Shield Toss": {
-        name: "Shield Toss",
+      "Vitality": {
+        name: "Vitality",
         pos: "e1",
-        icon: icons["ability_upgrademoonglaive"],
-        maxRank: 1,
+        icon: icons["spell_nature_undyingstrength"],
+        maxRank: 3,
         reqPoints: 20,
-        description: talentText`Hurls a shield at the enemy, causing 69 to 79 damage, increased by Attack Power and knocks down target for 2 sec. This ability causes a high amount of threat.`,
+        description: talentText`Increases your total Stamina by ${[
+          2,
+          4,
+          6,
+        ]}% and your total Strength by ${[
+          1,
+          2,
+          3,
+        ]}%.`,
       },
       "Concussion Blow": {
         name: "Concussion Blow",
@@ -697,10 +705,10 @@ This chance is increased to ${[
       },
       "Improved Shield Wall": {
         name: "Improved Shield Wall",
-        pos: "f2",
+        pos: "f1",
         icon: icons["ability_warrior_shieldwall"],
         maxRank: 2,
-        reqPoints: 20,
+        reqPoints: 25,
         description: talentText`Increases the effect duration of your Shield Wall ability by ${[
           3,
           6,
@@ -709,32 +717,12 @@ This chance is increased to ${[
           10,
         ]} min.`,
       },      
-      "Vitality": {
-        name: "Vitality",
-        pos: "f1",
-        icon: icons["spell_nature_undyingstrength"],
-        maxRank: 5,
-        reqPoints: 25,
-        description: talentText`Increases your total health by ${[
-          2,
-          4,
-          6,
-          8,
-          10,
-        ]}% and increases healing taken by ${[
-          2,
-          4,
-          6,
-          8,
-          10,
-        ]}%`,
-      },
       "One-Handed Weapon Specialization": {
         name: "One-Handed Weapon Specialization",
         pos: "f3",
         icon: icons["inv_sword_20"],
         maxRank: 5,
-        reqPoints: 15,
+        reqPoints: 25,
         description: talentText`Increases the damage you deal with One-Handed Melee weapons by ${[
           2,
           4,

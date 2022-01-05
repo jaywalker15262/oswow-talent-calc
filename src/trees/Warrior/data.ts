@@ -186,7 +186,7 @@ export const data: TalentData = {
         icon: icons["ability_rogue_slicedice"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`Your next 5 melee attacks strike an additional nearby opponent.`,
+        description: talentText`Your next 5 melee attacks strike an additional nearby opponent.  Lasts 20 sec.`,
       },
       "Mace Specialization": {
         name: "Mace Specialization",
@@ -407,18 +407,16 @@ This chance is increased to ${[
           100,
         ]}% chance to hit an additional target.`,
       },
-      "Precision": {
-        name: "Precision",
+      "Dual Wield Specialization": {
+        name: "Dual Wield Specialization",
         pos: "d1",
         icon: icons["ability_marksmanship"],
-        maxRank: 5,
+        maxRank: 3,
         reqPoints: 15,
-        description: talentText`Increases your chance to hit with melee weapons by ${[
-          1,
-          2,
-          3,
-          4,
+        description: talentText`Increases the damage done by your offhand weapon by ${[
           5,
+          10,
+          15,
         ]}%.`,
       },
       "Improved Execute": {
@@ -427,10 +425,10 @@ This chance is increased to ${[
         icon: icons["inv_sword_48"],
         maxRank: 2,
         reqPoints: 15,
-        description: talentText`Reduces the cooldown of your Execute ability by ${[
-          40,
-          80,
-        ]}%.`,
+        description: talentText`Reduces the Rage cost of your Execute ability by ${[
+          2,
+          5,
+        ]}.`,
       },
       "Enrage": {
         name: "Enrage",
@@ -439,39 +437,28 @@ This chance is increased to ${[
         maxRank: 5,
         reqPoints: 15,
         description: talentText`Gives you a ${[
-          1,
-          2,
           3,
-          4,
-          5,
-        ]}% melee damage bonus for 30 sec after being the victim of a critical strike. Stacks up to 10 times.`,
+          6,
+          9,
+          12,
+          15,
+        ]}% melee damage bonus for 12 swings any time you are the victim of a critical strike or when you activate your Bloodrage ability.`,
       },
       "Improved Slam": {
         name: "Improved Slam",
-        pos: "d4",
+        pos: "e1",
         icon: icons["ability_warrior_decisivestrike"],
         maxRank: 3,
-        reqPoints: 15,
-        description: talentText`Decreases the casting time of your Slam ability by ${[
-          0.5,
-          1,
-          1.5,
-        ]} sec${[
-          ".",
-          ".",
-          ", increases Rage cost by 5 Rage points and adds 6 sec shared cooldown.",
-        ]}`,
-      },
-      "Inner Rage": {
-        name: "Inner Rage",
-        pos: "e1",
-        icon: icons["ability_warrior_innerrage"],
-        maxRank: 2,
         reqPoints: 20,
-        description: talentText`Reduces the cooldown of your Bloodrage, Berserker Rage and Recklessness by ${[
-          25,
-          50,
-        ]}%.`,
+        description: talentText`Decreases the casting time of your Slam ability by ${[
+          0.25,
+          0.5,
+          0.75,
+        ]} sec and gives your Slam a ${[
+          33,
+          66,
+          100,
+        ]} chance to not lose casting time when you take damage`,
       },
       "Death Wish": {
         name: "Death Wish",
@@ -479,18 +466,15 @@ This chance is increased to ${[
         icon: icons["spell_shadow_deathpact"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`When activated, increases your physical damage by 20% and makes you immune to Fear effects, but lowers your armor and all resistances by 50%. Lasts 30 sec.`,
+        description: talentText`When activated, increases your physical damage by 20% and makes you immune to Fear effects, but lowers your armor and all resistances by 20%.  Lasts 30 sec.`,
       },
-      "Interceptor": {
-        name: "Interceptor",
+      "Improved Intercept": {
+        name: "Improved Intercept",
         pos: "e4",
         icon: icons["ability_rogue_sprint"],
         maxRank: 2,
         reqPoints: 20,
-        description: talentText`Reduces the Rage cost of your Intercept and Pummel abilities by ${[
-          50,
-          100,
-        ]}% and reduces the cooldown of your Intercept abiilty by ${[
+        description: talentText`Reduces the cooldown of your Intercept abiilty by ${[
           5,
           10,
         ]} sec.`,

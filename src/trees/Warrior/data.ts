@@ -511,6 +511,7 @@ This chance is increased to ${[
         pos: "f4",
         icon: icons["ability_whirlwind"],
         maxRank: 2,
+        reqPoints: 25,
         description: talentText`Reduces the cooldown of your Whirlwind ability by ${[
           "1 sec",
           "2 secs",

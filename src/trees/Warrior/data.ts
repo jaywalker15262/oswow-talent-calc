@@ -365,7 +365,7 @@ This chance is increased to ${[
         ]}%.  In addition, reduces the Rage cost of your Battle Shout, Commanding Shout and Intimidating Shout by ${[
           5,
           10,
-        ]}%.`,
+        ]}.`,
       },
       "Piercing Howl": {
         name: "Piercing Howl",

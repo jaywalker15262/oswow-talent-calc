@@ -360,7 +360,7 @@ This chance is increased to ${[
         maxRank: 2,
         reqPoints: 10,
         prereq: "Piercing Howl",
-        arrows: [{ dir: "left", from: "c2", to: "c1" }], 
+        arrows: [{ dir: "left", from: "c1", to: "c2" }], 
         description: talentText`Increases the area of effect of your Battle Shout, Demoralizing Shout, Commanding Shout and Piercing Howl by ${[
           25,
           50,

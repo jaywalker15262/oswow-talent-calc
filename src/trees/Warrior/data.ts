@@ -657,6 +657,30 @@ This chance is increased to ${[
           15,
         ]}% while in Defensive Stance.`,
       },
+      "Improved Sunder Armor": {
+        name: "Improved Sunder Armor",
+        pos: "d1",
+        icon: icons["ability_warrior_sunder"],
+        maxRank: 3,
+        reqPoints: 15,
+        description: talentText`Reduces the cost of your Sunder Armor ability by ${[
+          "1 rage point",
+          "2 rage points",
+          "3 rage points",
+        ]}.`,
+      },
+      "Improved Disarm": {
+        name: "Improved Disarm",
+        pos: "d2",
+        icon: icons["ability_warrior_disarm"],
+        maxRank: 3,
+        reqPoints: 15,
+        description: talentText`Reduces the cooldown of your Disarm ability by ${[
+          5,
+          10,
+          15,
+        ]} secs.`,
+      },
       "Improved Taunt": {
         name: "Improved Taunt",
         pos: "d3",
@@ -671,7 +695,7 @@ This chance is increased to ${[
       "Vitality": {
         name: "Vitality",
         pos: "e1",
-        icon: icons["spell_nature_undyingstrength"],
+        icon: icons["inv_helmet_21."],
         maxRank: 3,
         reqPoints: 20,
         description: talentText`Increases your total Stamina by ${[

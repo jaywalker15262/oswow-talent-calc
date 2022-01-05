@@ -579,6 +579,20 @@ This chance is increased to ${[
           15,
         ]}.`,
       },
+      "Iron Will": {
+        name: "Iron Will",
+        pos: "b1",
+        icon: icons["spell_magic_magearmor"],
+        maxRank: 5,
+        reqPoints: 5,
+        description: talentText`Increases your chance to resist Stun, Fear and Charm effects by an additional ${[
+          3,
+          6,
+          9,
+          12,
+          15
+        ]}%.`,
+      },
       "Toughness": {
         name: "Toughness",
         pos: "b3",
@@ -586,26 +600,12 @@ This chance is increased to ${[
         maxRank: 5,
         reqPoints: 5,
         description: talentText`Increases your armor value from items by ${[
-          3,
+          2,
+          4,
           6,
-          9,
-          12,
-          15,
-        ]}%.`,
-      },
-      "Improved Shield Bash": {
-        name: "Improved Shield Bash",
-        pos: "b3",
-        icon: icons["ability_warrior_shieldbash"],
-        maxRank: 2,
-        reqPoints: 5,
-        description: talentText`Reduces the cost of your Shield Bash by ${[
-          5,
+          8,
           10,
-        ]} rage points and gives it a ${[
-          50,
-          100,
-        ]}% chance to silence the target for 6 sec.`,
+        ]}%.`,
       },
       "Improved Revenge": {
         name: "Improved Revenge",
@@ -625,7 +625,7 @@ This chance is increased to ${[
         icon: icons["spell_holy_ashestoashes"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Heals yourself for 30% of your maximum health, and increases your maximum health by 30% for 20 sec.`,
+        description: talentText`When activated, this ability temporarily grants all party members within 20 yards 30% of their maximum hit points for 20 sec.  After the effect expires, the hit points are lost.`,
       },
       "Shield Mastery": {
         name: "Shield Mastery",
@@ -635,33 +635,15 @@ This chance is increased to ${[
         reqPoints: 10,
         prereq: "Shield Specialization",
         arrows: [{ dir: "down", from: "a2", to: "c2"}],
-        description: talentText`Allows your Shield Block and Shield Reflection abilities to block/reflect and additional attack/spell and reduces their cooldowns by ${[
+        description: talentText`Reduces the cooldown of your Shield Block ability by ${[
+          "1 sec",
+          "2 secs",
+          "3 secs",
+        ]} and increases your block amount by ${[
           15,
           30,
           45,
-        ]}%.`,
-      },
-      "Blade Mail": {
-        name: "Blade Mail",
-        pos: "c3",
-        icon: icons["inv_shoulder_11"],
-        maxRank: 3,
-        reqPoints: 10,
-        description: talentText`When struck in combat inflicts up to ${[
-          12,
-          24,
-          36,
-        ]}damage to the attacker. Damage scales with your level.`,
-      },
-      "Concussion Blow": {
-        name: "Concussion Blow",
-        pos: "c4",
-        icon: icons["ability_thunderbolt"],
-        maxRank: 1,
-        reqPoints: 10,
-        prereq: "Improved Revenge",
-        arrows: [{ dir: "down", from: "b4", to: "c4" }],
-        description: talentText`A brutal strike that deals weapon damage and stuns the opponent for 4 sec. This ability causes a high amount of threat.`,
+        ]}% for the duration.`,
       },
       "Mocker": {
         name: "Mocker",
@@ -672,32 +654,6 @@ This chance is increased to ${[
         description: talentText`Improves your chance to hit with Taunt, Challenging Shout and Mocking Blow abilities by ${[
           3,
           6,
-        ]}%.`,
-      },
-      "Iron Will": {
-        name: "Iron Will",
-        pos: "d2",
-        icon: icons["spell_magic_magearmor"],
-        maxRank: 3,
-        reqPoints: 15,
-        description: talentText`Increases your chance to resist Stun, Fear and Charm effects by an additional ${[
-          10,
-          20,
-          30,
-        ]}%.`,
-      },
-      "One-Handed Weapon Specialization": {
-        name: "One-Handed Weapon Specialization",
-        pos: "d3",
-        icon: icons["inv_sword_20"],
-        maxRank: 5,
-        reqPoints: 15,
-        description: talentText`Increases the damage you deal with One-Handed Melee weapons by ${[
-          2,
-          4,
-          6,
-          8,
-          10,
         ]}%.`,
       },
       "Defiance": {
@@ -723,17 +679,24 @@ This chance is increased to ${[
         reqPoints: 20,
         description: talentText`Hurls a shield at the enemy, causing 69 to 79 damage, increased by Attack Power and knocks down target for 2 sec. This ability causes a high amount of threat.`,
       },
-      "Training and Discipline": {
-        name: "Training and Discipline",
+      "Concussion Blow": {
+        name: "Concussion Blow",
         pos: "e2",
-        icon: icons["spell_holy_eyeforaneye"],
-        maxRank: 3,
+        icon: icons["ability_warrior_concussionblow"],
+        maxRank: 1,
         reqPoints: 20,
-        description: talentText`Reduces the cost of all your abilities by ${[
-          1,
-          2,
-          3,
-        ]} rage point${["","s","s"]}.`,
+        description: talentText`Stuns the opponent for 5 sec.  If the target is immune to stuns, instead deals 72% weapon damage and causes an extreme amount of threat.`,
+      },
+      "Improved Shield Bash": {
+        name: "Improved Shield Bash",
+        pos: "e3",
+        icon: icons["ability_warrior_shieldbash"],
+        maxRank: 2,
+        reqPoints: 5,
+        description: talentText`Gives your Shield Bash ability a ${[
+          50,
+          100,
+        ]}% chance to silence the target for 3 sec.`,
       },
       "Improved Shield Wall": {
         name: "Improved Shield Wall",
@@ -769,37 +732,29 @@ This chance is increased to ${[
           10,
         ]}%`,
       },
-      "Butterfly Style": {
-        name: "Butterfly Style",
+      "One-Handed Weapon Specialization": {
+        name: "One-Handed Weapon Specialization",
         pos: "f3",
-        icon: icons["spell_nature_windfury"],
+        icon: icons["inv_sword_20"],
         maxRank: 5,
-        reqPoints: 25,
-        prereq: "One-Handed Weapon Specialization",
-        arrows: [{ dir: "down", from: "d3", to: "f3" }],
-        description: talentText`Increases your chances to dodge by ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}%. Also, your critical hits generate ${[
+        reqPoints: 15,
+        description: talentText`Increases the damage you deal with One-Handed Melee weapons by ${[
           2,
           4,
           6,
           8,
           10,
-        ]}% more threat.`,
-      },           
-      "Constitution": {
-        name: "Constitution",
+        ]}%.`,
+      },         
+      "Shield Slam": {
+        name: "Shield Slam",
         pos: "g2",
-        icon: icons["ability_warrior_intensifyrage"],
+        icon: icons["inv_shield_05"],
         maxRank: 1,
         reqPoints: 30,
-        prereq: "Training and Discipline",
+        prereq: "Concussion Blow",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Increases your Strength by up to 1% of your current Health. Also if you have more than 50% of your Health you become immune to Diseases and if more than 90% to Poisons.`,
+        description: talentText`Slam the target with your shield, causing 225 to 235 damage, modified by your shield block value, and has a 50% chance of dispelling 1 magic effect on the target.  Also causes a high amount of threat.`,
       },
     },
   },

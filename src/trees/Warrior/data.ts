@@ -18,13 +18,19 @@ export const data: TalentData = {
         icon: icons["ability_rogue_ambush"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Increases the critical strike chance of your Heroic Strike ability by ${[
+        description: talentText`Reduces the rage cost of your Heroic Strike ability by ${[
+          1,
+          2,
           3,
-          6,
-          9,
-          12,
-          15,
-        ]}%.`,
+          4,
+          5,
+        ]} rage ${[
+          "point",
+          "points",
+          "points",
+          "points",
+          "points",
+        ]}.`,
       },
       "Tactical Mastery": {
         name: "Tactical Mastery",

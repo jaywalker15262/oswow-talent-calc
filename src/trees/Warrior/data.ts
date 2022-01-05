@@ -280,27 +280,27 @@ export const data: TalentData = {
     background: backgrounds["fury"],
     icon: icons["ability_warrior_innerrage"],
     talents: {
-      "Combat Endurance": {
-        name: "Combat Endurance",
+      "Victory Rush": {
+        name: "Victory Rush",
         pos: "a1",
-        icon: icons["racial_orc_berserkerstrength"],
-        maxRank: 3,
-        reqPoints: 0,
-        description: talentText`Allows ${[
-          5,
-          10,
-          15,
-        ]}% of your Health regeneration to continue while in combat.`
-      },
-      "Booming Voice": {
-        name: "Booming Voice",
-        pos: "a2",
-        icon: icons["spell_nature_purge"],
+        icon: icons["ability_hunter_harass"],
         maxRank: 2,
         reqPoints: 0,
-        description: talentText`Increases the area of effect and duration of all your shouts by ${[
-          30,
-          50,
+        description: talentText`After killing an opponent that yields experience or honor, restore ${[
+          10,
+          20,
+        ]}% of your maximum health.  Cannot occur more than once every 1 min.`
+      },
+      "Commanding Presence": {
+        name: "Commanding Presence",
+        pos: "a2",
+        icon: icons["spell_nature_focusedmind"],
+        maxRank: 3,
+        reqPoints: 0,
+        description: talentText`Increases the attack power bonus of your Battle Shout and the health bonus of your Commanding Shout by ${[
+          8,
+          16,
+          25
         ]}%.`,
       },
       Cruelty: {
@@ -319,16 +319,16 @@ export const data: TalentData = {
       },
       "Improved Demoralizing Shout": {
         name: "Improved Demoralizing Shout",
-        pos: "b1",
+        pos: "b2",
         icon: icons["ability_warrior_warcry"],
         maxRank: 5,
         reqPoints: 5,
-        description: talentText`Increases the melee attack power and spell damage reduction of your Demoralizing Shout by ${[
-          10,
-          20,
-          30,
-          40,
-          50,
+        description: talentText`Increases the melee attack power reduction of your Demoralizing Shout by ${[
+          9,
+          18,
+          27,
+          36,
+          45,
         ]}%.`,
       },
       "Unbridled Wrath": {
@@ -338,23 +338,31 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 5,
         description: talentText`Gives you a ${[
-          5,
-          10,
+          3,
+          6,
+          9,
+          12,
           15,
-          20,
-          25,
-        ]}% chance to generate an 5 Rage points when you swing or take damage.`,
+        ]}% chance to generate an additional 5 Rage points when you deal melee damage with a weapon.
+        
+        This chance is increased to ${[
+          8,
+          16,
+          24,
+          32,
+          40
+      ]}% when wielding a two-handed weapon.`,
       },
-      "Improved Cleave": {
-        name: "Improved Cleave",
+      "Booming Voice": {
+        name: "Booming Voice",
         pos: "c1",
-        icon: icons["ability_warrior_cleave"],
+        icon: icons["spell_nature_purge"],
         maxRank: 2,
         reqPoints: 10,
-        description: talentText`Increases the number of targets your Cleave hit by ${[
-          1,
-          2,
-        ]}.`,
+        description: talentText`Increases the area of effect and duration of all your shouts by ${[
+          30,
+          50,
+        ]}%.`,
       },
       "Piercing Howl": {
         name: "Piercing Howl",
@@ -362,8 +370,6 @@ export const data: TalentData = {
         icon: icons["spell_shadow_deathscream"],
         maxRank: 1,
         reqPoints: 10,
-        prereq: "Booming Voice",
-        arrows: [{ dir: "down", from: "a2", to: "c2" }],
         description: talentText`Causes all enemies near the warrior to be dazed, reducing movement speed by 50% for 6 sec.`,
       },
       "Blood Craze": {
@@ -378,16 +384,16 @@ export const data: TalentData = {
           9,
         ]}% of your total Health over 9 sec after being the victim of a critical strike.`,
       },
-      "Improved Battle Shout": {
-        name: "Improved Battle Shout",
+      "Improved Cleave": {
+        name: "Improved Cleave",
         pos: "c4",
-        icon: icons["ability_warrior_battleshout"],
+        icon: icons["ability_warrior_cleave"],
         maxRank: 2,
         reqPoints: 10,
-        description: talentText`Increases the melee attack power bonus of your Battle Shout by ${[
-          10,
-          20,
-        ]}%.`,
+        description: talentText`Increases the number of targets your Cleave hit by ${[
+          1,
+          2,
+        ]}.`,
       },
       "Precision": {
         name: "Precision",

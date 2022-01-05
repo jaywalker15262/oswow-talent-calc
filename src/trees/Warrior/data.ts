@@ -695,7 +695,7 @@ This chance is increased to ${[
       "Vitality": {
         name: "Vitality",
         pos: "e1",
-        icon: icons["inv_helmet_21."],
+        icon: icons["inv_helmet_21"],
         maxRank: 3,
         reqPoints: 20,
         description: talentText`Increases your total Stamina by ${[

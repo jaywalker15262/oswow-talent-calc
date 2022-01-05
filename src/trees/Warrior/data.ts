@@ -32,9 +32,20 @@ export const data: TalentData = {
           "points",
         ]}.`,
       },
+      "Improved Rend": {
+        name: "Improved Rend",
+        pos: "a2",
+        icon: icons["ability_gouge"],
+        maxRank: 3,
+        reqPoints: 0,
+        description: talentText`Increases the bleed damage done by your Rend ability by ${[
+          10,
+          20,
+        ]}%.`,
+      },
       "Tactical Mastery": {
         name: "Tactical Mastery",
-        pos: "a2",
+        pos: "a4",
         icon: icons["spell_nature_enchantarmor"],
         maxRank: 3,
         reqPoints: 0,
@@ -118,12 +129,12 @@ export const data: TalentData = {
       "Anger Management": {
         name: "Anger Management",
         pos: "c2",
-        icon: icons["spell_holy_blessingofstamina"],
+        icon: icons["ability_warrior_endlessrage"],
         maxRank: 1,
         reqPoints: 10,
         prereq: "Tactical Mastery",
         arrows: [{ dir: "down", from: "a2", to: "c2" }],
-        description: talentText`Increases the time required for your rage to decay while out of combat by 30%.`,
+        description: talentText`Generates 1 rage per 3 seconds.`,
       },
       "Impale": {
         name: "Impale",

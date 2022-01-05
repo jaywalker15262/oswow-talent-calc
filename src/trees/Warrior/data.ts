@@ -118,7 +118,7 @@ export const data: TalentData = {
       "Duelist": {
         name: "Duelist",
         pos: "c2",
-        icon: icons["ability_warrior_challange"],
+        icon: icons["ability_warrior_weaponmastery"],
         maxRank: 3,
         reqPoints: 10,
         prereq: "Deflection",
@@ -148,11 +148,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 15,
         description: talentText`Indreases the damage you deal with two-handed melee weapons by ${[
+          1,
           2,
+          3,
           4,
-          6,
-          8,
-          10,
+          5,
         ]}%.`,
       },
       "Impale": {
@@ -209,7 +209,10 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 20,
         prereq: "Impale",
-        arrows: [{ dir: "right", from: "d3", to: "e4"}],
+        arrows: [
+          { dir: "right-down", from: "d3", to: "d4"}, 
+          { dir: "right-down-down", from: "d4", to: "e4" }
+        ], 
         description: talentText`Your critical strikes cause the opponent to bleed, dealing ${[
           16,
           32,

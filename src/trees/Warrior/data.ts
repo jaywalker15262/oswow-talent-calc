@@ -359,6 +359,7 @@ This chance is increased to ${[
         icon: icons["spell_nature_purge"],
         maxRank: 2,
         reqPoints: 10,
+        arrows: [{ dir: "left", from: "c2", to: "c1" }], 
         description: talentText`Increases the area of effect of your Battle Shout, Demoralizing Shout, Commanding Shout and Piercing Howl by ${[
           25,
           50,

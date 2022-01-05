@@ -351,7 +351,7 @@ This chance is increased to ${[
           24,
           32,
           40
-      ]}% when wielding a two-handed weapon.`,
+        ]}% when wielding a two-handed weapon.`,
       },
       "Booming Voice": {
         name: "Booming Voice",
@@ -359,9 +359,12 @@ This chance is increased to ${[
         icon: icons["spell_nature_purge"],
         maxRank: 2,
         reqPoints: 10,
-        description: talentText`Increases the area of effect and duration of all your shouts by ${[
-          30,
+        description: talentText`Increases the area of effect of your Battle Shout, Demoralizing Shout, Commanding Shout and Piercing Howl by ${[
+          25,
           50,
+        ]}%.  In addition, reduces the Rage cost of your Battle Shout, Commanding Shout and Intimidating Shout by ${[
+          5,
+          10,
         ]}%.`,
       },
       "Piercing Howl": {
@@ -378,22 +381,31 @@ This chance is increased to ${[
         icon: icons["spell_shadow_summonimp"],
         maxRank: 3,
         reqPoints: 10,
-        description: talentText`Regenerates ${[
-          3,
+        description: talentText`After taking any damage while below 50% Health, you have a 15% chance to regenerate ${[
           6,
-          9,
-        ]}% of your total Health over 9 sec after being the victim of a critical strike.`,
+          12,
+          18,
+        ]}% of your missing health over 6, but damage taken is increased by ${[
+          2,
+          3,
+          4,
+        ]}% for the duration.`,
       },
       "Improved Cleave": {
         name: "Improved Cleave",
         pos: "c4",
         icon: icons["ability_warrior_cleave"],
-        maxRank: 2,
+        maxRank: 3,
         reqPoints: 10,
-        description: talentText`Increases the number of targets your Cleave hit by ${[
-          1,
-          2,
-        ]}.`,
+        description: talentText`Increases the bonus damage done by your Cleave ability by ${[
+          25,
+          50,
+          75,
+        ]}% and gives your Cleave a ${[
+          33,
+          66,
+          100,
+        ]}% chance to hit an additional target.`,
       },
       "Precision": {
         name: "Precision",

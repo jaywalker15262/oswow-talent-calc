@@ -147,7 +147,7 @@ export const data: TalentData = {
         icon: icons["inv_axe_09"],
         maxRank: 5,
         reqPoints: 15,
-        description: talentText`Indreases the damage you deal with two-handed melee weapons by ${[
+        description: talentText`Increases the damage you deal with two-handed melee weapons by ${[
           1,
           2,
           3,
@@ -345,7 +345,7 @@ export const data: TalentData = {
           15,
         ]}% chance to generate an additional 5 Rage points when you deal melee damage with a weapon.
         
-        This chance is increased to ${[
+This chance is increased to ${[
           8,
           16,
           24,

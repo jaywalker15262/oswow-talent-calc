@@ -485,23 +485,9 @@ export const data: TalentData = {
     background: backgrounds["retribution"],
     icon: icons["spell_holy_auraoflight"],
     talents: {
-      "Improved Seal of the Crusader": {
-        name: "Improved Seal of the Crusader",
-        pos: "a2", 
-        icon: icons["spell_holy_holysmite"], 
-        maxRank: 5,
-        reqPoints: 0, 
-        description: talentText`Increases the melee attack power bonus of your Seal of the Crusader and the damage done by your Judgement of the Crusader by ${[
-          4,
-          8,
-          12,
-          16,
-          20
-        ]}%.`, 
-      },
       "Deflection": {
         name: "Deflection", 
-        pos: "a3", 
+        pos: "a2", 
         icon: icons["ability_parry"], 
         maxRank: 5, 
         reqPoints: 0, 
@@ -511,6 +497,20 @@ export const data: TalentData = {
           3,
           4,
           5,
+        ]}%.`, 
+      },
+      "Improved Seal of the Crusader": {
+        name: "Improved Seal of the Crusader",
+        pos: "a3", 
+        icon: icons["spell_holy_holysmite"], 
+        maxRank: 5,
+        reqPoints: 0, 
+        description: talentText`Increases the melee attack power bonus of your Seal of the Crusader and the damage done by your Judgement of the Crusader by ${[
+          4,
+          8,
+          12,
+          16,
+          20
         ]}%.`, 
       },
       "Improved Blessing of Might": {

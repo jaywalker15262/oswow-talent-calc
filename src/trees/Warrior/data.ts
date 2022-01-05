@@ -122,7 +122,6 @@ export const data: TalentData = {
           40
         ]}%.`,
       },
-      },
       "Anger Management": {
         name: "Anger Management",
         pos: "c3",

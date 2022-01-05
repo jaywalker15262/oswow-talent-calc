@@ -513,9 +513,9 @@ This chance is increased to ${[
         maxRank: 2,
         reqPoints: 25,
         description: talentText`Reduces the cooldown of your Whirlwind ability by ${[
-          "1 sec",
-          "2 secs",
-        ]}.`,
+          1,
+          2,
+        ]} sec.`,
       },
       "Bloodthirst": {
         name: "Bloodthirst",

@@ -133,7 +133,7 @@ export const data: TalentData = {
       },
       "Impale": {
         name: "Impale",
-        pos: "c3",
+        pos: "d4",
         icon: icons["ability_searingarrow"],
         maxRank: 2,
         reqPoints: 10,
@@ -144,7 +144,7 @@ export const data: TalentData = {
       },
       "Deep Wounds": {
         name: "Deep Wounds",
-        pos: "c4",
+        pos: "e4",
         icon: icons["ability_backstab"],
         maxRank: 3,
         reqPoints: 10,
@@ -219,20 +219,6 @@ export const data: TalentData = {
           8,
           10,
         ]}%.`,
-      },
-      "Maim": {
-        name: "Maim",
-        pos: "e4",
-        icon: icons["ability_creature_cursed_02"],
-        maxRank: 3,
-        reqPoints: 20,
-        prereq: "Deep Wounds",
-        arrows: [{ dir: "down", from: "c4", to: "e4" }],
-        description: talentText`Your auto attacks have a 10% chance to injure the target, increasing physical damage taken by 5% for ${[
-          10,
-          20,
-          30,
-        ]} sec.`,
       },
       "Para Bellum": {
         name: "Para Bellum",

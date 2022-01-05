@@ -36,7 +36,7 @@ export const data: TalentData = {
         name: "Improved Rend",
         pos: "a2",
         icon: icons["ability_gouge"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         description: talentText`Increases the bleed damage done by your Rend ability by ${[
           10,
@@ -132,8 +132,6 @@ export const data: TalentData = {
         icon: icons["ability_warrior_endlessrage"],
         maxRank: 1,
         reqPoints: 10,
-        prereq: "Tactical Mastery",
-        arrows: [{ dir: "down", from: "a2", to: "c2" }],
         description: talentText`Generates 1 rage per 3 seconds.`,
       },
       "Impale": {

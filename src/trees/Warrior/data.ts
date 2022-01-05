@@ -550,7 +550,7 @@ This chance is increased to ${[
         pos: "a2",
         icon: icons["inv_shield_06"],
         maxRank: 5,
-        reqPoints: 5,
+        reqPoints: 0,
         description: talentText`Increases your chance to block attacks with a shield by ${[
           1,
           2,
@@ -584,7 +584,7 @@ This chance is increased to ${[
         pos: "b3",
         icon: icons["spell_holy_devotion"],
         maxRank: 5,
-        reqPoints: 0,
+        reqPoints: 5,
         description: talentText`Increases your armor value from items by ${[
           3,
           6,
@@ -634,7 +634,7 @@ This chance is increased to ${[
         maxRank: 3,
         reqPoints: 10,
         prereq: "Shield Specialization",
-        arrows: [{ dir: "down", from: "b2", to: "c2"}],
+        arrows: [{ dir: "down", from: "a2", to: "c2"}],
         description: talentText`Allows your Shield Block and Shield Reflection abilities to block/reflect and additional attack/spell and reduces their cooldowns by ${[
           15,
           30,

@@ -792,8 +792,7 @@ export const data: TalentData = {
           8,
           10,
         ]}% more threat.`,
-      },
-                  
+      },           
       "Constitution": {
         name: "Constitution",
         pos: "g2",

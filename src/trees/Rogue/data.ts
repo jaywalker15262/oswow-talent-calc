@@ -104,13 +104,13 @@ export const data: TalentData = {
           40,
         ]}% to resist dispel effects.
         
-    Additionally increases the chance to apply poisons to your target by ${[
-      1,
-      2,
-      3,
-      4,
-      5,
-    ]}%.`, 
+  Additionally increases the chance to apply poisons to your target by ${[
+          1,
+          2,
+          3,
+          4,
+          5,
+        ]}%.`, 
       },
       "Lethality": {
         name: "Lethality", 
@@ -132,9 +132,8 @@ export const data: TalentData = {
         name: "Death Mark", 
         pos: "d2", 
         icon: icons["spell_shadow_deathscream"], 
-        maxRank: 2, reqPoints: 15, 
-        prereq: "Seek and Destroy", 
-        arrows: [{ dir: "down", from: "b2", to: "d2" }], 
+        maxRank: 2,
+        reqPoints: 15, 
         description: talentText`Your Ambush, Garrote, and Cheap Shot marks the target. Marked can always be seen by the rogue whether it stealths or turns invisible. The target also appears on the minimap and cannot flee or move faster than their normal movement speed. This effect lasts ${[
           10,
           20,

@@ -121,11 +121,11 @@ Additionally increases the chance to apply poisons to your target by ${[
         prereq: "Malice", 
         arrows: [{ dir: "down", from: "a4", to: "c4" }], 
         description: talentText`Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ambush, Ghostly Strike, and Hemorrhage abilities by ${[
-          5,
-          10,
-          15,
-          20,
-          25,
+          6,
+          12,
+          18,
+          24,
+          30,
         ]}%.`, 
       },
       "Death Mark": {

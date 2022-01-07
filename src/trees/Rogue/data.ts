@@ -104,7 +104,7 @@ export const data: TalentData = {
           40,
         ]}% to resist dispel effects.
         
-  Additionally increases the chance to apply poisons to your target by ${[
+Additionally increases the chance to apply poisons to your target by ${[
           1,
           2,
           3,

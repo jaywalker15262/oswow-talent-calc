@@ -14,7 +14,7 @@ export const data: TalentData = {
     talents: {
       "Improved Eviscerate": {
         name: "Improved Eviscerate", 
-        pos: "a1", 
+        pos: "a2", 
         icon: icons["ability_rogue_eviscerate"], 
         maxRank: 3, 
         reqPoints: 0, 
@@ -26,18 +26,18 @@ export const data: TalentData = {
       },
       "Remorseless Attacks": {
         name: "Remorseless Attacks", 
-        pos: "a2", 
+        pos: "a3", 
         icon: icons["ability_fiegndead"], 
         maxRank: 2, 
         reqPoints: 0, 
         description: talentText`After killing an opponent that yields experience or honor, you gain a ${[
           20,
           40,
-        ]}% increased critical strike chance on your next Sinister Strike, backstab, Ambush, or Ghostly strike. Lasts 30 seconds.`, 
+        ]}% increased critical strike chance on your next Sinister Strike, backstab, Ambush, or Ghostly strike. Lasts 20 seconds.`, 
       },
       "Malice": {
         name: "Malice", 
-        pos: "a3", 
+        pos: "a4", 
         icon: icons["ability_racial_bloodrage"], 
         maxRank: 5, 
         reqPoints: 0, 
@@ -56,49 +56,70 @@ export const data: TalentData = {
         maxRank: 3, 
         reqPoints: 5, 
         description: talentText`Guves your finishing moves a ${[
-          30,
+          20,
+          40,
           60,
-          90,
         ]}% chance to add a combo point on your target.`, 
       },
-      "Seek and Destroy": {
-        name: "Seek and Destroy", 
+      "Blood Splatter": {
+        name: "Blood Splatter", 
         pos: "b2", 
-        icon: icons["ability_rogue_bloodyeye"], 
+        icon: icons["ability_rogue_rupture"], 
         maxRank: 2, 
         reqPoints: 5, 
-        description: talentText`Your Detection ability now shows the location of all nearby humanoids on the minimap. Also increases movement and mounted movement speed by ${[
-          5,
-          10,
-        ]}%. This does not stack with other movement speed increasing effects.`, 
-      },
-      "Exhaustion": {
-        name: "Exhaustion", 
-        pos: "b4", 
-        icon: icons["spell_shadow_curseofsargeras"], 
-        maxRank: 2, 
-        reqPoints: 5, 
-        description: talentText`Increase the duration of your Slice and Dice, Rupture, and Expose Armor abilities by ${[
-          25,
-          50,
+        description: talentText`Increases the damage caused by your Garrote and Rupture abilities ${[
+          15,
+          30,
         ]}%.`, 
       },
-      "Relentless Strikes": {
-        name: "Relentless Strikes", 
+      "Improved Backstab": {
+        name: "Improved Backstab", 
+        pos: "b3", 
+        icon: icons["ability_backstab"], 
+        maxRank: 3, 
+        reqPoints: 5, 
+        description: talentText`Increases the critical strike chance of your Backstab ability by ${[
+          10,
+          20,
+          30,
+        ]}%.`, 
+      },
+      "Vile poisons": {
+        name: "Vile poisons", 
         pos: "c1", 
-        icon: icons["ability_warrior_decisivestrike"], 
-        maxRank: 1, 
+        icon: icons["ability_rogue_feigndeath"], 
+        maxRank: 5, 
         reqPoints: 10, 
-        description: talentText`Your finishing moves have a 20% chance per combo point to restore 35 energy.`, 
+        description: talentText`Increases damage dealt by your poisons by ${[
+          4,
+          8,
+          12,
+          16,
+          20
+        ]}% and gives your poisons an additional ${[
+          8,
+          16,
+          24,
+          32,
+          40,
+        ]}% to resist dispel effects.
+        
+    Additionally increases the chance to apply poisons to your target by ${[
+      1,
+      2,
+      3,
+      4,
+      5,
+    ]}%.`, 
       },
       "Lethality": {
         name: "Lethality", 
-        pos: "c3", 
+        pos: "c4", 
         icon: icons["ability_criticalstrike"], 
         maxRank: 5, 
         reqPoints: 10, 
         prereq: "Malice", 
-        arrows: [{ dir: "down", from: "a3", to: "c3" }], 
+        arrows: [{ dir: "down", from: "a4", to: "c4" }], 
         description: talentText`Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ambush, Ghostly Strike, and Hemorrhage abilities by ${[
           5,
           10,
@@ -106,40 +127,6 @@ export const data: TalentData = {
           20,
           25,
         ]}%.`, 
-      },
-      "Improved Poisons": {
-        name: "Improved Poisons", 
-        pos: "c4", 
-        icon: icons["ability_poisons"], 
-        maxRank: 5, 
-        reqPoints: 10, 
-        description: talentText`Increases the chance to apply poisons to your target by ${[
-          2,
-          4,
-          6,
-          8,
-          10,
-        ]}%.`, 
-      },
-      "Vile Poisons": {
-        name: "Vile Poisons", 
-        pos: "d1", 
-        icon: icons["ability_rogue_feigndeath"], 
-        maxRank: 5, 
-        reqPoints: 15, 
-        description: talentText`Increases the effectiveness of your poisons by ${[
-          5,
-          10,
-          15,
-          20,
-          25,
-        ]}% and gives your poisons an additional ${[
-          10,
-          20,
-          30,
-          40,
-          50,
-        ]}% dispel effect.`, 
       },
       "Death Mark": {
         name: "Death Mark", 
@@ -314,18 +301,6 @@ export const data: TalentData = {
           32,
           40,
         ]}`, 
-      },
-      "Improved Backstab": {
-        name: "Improved Backstab", 
-        pos: "b1", 
-        icon: icons["ability_backstab"], 
-        maxRank: 3, 
-        reqPoints: 5, 
-        description: talentText`Increases the critical strike chance of your Backstab ability by ${[
-          10,
-          20,
-          30,
-        ]}%.`, 
       },
       "Deflection": {
         name: "Deflection", 

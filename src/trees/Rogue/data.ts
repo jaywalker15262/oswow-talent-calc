@@ -33,7 +33,7 @@ export const data: TalentData = {
         description: talentText`After killing an opponent that yields experience or honor, you gain a ${[
           20,
           40,
-        ]}% increased critical strike chance on your next Sinister Strike, backstab, Ambush, or Ghostly strike. Lasts 20 seconds.`, 
+        ]}% increased critical strike chance on your next Sinister Strike, backstab, Ambush, or Ghostly strike  Lasts 20 seconds.`, 
       },
       "Malice": {
         name: "Malice", 

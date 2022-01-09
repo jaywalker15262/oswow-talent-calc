@@ -19,9 +19,9 @@ export const data: TalentData = {
         maxRank: 3, 
         reqPoints: 0, 
         description: talentText`Increases the damage done by your Eviscerate ability by ${[
-          5,
-          10,
-          15,
+          7,
+          14,
+          20,
         ]}%.`, 
       },
       "Remorseless Attacks": {
@@ -152,9 +152,23 @@ Additionally increases the chance to apply poisons to your target by ${[
           50.
         ]}%.`, 
       },
+      "Quick Recovery": {
+        name: "Quick Recovery", 
+        pos: "d3", 
+        icon: icons["ability_rogue_quickrecovery"], 
+        maxRank: 2, 
+        reqPoints: 15, 
+        description: talentText`All healing effects on you are increased by ${[
+          10,
+          20,
+        ]}%.  In addition, your finishing moves cost ${[
+          40,
+          80,
+        ]}% less Energy when they fail to hit.`, 
+      },
       "Bloodthirsty": {
         name: "Bloodthirsty", 
-        pos: "d3", 
+        pos: "d4", 
         icon: icons["ability_warrior_bloodfrenzy"], 
         maxRank: 3, 
         reqPoints: 15, 
@@ -162,20 +176,6 @@ Additionally increases the chance to apply poisons to your target by ${[
           15,
           30,
           45,
-        ]}%.`, 
-      },
-      "Vitality": {
-        name: "Vitality", 
-        pos: "d4", 
-        icon: icons["ability_rogue_quickrecovery"], 
-        maxRank: 2, 
-        reqPoints: 15, 
-        description: talentText`Allows ${[
-          5,
-          10,
-        ]}% of your Health regeneration to work while in combat. In addition, healing taken is increased by ${[
-          10,
-          20,
         ]}%.`, 
       },
       "Cold Blood": {

@@ -145,7 +145,7 @@ Additionally increases the chance to apply poisons to your target by ${[
         prereq: "Vile Poisons", 
         arrows: [
           { dir: "left", from: "c1", to: "c2" }, 
-          { dir: "left-down-down", from: "c1", to: "d1" },
+          { dir: "down", from: "c1", to: "d1" },
         ], 
         description: talentText`Increases the critical strike chance of your attacks made against any target you have poisoned by ${[
           2,

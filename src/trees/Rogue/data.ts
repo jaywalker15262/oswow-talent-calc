@@ -139,7 +139,7 @@ Additionally increases the chance to apply poisons to your target by ${[
       "Poison Paragon": {
         name: "Poison Paragon", 
         pos: "d1", 
-        icon: icons["spell_shadow_deathscream"], 
+        icon: icons["ability_rogue_poisonparagon"], 
         maxRank: 3,
         reqPoints: 15,
         prereq: "Vile Poisons", 

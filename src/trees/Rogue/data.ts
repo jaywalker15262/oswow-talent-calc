@@ -112,6 +112,14 @@ Additionally increases the chance to apply poisons to your target by ${[
           5,
         ]}%.`, 
       },
+      "Fel Poison": {
+        name: "Fel Poison", 
+        pos: "c3", 
+        icon: icons["ability_creature_poison_06"], 
+        maxRank: 1,
+        reqPoints: 10, 
+        description: talentText`Your poisons are infused with Fel magic and can Elementals and Mechanical creatures.  The infused Fel magic causes your maximum energy capacity to swell up by 10 Energy.`, 
+      },
       "Lethality": {
         name: "Lethality", 
         pos: "c4", 
@@ -128,16 +136,26 @@ Additionally increases the chance to apply poisons to your target by ${[
           30,
         ]}%.`, 
       },
-      "Death Mark": {
-        name: "Death Mark", 
-        pos: "d2", 
+      "Poison Paragon": {
+        name: "Poison Paragon", 
+        pos: "d1", 
         icon: icons["spell_shadow_deathscream"], 
-        maxRank: 2,
-        reqPoints: 15, 
-        description: talentText`Your Ambush, Garrote, and Cheap Shot marks the target. Marked can always be seen by the rogue whether it stealths or turns invisible. The target also appears on the minimap and cannot flee or move faster than their normal movement speed. This effect lasts ${[
-          10,
-          20,
-        ]} seconds and can only occur once every 60 sec.`, 
+        maxRank: 3,
+        reqPoints: 15,
+        prereq: "Vile Poisons", 
+        arrows: [
+          { dir: "right-left", from: "c2", to: "c1" }, 
+          { dir: "right-left-left", from: "c1", to: "d1" },
+        ], 
+        description: talentText`Increases the critical strike chance of your attacks made against any target you have poisoned by ${[
+          2,
+          4,
+          6,
+        ]}% and reduces the duration of all Poison effects applied to you by ${[
+          17,
+          34,
+          50.
+        ]}%.`, 
       },
       "Bloodthirsty": {
         name: "Bloodthirsty", 

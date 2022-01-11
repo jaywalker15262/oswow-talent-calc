@@ -679,7 +679,7 @@ Additionally increases the chance to apply poisons to your target by ${[
         icon: icons["spell_shadow_possession"], 
         maxRank: 1, 
         reqPoints: 20, 
-        description: talentText`When used, adds 2 combo points to your target.  You must add to or use those combo points within 20 sec or the combo points are lost..`, 
+        description: talentText`When used, adds 2 combo points to your target.  You must add to or use those combo points within 20 sec or the combo points are lost.`, 
       },
       "Dirty Deeds": {
         name: "Dirty Deeds", 

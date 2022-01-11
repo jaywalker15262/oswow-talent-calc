@@ -673,6 +673,18 @@ Additionally increases the chance to apply poisons to your target by ${[
           30,
         ]}%.`, 
       },
+      "Enveloping Shadows": {
+        name: "Enveloping Shadows", 
+        pos: "e1", 
+        icon: icons["ability_rogue_envelopingshadows"], 
+        maxRank: 3, 
+        reqPoints: 30,  
+        description: talentText`Increases your chance to avoid area of effect attacks by an additional ${[
+          5,
+          10,
+          15,
+        ]}%.`, 
+      },
       "Premeditation": {
         name: "Premeditation", 
         pos: "e2", 
@@ -685,27 +697,15 @@ Additionally increases the chance to apply poisons to your target by ${[
         name: "Dirty Deeds", 
         pos: "e3", 
         icon: icons["spell_shadow_summonsuccubus"], 
-        maxRank: 3, 
+        maxRank: 2, 
         reqPoints: 20, 
         description: talentText`Reduces the Energy cost of your Cheap Shot and Garrote abilities by ${[
           10,
           20,
-          30,
-        ]}.`, 
-      },
-      "Brigandage": {
-        name: "Brigandage", 
-        pos: "f1", 
-        icon: icons["inv_sword_11"], 
-        maxRank: 5, 
-        reqPoints: 25, 
-        description: talentText`Your auto attacks drain ${[
-          0.3,
-          0.6,
-          0.9,
-          1.2,
-          1.5,
-        ]} per level amount of Mana from a target. For each mana drained this way, the target takes 0.3 Shadow Damage.`, 
+        ]}.  Additionally, your special abilities cause ${[
+          10,
+          20,
+        ]}% more damage against targets above 75% health.`, 
       },
       "Deadliness": {
         name: "Deadliness", 
@@ -720,18 +720,6 @@ Additionally increases the chance to apply poisons to your target by ${[
           12,
           15,
         ]}%.`, 
-      },
-      "Enveloping Shadows": {
-        name: "Enveloping Shadows", 
-        pos: "g1", 
-        icon: icons["ability_rogue_envelopingshadows"], 
-        maxRank: 3, 
-        reqPoints: 30,  
-        description: talentText`Increases your chance to avoid area of effect spells by an additional ${[
-          10,
-          20,
-          30,
-        ]}%. While stealthed the effect is doubled.`, 
       },
       "Preparation": {
         name: "Preparation", 

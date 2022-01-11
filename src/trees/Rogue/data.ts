@@ -512,7 +512,7 @@ Additionally increases the chance to apply poisons to your target by ${[
         icon: icons["spell_shadow_charm"], 
         maxRank: 2, 
         reqPoints: 0, 
-        description: talentText`Reduces the chance enemies have to detect you while in Stealth mode. ${["","More effective than Master of Deception(Rank 1)."]}`, 
+        description: talentText`Reduces the chance enemies have to detect you while in Stealth mode. ${[""," More effective than Master of Deception(Rank 1)."]}`, 
       },
       "Opportunity": {
         name: "Opportunity", 

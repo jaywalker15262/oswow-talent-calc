@@ -552,16 +552,14 @@ Additionally increases the chance to apply poisons to your target by ${[
         name: "Sleight of Hand", 
         pos: "b1", 
         icon: icons["ability_rogue_feint"], 
-        maxRank: 3, 
+        maxRank: 2, 
         reqPoints: 5, 
         description: talentText`Reduces the chance you are critically hit by melee and ranged attacks by ${[
+          1,
           2,
-          4,
-          6,
         ]}% and increases the threat reduction of your Feint ability by ${[
+          15,
           30,
-          60,
-          90,
         ]}%.`, 
       },
       "Dirty Tricks": {

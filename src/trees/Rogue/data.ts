@@ -699,14 +699,14 @@ Additionally increases the chance to apply poisons to your target by ${[
       "Master of Shadows": {
         name: "Master of Shadows", 
         pos: "f1", 
-        icon: icons["ability_ambush"], 
+        icon: icons["ability_rogue_masterofsubtlety"], 
         maxRank: 3, 
         reqPoints: 25,
         prereq: "Enveloping Shadows", 
         arrows: [{ dir: "down", from: "e1", to: "f1" }], 
         description: talentText`Attacks made while stealthed and for 7 sec after breaking stealth cause an additional ${[
           4,
-          7,
+          8,
           12,
         ]}% damage.
         

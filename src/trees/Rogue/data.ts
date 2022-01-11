@@ -340,7 +340,7 @@ Additionally increases the chance to apply poisons to your target by ${[
         maxRank: 1, 
         reqPoints: 10, 
         prereq: "Deflection", 
-        arrows: [{ dir: "down", from: "b2", to: "c2" }], 
+        arrows: [{ dir: "down", from: "a2", to: "c2" }], 
         description: talentText`A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 seconds.`, 
       },
       "Dual Wield Specialization": {

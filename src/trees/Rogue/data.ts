@@ -673,13 +673,13 @@ Additionally increases the chance to apply poisons to your target by ${[
           30,
         ]}%.`, 
       },
-      "Cloak of Shadows": {
-        name: "Cloak of Shadows", 
+      "Premeditation": {
+        name: "Premeditation", 
         pos: "e2", 
-        icon: icons["spell_shadow_nethercloak"], 
+        icon: icons["spell_shadow_possession"], 
         maxRank: 1, 
         reqPoints: 20, 
-        description: talentText`Protects the Rogue from all spells for 5 seconds. Does not break stealth.`, 
+        description: talentText`When used, adds 2 combo points to your target.  You must add to or use those combo points within 20 sec or the combo points are lost..`, 
       },
       "Dirty Deeds": {
         name: "Dirty Deeds", 

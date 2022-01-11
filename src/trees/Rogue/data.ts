@@ -346,7 +346,7 @@ Additionally increases the chance to apply poisons to your target by ${[
       "Dual Wield Specialization": {
         name: "Dual Wield Specialization", pos: "c3", 
         icon: icons["ability_dualwield"], 
-        maxRank: 5, 
+        maxRank: 3, 
         reqPoints: 10, 
         prereq: "Precision", 
         arrows: [{ dir: "down", from: "b3", to: "c3" }], 

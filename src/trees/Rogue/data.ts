@@ -646,17 +646,6 @@ Additionally increases the chance to apply poisons to your target by ${[
           90,
         ]}% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.`, 
       },
-      "Heightened Senses": {
-        name: "Heightened Senses", 
-        pos: "d4", 
-        icon: icons["ability_ambush"], 
-        maxRank: 2, 
-        reqPoints: 15, 
-        description: talentText`Increases your Stealth detection and reduces the chance you are hit by spells and ranged attack by ${[
-          3,
-          6,
-        ]}%. ${[""," More effective than Heightened Senses (Rank 1)."]}`, 
-      },
       "Serrated Blades": {
         name: "Serrated Blades", 
         pos: "d3", 
@@ -678,7 +667,7 @@ Additionally increases the chance to apply poisons to your target by ${[
         pos: "e1", 
         icon: icons["ability_rogue_envelopingshadows"], 
         maxRank: 3, 
-        reqPoints: 30,  
+        reqPoints: 20,  
         description: talentText`Increases your chance to avoid area of effect attacks by an additional ${[
           5,
           10,
@@ -707,19 +696,39 @@ Additionally increases the chance to apply poisons to your target by ${[
           20,
         ]}% more damage against targets above 75% health.`, 
       },
+      "Master of Shadows": {
+        name: "Master of Shadows", 
+        pos: "f1", 
+        icon: icons["ability_ambush"], 
+        maxRank: 3, 
+        reqPoints: 25, 
+        description: talentText`Attacks made while stealthed and for 7 sec after breaking stealth cause an additional ${[
+          4,
+          7,
+          12,
+        ]}% damage.
+        
+  Additionally, increases your Stealth detection and reduces the chance you are hit by spells and ranged attacks by ${[
+          1,
+          2,
+          3,
+        ]}%.${["","  More effective than Master of Shadows (Rank 1).","  More effective than Master of Shadows (Rank 2).",]}`, 
+      },
       "Deadliness": {
         name: "Deadliness", 
         pos: "f3", 
         icon: icons["inv_weapon_crossbow_11"], 
-        maxRank: 5, 
+        maxRank: 3, 
         reqPoints: 25, 
-        description: talentText`Increases your Attack Power by ${[
-          3,
-          6,
-          9,
-          12,
-          15,
-        ]}%.`, 
+        description: talentText`Increases your total Attack Power by ${[
+          4,
+          7,
+          10,
+        ]}% and reduces the Energy cost of your Backstab and Ambush abilities by ${[
+          4,
+          7,
+          10,
+        ]}.`,
       },
       "Preparation": {
         name: "Preparation", 

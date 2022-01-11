@@ -490,21 +490,29 @@ Additionally increases the chance to apply poisons to your target by ${[
     background: backgrounds["subtlety"],
     icon: icons["ability_stealth"],
     talents: {
-      "Improved Sap": {
-        name: "Improved Sap", 
+      "Street Smarts": {
+        name: "Street Smarts", 
         pos: "a1", 
-        icon: icons["ability_sap"], 
-        maxRank: 3, 
+        icon: icons["ability_rogue_sinistercalling"], 
+        maxRank: 5, 
         reqPoints: 0, 
-        description: talentText`Gives you a ${[
-          30,
-          60,
-          90,
-        ]}% chance to return to stealth mode after using your Sap ability. In addition, reduces the Energy cost of your Sap ability by ${[
+        description: talentText`Increases the amount of money pickpocketed by ${[
+          4,
+          7,
           10,
-          20,
-          30,
-        ]}.`, 
+        ]}% reduces the casting time of Pick Lock and Disarm Trap by ${[
+          0.5,
+          1,
+          1.5,
+        ]} sec.  Additionally, reduces the cooldown of Distract by ${[
+          25,
+          50,
+          75,
+        ]}% and its Energy cost by ${[
+          33,
+          66,
+          100,
+        ]}%.`, 
       },
       "Master of Deception": {
         name: "Master of Deception", 

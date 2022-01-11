@@ -536,18 +536,6 @@ Additionally increases the chance to apply poisons to your target by ${[
           20,
         ]}%.`, 
       },
-      "Initiative": {
-        name: "Initiative", 
-        pos: "b1", 
-        icon: icons["spell_shadow_fumble"], 
-        maxRank: 3, 
-        reqPoints: 5, 
-        description: talentText`Gives you a ${[
-          30,
-          60,
-          90,
-        ]}% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.`, 
-      },
       "Sleight of Hand": {
         name: "Sleight of Hand", 
         pos: "b1", 

@@ -494,7 +494,7 @@ Additionally increases the chance to apply poisons to your target by ${[
         name: "Street Smarts", 
         pos: "a1", 
         icon: icons["ability_rogue_sinistercalling"], 
-        maxRank: 5, 
+        maxRank: 3, 
         reqPoints: 0, 
         description: talentText`Increases the amount of money pickpocketed by ${[
           4,

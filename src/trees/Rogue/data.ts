@@ -261,7 +261,7 @@ Additionally increases the chance to apply poisons to your target by ${[
         name: "Deflection", 
         pos: "a2", 
         icon: icons["ability_parry"], 
-        maxRank: 3, 
+        maxRank: 5, 
         reqPoints: 0, 
         description: talentText`Increases your Parry chance by ${[
           1,

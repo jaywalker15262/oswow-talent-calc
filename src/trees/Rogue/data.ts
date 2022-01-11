@@ -325,7 +325,7 @@ Additionally increases the chance to apply poisons to your target by ${[
       "Endurance": {
         name: "Endurance", 
         pos: "c1", 
-        icon: icons["ability_warrior_revenge"], 
+        icon: icons["spell_shadow_shadowward"], 
         maxRank: 2,
         reqPoints: 10, 
         description: talentText`Reduces the cooldown of your Sprint and Evasion abilities by ${[
@@ -337,11 +337,14 @@ Additionally increases the chance to apply poisons to your target by ${[
         name: "Riposte", 
         pos: "c2", 
         icon: icons["ability_warrior_challange"], 
-        maxRank: 1, 
+        maxRank: 2, 
         reqPoints: 10, 
         prereq: "Deflection", 
         arrows: [{ dir: "down", from: "a2", to: "c2" }], 
-        description: talentText`A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 seconds.`, 
+        description: talentText`A strike that becomes active after ${[ 
+          "parrying an opponent's attack.  This attack deals 150% weapon damage and disarms the target for 6 seconds.",
+          "the opponent dodges.  This attack deals 175% weapon damage.  Awards 1 combo point.",
+        ]}`, 
       },
       "Dual Wield Specialization": {
         name: "Dual Wield Specialization", pos: "c3", 

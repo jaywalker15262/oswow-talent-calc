@@ -641,9 +641,9 @@ Additionally increases the chance to apply poisons to your target by ${[
         maxRank: 3, 
         reqPoints: 15, 
         description: talentText`Gives you a ${[
-          33,
-          66,
-          100,
+          30,
+          60,
+          90,
         ]}% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.`, 
       },
       "Heightened Senses": {
@@ -663,15 +663,15 @@ Additionally increases the chance to apply poisons to your target by ${[
         icon: icons["inv_sword_17"], 
         maxRank: 3, 
         reqPoints: 15, 
-        description: talentText`Causes your attacks to ignore up to ${[
-          100,
-          200,
-          300,
-        ]} of your target's Armor and increases the duration of your Garrote and Rupture ablities by ${[
-          2,
-          4,
-          6,
-        ]} sec. The amount of Armor reduced increases with your level.`, 
+        description: talentText`Your attacks ignore ${[
+          1.67,
+          3.34,
+          5,
+        ]} of your opponent's armor per level and increases the damage dealt by your Rupture ablity by ${[
+          10,
+          20,
+          30,
+        ]}%.`, 
       },
       "Cloak of Shadows": {
         name: "Cloak of Shadows", 

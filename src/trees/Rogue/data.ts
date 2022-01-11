@@ -701,14 +701,16 @@ Additionally increases the chance to apply poisons to your target by ${[
         pos: "f1", 
         icon: icons["ability_ambush"], 
         maxRank: 3, 
-        reqPoints: 25, 
+        reqPoints: 25,
+        prereq: "Enveloping Shadows", 
+        arrows: [{ dir: "down", from: "f1", to: "e1" }], 
         description: talentText`Attacks made while stealthed and for 7 sec after breaking stealth cause an additional ${[
           4,
           7,
           12,
         ]}% damage.
         
-  Additionally, increases your Stealth detection and reduces the chance you are hit by spells and ranged attacks by ${[
+Additionally, increases your Stealth detection and reduces the chance you are hit by spells and ranged attacks by ${[
           1,
           2,
           3,

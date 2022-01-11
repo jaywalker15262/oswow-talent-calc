@@ -22,7 +22,7 @@ export const data: TalentData = {
           7,
           14,
           20,
-        ]}%.`, 
+        ]}%.`,
       },
       "Remorseless Attacks": {
         name: "Remorseless Attacks", 

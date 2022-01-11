@@ -639,12 +639,24 @@ Additionally increases the chance to apply poisons to your target by ${[
         pos: "d1", 
         icon: icons["spell_nature_mirrorimage"], 
         maxRank: 3, 
-        reqPoints: 10, 
+        reqPoints: 15, 
         description: talentText`Adds a ${[
           25,
           50,
           75,
         ]}% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells.`, 
+      },
+      "Initiative": {
+        name: "Initiative", 
+        pos: "d2", 
+        icon: icons["spell_shadow_fumble"], 
+        maxRank: 3, 
+        reqPoints: 15, 
+        description: talentText`Gives you a ${[
+          33,
+          66,
+          100,
+        ]}% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.`, 
       },
       "Heightened Senses": {
         name: "Heightened Senses", 

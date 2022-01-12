@@ -226,8 +226,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 25,
         description: talentText`Increases your melee attack speed by ${[
-          5,
-          10,
+          3,
+          6,
         ]}%.  In addition, your Rend and Deep Wounds abilities also increase all physical damage caused to that target by ${[
           1,
           2,

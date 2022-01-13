@@ -114,6 +114,18 @@ export const data: TalentData = {
         reqPoints: 10, 
         description: talentText`Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next 2 damage or healing spells by 40%.`, 
       },
+      "Master of Elements": {
+        name: "Master of Elements", 
+        pos: "d1", 
+        icon: icons["spell_frostfire-orb"], 
+        maxRank: 3, 
+        reqPoints: 15, 
+        description: talentText`Your Fire and Frost spell criticals will refund ${[
+          10,
+          20,
+          30,
+        ]}% of their base mana cost.`, 
+      },
       "Eye of the Storm": {
         name: "Eye of the Storm", 
         pos: "d2", 

@@ -177,10 +177,12 @@ export const data: TalentData = {
       },
       "Shamanism": {
         name: "Shamanism", 
-        pos: "e3", 
+        pos: "e4", 
         icon: icons["spell_nature_wispheal"], 
         maxRank: 3, 
-        reqPoints: 20, 
+        reqPoints: 20,
+        prereq: "Elemental Focus", 
+        arrows: [{ dir: "down", from: "c4", to: "e4" }], 
         description: talentText`Entering a Clearcasting state increases all party members' spell haste by ${[
           2,
           4,

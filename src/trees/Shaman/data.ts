@@ -109,7 +109,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_manaburn"], 
         maxRank: 1, 
         reqPoints: 10, 
-        description: talentText`Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next 2 damage or healing spells by 40%.`, 
+        description: talentText`Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next 2 damage or healing spells by 40%.`, 
       },
       "Eye of the Storm": {
         name: "Eye of the Storm", 

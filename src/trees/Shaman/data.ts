@@ -91,7 +91,7 @@ export const data: TalentData = {
       },
       "Lightning Mastery": {
         name: "Lightning Mastery", 
-        pos: "e3", 
+        pos: "c3", 
         icon: icons["spell_lightning_lightningbolt01"], 
         maxRank: 5, 
         reqPoints: 10, 

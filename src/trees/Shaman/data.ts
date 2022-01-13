@@ -71,7 +71,7 @@ export const data: TalentData = {
         pos: "c1", 
         icon: icons["spell_fire_sealoffire"], 
         maxRank: 2, 
-        reqPoints: 20, 
+        reqPoints: 10, 
         description: talentText`Reduces the delay before your Fire Nova Totem activates by ${[
           0.5,
           1,

@@ -177,7 +177,7 @@ export const data: TalentData = {
       },
       "Shamanism": {
         name: "Shamanism", 
-        pos: "e1", 
+        pos: "e3", 
         icon: icons["spell_nature_wispheal"], 
         maxRank: 3, 
         reqPoints: 20, 

@@ -12,17 +12,6 @@ export const data: TalentData = {
     background: backgrounds["elemental"],
     icon: icons["spell_nature_lightning"],
     talents: {
-      "Storm Reach": {
-        name: "Storm Reach", 
-        pos: "a1", 
-        icon: icons["spell_nature_stormreach"], 
-        maxRank: 2, 
-        reqPoints: 0, 
-        description: talentText`Increases the range of your Lightning Bolt, Chain Lighting and Chain Heal spells by ${[
-          3,
-          6,
-        ]} yards.`, 
-      },
       "Convection": {
         name: "Convection", 
         pos: "a2", 
@@ -131,11 +120,15 @@ export const data: TalentData = {
         icon: icons["spell_nature_eyeofthestorm"], 
         maxRank: 3, 
         reqPoints: 15, 
-        description: talentText`Gives you a ${[
-          20,
-          40,
-          60,
-        ]}% chance to avoid interruption caused by damage while casting Lightning Bolt or Chain Lightning.`, 
+        description: talentText`Reduces all pushback suffered from damaging attacks by ${[
+          17,
+          34,
+          50,
+        ]}%.  Additionally gives you a ${[
+          33,
+          66,
+          100,
+        ]}% chance to reduce the pushback suffered from damaging attacks by 50% for 6 sec after being the victim of a melee or ranged critical strike.`, 
       },
       "Call of Thunder": {
         name: "Call of Thunder",
@@ -151,6 +144,17 @@ export const data: TalentData = {
           6,
         ]}%.`, 
       },
+      "Storm Reach": {
+        name: "Storm Reach", 
+        pos: "e1", 
+        icon: icons["spell_nature_stormreach"], 
+        maxRank: 2, 
+        reqPoints: 20, 
+        description: talentText`Increases the range of your Lightning Bolt and Chain Lighting by ${[
+          5,
+          10,
+        ]} yards.`, 
+      },
       "Elemental Fury": {
         name: "Elemental Fury", 
         pos: "e2", 
@@ -159,50 +163,34 @@ export const data: TalentData = {
         reqPoints: 20, 
         description: talentText`Increases the critical strike damage bonus of your Searing, Magma, and Fire Nova Totems and your Fire, Frost, and Nature spells by 100%.`, 
       },
-      "Elemental Precision": {
+      "Elemental Piercing": {
         name: "Elemental Precision", 
         pos: "f1", 
         icon: icons["spell_nature_elementalprecision_1"], 
-        maxRank: 5, 
+        maxRank: 3, 
         reqPoints: 25, 
-        description: talentText`Increases your chance to hit with Fire, Frost and Nature spells by ${[
-          2,
-          4,
-          6,
-          8,
-          10,
-        ]}%. Also grants ${[
-          0.2,
-          0.4,
-          0.6,
-          0.8,
+        description: talentText`Reduces the chance for enemies to resist your Fire, Frost and Nature spells by ${[
           1,
-        ]} per level Fire, Frost, and Nature spell penetration.`, 
+          2,
+          3,
+        ]}% and decreases their magical resistances against your spells by ${[
+          13,
+          27,
+          40,
+        ]}.`, 
       },
       "Lightning Overlord": {
         name: "Lightning Overlord", 
         pos: "f3", 
-        icon: icons["inv_helmet_06"], 
+        icon: icons["spell_nature_lightningoverload"], 
         maxRank: 2, 
-        reqPoints: 25, 
-        description: talentText`Your Lightning Bolt, Chain Lightning, and Chain Heal spells' criticals will refund ${[
-          25,
-          50,
-        ]}% of their base mana cost.`, 
-      },
-      "Static Field": {
-        name: "Static Field", 
-        pos: "f4", 
-        icon: icons["spell_shaman_staticshock"], 
-        maxRank: 5, 
-        reqPoints: 25, 
-        description: talentText`Gives your damage spells a ${[
-          20,
-          40,
-          60,
-          80,
-          100,
-        ]}% chance to energize you, increasing damage and reducing Mana cost of your damage spells by 1% for 30 seconds. Stacks up to 10 times.`, 
+        reqPoints: 25,
+        prereq: "Call of Thunder", 
+        arrows: [{ dir: "down", from: "d3", to: "f3" }], 
+        description: talentText`Gives your Lightning Bolt and Chain Lightning spells a ${[
+          8,
+          16,
+        ]}% chance to cast a second, similiar spell on the same target at no additional cost that causes half damage and no threat.`, 
       },
       "Earthquake": {
         name: "Earthquake", 

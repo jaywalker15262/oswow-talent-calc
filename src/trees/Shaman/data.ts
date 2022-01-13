@@ -175,7 +175,19 @@ export const data: TalentData = {
         reqPoints: 20, 
         description: talentText`Increases the critical strike damage bonus of your Searing, Magma, and Fire Nova Totems and your Fire, Frost, and Nature spells by 100%.`, 
       },
-      "Elemental Piercing": {
+      "Shamanism": {
+        name: "Shamanism", 
+        pos: "e1", 
+        icon: icons["spell_nature_wispheal"], 
+        maxRank: 3, 
+        reqPoints: 20, 
+        description: talentText`Entering a Clearcasting state increases all party members' spell haste by ${[
+          2,
+          4,
+          6,
+        ]}% if within 20 yards of the Shaman.  Lasts 8 sec.`, 
+      },
+      "Elemental Precision": {
         name: "Elemental Precision", 
         pos: "f1", 
         icon: icons["spell_nature_elementalprecision_1"], 

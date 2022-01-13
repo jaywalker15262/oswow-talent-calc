@@ -179,8 +179,8 @@ export const data: TalentData = {
           40,
         ]}.`, 
       },
-      "Lightning Overlord": {
-        name: "Lightning Overlord", 
+      "Lightning Overload": {
+        name: "Lightning Overload", 
         pos: "f3", 
         icon: icons["spell_nature_lightningoverload"], 
         maxRank: 2, 
@@ -192,13 +192,15 @@ export const data: TalentData = {
           16,
         ]}% chance to cast a second, similiar spell on the same target at no additional cost that causes half damage and no threat.`, 
       },
-      "Earthquake": {
-        name: "Earthquake", 
+      "Sons of Ice and Fire": {
+        name: "Sons of Ice and Fire", 
         pos: "g2", 
-        icon: icons["spell_nature_earthquake"], 
+        icon: icons["spell_frostresistancetotem_01"], 
         maxRank: 1, 
-        reqPoints: 30, 
-        description: talentText`Shakes the ground, shocking enemies for trivial amounts of Nature damage. Each hit causes echoes that inflict damage to their neraby allies. The effect lessens with distance to the epicenter. Also dazes the targets for 5 seconds and causes a high amount of threat.`, 
+        reqPoints: 30,
+        prereq: "Elemental Fury", 
+        arrows: [{ dir: "down", from: "e2", to: "g2" }],
+        description: talentText`Deepens your communion with the elements Water and Fire, teaching you Water Jet and Molten Blast.`, 
       },
     },
   },

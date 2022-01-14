@@ -437,7 +437,7 @@ export const data: TalentData = {
       },
       "Weapon Mastery": {
         name: "Weapon Mastery", 
-        pos: "e2", 
+        pos: "e3", 
         icon: icons["ability_hunter_swiftstrike"], 
         maxRank: 3, 
         reqPoints: 20, 

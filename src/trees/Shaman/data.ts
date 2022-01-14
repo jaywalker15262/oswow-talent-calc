@@ -433,7 +433,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_shamanrage"], 
         maxRank: 1, 
         reqPoints: 20, 
-        description: talentText`Increases a friendly target's attack speed by 30% and movement speed by 20%.  If the target is someone other than the Shaman, then you will recieve half of the effect as well.  Lasts $d.`, 
+        description: talentText`Increases a friendly target's attack speed by 30% and movement speed by 20%.  If the target is someone other than the Shaman, then you will recieve half of the effect as well.  Lasts 20 sec.`, 
       },
       "Weapon Mastery": {
         name: "Weapon Mastery", 

@@ -456,7 +456,12 @@ export const data: TalentData = {
         pos: "e4", 
         icon: icons["ability_dualwieldspecialization"], 
         maxRank: 1, 
-        reqPoints: 20, 
+        reqPoints: 20,
+        prereq: "Elemental Weapons",
+        arrows: [
+          { dir: "right-down", from: "d3", to: "d4"}, 
+          { dir: "right-down-down", from: "d4", to: "e4" }
+        ],  
         description: talentText`Gives a chance to parry enemy melee attacks and allows one-hand and off-hand weapons to be equipped in the off-hand.`, 
       },
       "Maelstrom Weapon": {
@@ -464,7 +469,7 @@ export const data: TalentData = {
         pos: "f1", 
         icon: icons["spell_shaman_maelstromweapon"], 
         maxRank: 2, 
-        reqPoints: 25, 
+        reqPoints: 25,
         description: talentText`When you deal damage with a melee weapon, you have a chance${["", " (higher than rank 1)"]} to reduce the cast time of your next Lightning Bolt and Chain Lightning by 20%.  Stacks up to 5 times.  Lasts 20 sec.`, 
       },
       "Unleashed Rage": {

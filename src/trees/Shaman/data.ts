@@ -246,29 +246,17 @@ export const data: TalentData = {
     background: backgrounds["enhancement"],
     icon: icons["spell_nature_lightningshield"],
     talents: {
-      "Elemental Weapons": {
-        name: "Elemental Weapons", 
-        pos: "a1", 
-        icon: icons["spell_fire_flametounge"], 
-        maxRank: 3, 
-        reqPoints: 0, 
-        description: talentText`Increases the effectiveness of your elemental weapon enchants by ${[
-          10,
-          20,
-          30,
-        ]}%.`, 
-      },
       "Ancestral Knowledge": {
         name: "Ancestral Knowledge", 
         pos: "a2", icon: icons["spell_shadow_grimward"], 
         maxRank: 5, 
         reqPoints: 0, 
         description: talentText`Increases your maximum Mana by ${[
-          2,
-          4,
+          3,
           6,
-          8,
-          10,
+          9,
+          12,
+          15,
         ]}%.`, 
       },
       "Shield Specialization": {
@@ -313,16 +301,18 @@ export const data: TalentData = {
           5,
         ]}%.`, 
       },
-      "Toughness": {
-        name: "Toughness", 
-        pos: "b4", 
-        icon: icons["spell_holy_devotion"], 
-        maxRank: 3, 
+      "Anticipation": {
+        name: "Anticipation", 
+        pos: "b3", 
+        icon: icons["spell_nature_mirrorimage"], 
+        maxRank: 5, 
         reqPoints: 5, 
-        description: talentText`Increases your resistance and armor value from items by ${[
+        description: talentText`Increases your chance to dodge by an additional ${[
+          1,
+          2,
+          3,
+          4,
           5,
-          10,
-          15,
         ]}%.`, 
       },
       "Rockhide": {
@@ -363,15 +353,16 @@ export const data: TalentData = {
           30,
         ]}% for your next 3 swings after dealing a critical strike.`, 
       },
-      "Earth Shield": {
-        name: "Earth Shield", 
+      "Improved Ghost Wolf": {
+        name: "Improved Ghost Wolf", 
         pos: "c3", 
-        icon: icons["spell_nature_skinofearth"], 
-        maxRank: 1, 
+        icon: icons["spell_nature_spiritwolf"], 
+        maxRank: 2, 
         reqPoints: 10, 
-        prereq: "Shield Specialization", 
-        arrows: [{ dir: "down", from: "a3", to: "c3" }], 
-        description: talentText`Increases Healing taken by 15% and chance to block by 30%. Lasts for 10 min or 20 attacks.`, 
+        description: talentText`Reduces the cast time of your Ghost Wolf spell by ${[
+          1,
+          2,
+        ]} sec.`, 
       },
       "Weapon Mastery": {
         name: "Weapon Mastery", 
@@ -393,38 +384,53 @@ export const data: TalentData = {
         icon: icons["spell_fire_enchantweapon"], 
         maxRank: 2, 
         reqPoints: 15, 
-        description: talentText`Increases the effect and reduces the Mana cost of your Windfury and Flametongue Totems by ${[
-          25,
-          50,
+        description: talentText`Increases the melee attack power bonus of your Windfury Totem by ${[
+          15,
+          30,
+        ]}% and increases the damage caused by your Flametongue Totem by ${[
+          6,
+          12,
         ]}%.`, 
       },
-      "Primal Endurance": {
-        name: "Primal Endurance", 
+      "Toughness": {
+        name: "Toughness", 
         pos: "d2", 
-        icon: icons["spell_nature_ancestralguardian"], 
+        icon: icons["spell_holy_devotion"], 
         maxRank: 5, 
         reqPoints: 15, 
-        description: talentText`Increases total health by ${[
+        description: talentText`Increases your Stamina by ${[
+          2,
           4,
+          6,
           8,
+          10,
+        ]}%, and reduces the duration of all movement slowing effects by ${[
+          6,
           12,
-          16,
-          20,
+          18,
+          24,
+          30,
         ]}%.`, 
       },
-      "Improved Ghost Wolf": {
-        name: "Improved Ghost Wolf", 
+      "Elemental Weapons": {
+        name: "Elemental Weapons", 
         pos: "d3", 
-        icon: icons["spell_nature_spiritwolf"], 
-        maxRank: 2, 
+        icon: icons["spell_fire_flametounge"], 
+        maxRank: 3, 
         reqPoints: 15, 
-        description: talentText`Reduces the Mana cost of your Ghost Wolf spell by ${[
-          50,
-          100
-        ]}% and cast time by ${[
-          1,
-          2,
-        ]} sec.`, 
+        description: talentText`Increases the melee attack power bonus of your Rockbiter Weapon by ${[
+          7,
+          14,
+          20,
+        ]}%, your Windfury Weapon effect by ${[
+          20,
+          40,
+          60,
+        ]}% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by ${[
+          5,
+          10,
+          15,
+        ]}%.`, 
       },
       "Improved Lightning Shield": {
         name: "Improved Lightning Shield", 
@@ -464,18 +470,6 @@ export const data: TalentData = {
         maxRank: 1, 
         reqPoints: 20, 
         description: talentText`Increases an ally's attack and casting speed by 10% for 180 seconds.`, 
-      },
-      "Anticipation": {
-        name: "Anticipation", 
-        pos: "e3", 
-        icon: icons["spell_nature_mirrorimage"], 
-        maxRank: 3, 
-        reqPoints: 20, 
-        description: talentText`Increases your stealth detection and reduces the chence you are hit by spells and ranged attakcs by ${[
-          2,
-          4,
-          6,
-        ]}%.`, 
       },
       "Armaments of Storm": {
         name: "Armaments of Storm", 

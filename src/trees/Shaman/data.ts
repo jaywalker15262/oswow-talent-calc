@@ -454,7 +454,7 @@ export const data: TalentData = {
       "Maelstrom Weapon": {
         name: "Maelstrom Weapon", 
         pos: "f1", 
-        icon: icons["spell_shaman_maelstromweaponr"], 
+        icon: icons["spell_shaman_maelstromweapon"], 
         maxRank: 2, 
         reqPoints: 25, 
         description: talentText`When you deal damage with a melee weapon, you have a chance${["", " (higher than rank 1)"]} to reduce the cast time of your next Lightning Bolt and Chain Lightning by 20%.  Stacks up to 5 times.  Lasts 20 sec.`, 

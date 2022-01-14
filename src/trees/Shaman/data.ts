@@ -453,7 +453,7 @@ export const data: TalentData = {
       },
       "Sprit Weapons": {
         name: "Sprit Weapons", 
-        pos: "e2", 
+        pos: "e4", 
         icon: icons["ability_dualwieldspecialization"], 
         maxRank: 1, 
         reqPoints: 20, 

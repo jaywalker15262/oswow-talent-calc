@@ -1,4 +1,4 @@
-import { areReqPointsMet, TalentData } from "../../TalentContext";
+import { TalentData } from "../../TalentContext";
 import { talentText, requireAll } from "../../utils";
 
 const backgrounds = requireAll(

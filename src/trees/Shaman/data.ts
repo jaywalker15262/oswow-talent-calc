@@ -320,7 +320,7 @@ export const data: TalentData = {
         pos: "c1", 
         icon: icons["spell_nature_earthbindtotem"], 
         maxRank: 2, 
-        reqPoints: 20, 
+        reqPoints: 10, 
         description: talentText`Increases the effect of your Strength of Earth and Grace of Air Totems by ${[
           8,
           15,

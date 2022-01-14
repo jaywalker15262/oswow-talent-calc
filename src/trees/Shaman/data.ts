@@ -533,7 +533,7 @@ export const data: TalentData = {
       },
       "Improved Reincarnation": {
         name: "Improved Reincarnation", 
-        pos: "a1", 
+        pos: "b1", 
         icon: icons["spell_nature_reincarnation"], 
         maxRank: 2, 
         reqPoints: 0, 

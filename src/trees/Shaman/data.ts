@@ -54,6 +54,17 @@ export const data: TalentData = {
           1,
         ]} sec.`, 
       },
+      "Cauterizing Flames": {
+        name: "Cauterizing Flames", 
+        pos: "b2", 
+        icon: icons["spell_nature_guardianward"], 
+        maxRank: 2, 
+        reqPoints: 5, 
+        description: talentText`Increases spell damage bonus of your Flametongue Weapon by ${[
+          50,
+          100,
+        ]}%.`, 
+      },
       "Call of Flame": {
         name: "Call of Flame", 
         pos: "b3", 

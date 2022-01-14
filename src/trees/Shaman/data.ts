@@ -315,6 +315,17 @@ export const data: TalentData = {
           5,
         ]}%.`, 
       },
+      "Enhancing Totems": {
+        name: "Enhancing Totems", 
+        pos: "c1", 
+        icon: icons["spell_nature_earthbindtotem"], 
+        maxRank: 2, 
+        reqPoints: 20, 
+        description: talentText`Increases the effect of your Strength of Earth and Grace of Air Totems by ${[
+          8,
+          15,
+        ]}%.`, 
+      },
       "Elemental Devastation": {
         name: "Elemental Devastationy", 
         pos: "c2", 
@@ -331,9 +342,17 @@ export const data: TalentData = {
           25,
         ]}% for 10 sec.`, 
       },
+      "Shamanistic Focus": {
+        name: "Shamanistic Focus", 
+        pos: "c3", 
+        icon: icons["spell_nature_elementalabsorption"], 
+        maxRank: 1, 
+        reqPoints: 10, 
+        description: talentText`Reduces the mana cost of your Shock spells by 25%.`, 
+      },
       "Improved Ghost Wolf": {
         name: "Improved Ghost Wolf", 
-        pos: "c3", 
+        pos: "c4", 
         icon: icons["spell_nature_spiritwolf"], 
         maxRank: 2, 
         reqPoints: 10, 
@@ -415,17 +434,6 @@ export const data: TalentData = {
           5,
           7,
         ]}.`, 
-      },
-      "Enhancing Totems": {
-        name: "Enhancing Totems", 
-        pos: "e1", 
-        icon: icons["spell_nature_earthbindtotem"], 
-        maxRank: 2, 
-        reqPoints: 20, 
-        description: talentText`Increases the effect and reduces the Mana cost of your Strength of Earth and Grace of Air totems by ${[
-          25,
-          50,
-        ]}%.`, 
       },
       "Bloodlust": {
         name: "Bloodlust", 

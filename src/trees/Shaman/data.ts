@@ -446,6 +446,7 @@ export const data: TalentData = {
           4,
           6,
         ]}%.`,
+      },
       "Armaments of Storm": {
         name: "Armaments of Storm", 
         pos: "f1", 

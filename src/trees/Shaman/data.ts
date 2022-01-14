@@ -695,7 +695,7 @@ export const data: TalentData = {
       "Mana Tide Totem": {
         name: "Cleansing Wave", 
         pos: "g2", 
-        icon: icons["spell_shadow_demonbreath"], 
+        icon: icons["spell_frost_summonwaterelemental"], 
         maxRank: 1, 
         reqPoints: 30, 
         prereq: "Tidal Mastery", 

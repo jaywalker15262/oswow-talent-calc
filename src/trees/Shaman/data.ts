@@ -342,7 +342,6 @@ export const data: TalentData = {
           2,
         ]} sec.`, 
       }, 
-      },
       "Improved Weapon Totems": {
         name: "Improved Weapon Totems", 
         pos: "d1", 

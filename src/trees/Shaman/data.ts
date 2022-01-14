@@ -651,7 +651,7 @@ export const data: TalentData = {
         name: "Healing Way", 
         pos: "e1", 
         icon: icons["classic_spell_nature_healingway"], 
-        maxRank: 5, 
+        maxRank: 3, 
         reqPoints: 20, 
         description: talentText`Your Healing Wave spells have a ${[
           33,

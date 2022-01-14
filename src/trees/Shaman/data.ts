@@ -251,7 +251,7 @@ export const data: TalentData = {
         pos: "a1", 
         icon: icons["spell_nature_stoneskintotem"], 
         maxRank: 2, 
-        reqPoints: 5, 
+        reqPoints: 0, 
         description: talentText`Increases the effect of your Resistance Totems, Stoneskin Totem and Windwall Totem by ${[
           10,
           20,

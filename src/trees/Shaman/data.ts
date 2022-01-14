@@ -669,7 +669,7 @@ export const data: TalentData = {
       },
       "Improved Chain Heal": {
         name: "Improved Chain Heal", 
-        pos: "f1", 
+        pos: "e4", 
         icon: icons["spell_nature_healingwavegreater"], 
         maxRank: 2, 
         reqPoints: 25, 

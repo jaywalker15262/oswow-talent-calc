@@ -246,33 +246,6 @@ export const data: TalentData = {
     background: backgrounds["enhancement"],
     icon: icons["spell_nature_lightningshield"],
     talents: {
-      "Ancestral Knowledge": {
-        name: "Ancestral Knowledge", 
-        pos: "a2", icon: icons["spell_shadow_grimward"], 
-        maxRank: 5, 
-        reqPoints: 0, 
-        description: talentText`Increases your maximum Mana by ${[
-          3,
-          6,
-          9,
-          12,
-          15,
-        ]}%.`, 
-      },
-      "Shield Specialization": {
-        name: "Shield Specialization", 
-        pos: "a3", 
-        icon: icons["inv_shield_06"], 
-        maxRank: 2, 
-        reqPoints: 0, 
-        description: talentText`Increases your chance to block attacks with a shield by ${[
-          3,
-          5,
-        ]}% and has a ${[
-          50,
-          100,
-        ]}% chance to restore 1% of your Mana when a block occurs.`, 
-      },
       "Guardian Totems": {
         name: "Guardian Totems", 
         pos: "a1", 
@@ -286,6 +259,35 @@ export const data: TalentData = {
           1,
           2,
         ]} sec.`, 
+      },
+      "Ancestral Knowledge": {
+        name: "Ancestral Knowledge", 
+        pos: "a2", icon: icons["spell_shadow_grimward"], 
+        maxRank: 5, 
+        reqPoints: 0, 
+        description: talentText`Increases your maximum Mana by ${[
+          3,
+          6,
+          9,
+          12,
+          15,
+        ]}%.`, 
+      },
+      "Improved Lightning Shield": {
+        name: "Improved Lightning Shield", 
+        pos: "a3", 
+        icon: icons["spell_nature_lightningshield"], 
+        maxRank: 3, 
+        reqPoints: 0, 
+        description: talentText`Your Lightning Shield gains ${[
+          "1 additional charge",
+          "2 additional charges",
+          "3 additional charges",
+        ]}  However, the damage done by your Lightning Shield orbs is decreased by ${[
+          5,
+          10,
+          15,
+        ]}%.`, 
       },
       "Thundering Strikes": {
         name: "Thundering Strikes", 
@@ -414,26 +416,6 @@ export const data: TalentData = {
           10,
           15,
         ]}%.`, 
-      },
-      "Improved Lightning Shield": {
-        name: "Improved Lightning Shield", 
-        pos: "d4", 
-        icon: icons["spell_nature_lightningshield"], 
-        maxRank: 3, 
-        reqPoints: 15, 
-        description: talentText`Increases the damage done by your Lightning Shield orbs by ${[
-          5,
-          10,
-          15,
-        ]}%, reduces its Mana cost by ${[
-          5,
-          10,
-          15,
-        ]}% and increases the number of orbs by ${[
-          3,
-          5,
-          7,
-        ]}.`, 
       },
       "Bloodlust": {
         name: "Bloodlust", 

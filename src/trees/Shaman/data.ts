@@ -315,10 +315,10 @@ export const data: TalentData = {
           5,
         ]}%.`, 
       },
-      "Flurry": {
-        name: "Flurry", 
+      "Elemental Devastation": {
+        name: "Elemental Devastationy", 
         pos: "c2", 
-        icon: icons["ability_ghoulfrenzy"], 
+        icon: icons["classic_spell_fire_elementaldevastation"], 
         maxRank: 5, 
         reqPoints: 10, 
         prereq: "Thundering Strikes", 
@@ -430,14 +430,14 @@ export const data: TalentData = {
       "Bloodlust": {
         name: "Bloodlust", 
         pos: "e2", 
-        icon: icons["spell_nature_bloodlust"], 
+        icon: icons["spell_nature_shamanrage"], 
         maxRank: 1, 
         reqPoints: 20, 
-        description: talentText`Increases an ally's attack and casting speed by 10% for 180 seconds.`, 
+        description: talentText`Increases a friendly target's attack speed by 30% and movement speed by 20%.  If the target is someone other than the Shaman, then you will recieve half of the effect as well.  Lasts $d.`, 
       },
       "Weapon Mastery": {
         name: "Weapon Mastery", 
-        pos: "c4", 
+        pos: "e2", 
         icon: icons["ability_hunter_swiftstrike"], 
         maxRank: 3, 
         reqPoints: 20, 

@@ -275,16 +275,16 @@ export const data: TalentData = {
       },
       "Guardian Totems": {
         name: "Guardian Totems", 
-        pos: "b1", 
+        pos: "a1", 
         icon: icons["spell_nature_stoneskintotem"], 
         maxRank: 2, 
         reqPoints: 5, 
         description: talentText`Increases the effect of your Resistance Totems, Stoneskin Totem and Windwall Totem by ${[
-          25,
-          50,
-        ]}% and reduces the cooldown of your Grounding Totem by ${[
           10,
           20,
+        ]}% and reduces the cooldown of your Grounding Totem by ${[
+          1,
+          2,
         ]} sec.`, 
       },
       "Thundering Strikes": {
@@ -315,28 +315,6 @@ export const data: TalentData = {
           5,
         ]}%.`, 
       },
-      "Rockhide": {
-        name: "Rockhide", 
-        pos: "c1", 
-        icon: icons["stoneskinz"], 
-        maxRank: 5, 
-        reqPoints: 10, 
-        prereq: "Guardian Totems", 
-        arrows: [{ dir: "down", from: "b1", to: "c1" }], 
-        description: talentText`Has a ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}% chance when struck in combat to inflict up to 120 physical damage (scales with your level) to nearby enemies and to stun them for 1 seconds. In addition, reduces all damage taken by ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}%.`, 
-      },
       "Flurry": {
         name: "Flurry", 
         pos: "c2", 
@@ -345,13 +323,13 @@ export const data: TalentData = {
         reqPoints: 10, 
         prereq: "Thundering Strikes", 
         arrows: [{ dir: "down", from: "b2", to: "c2" }], 
-        description: talentText`Increases your attack speed by ${[
+        description: talentText`Your offensive spell crits will increase your attack speed by ${[
+          5,
           10,
           15,
           20,
           25,
-          30,
-        ]}% for your next 3 swings after dealing a critical strike.`, 
+        ]}% for 10 sec.`, 
       },
       "Improved Ghost Wolf": {
         name: "Improved Ghost Wolf", 
@@ -363,20 +341,7 @@ export const data: TalentData = {
           1,
           2,
         ]} sec.`, 
-      },
-      "Weapon Mastery": {
-        name: "Weapon Mastery", 
-        pos: "c4", 
-        icon: icons["ability_hunter_swiftstrike"], 
-        maxRank: 5, 
-        reqPoints: 10, 
-        description: talentText`Increases the damage you deal with all weapons by ${[
-          2,
-          4,
-          6,
-          8,
-          10,
-        ]}%.`, 
+      }, 
       },
       "Improved Weapon Totems": {
         name: "Improved Weapon Totems", 
@@ -471,6 +436,17 @@ export const data: TalentData = {
         reqPoints: 20, 
         description: talentText`Increases an ally's attack and casting speed by 10% for 180 seconds.`, 
       },
+      "Weapon Mastery": {
+        name: "Weapon Mastery", 
+        pos: "c4", 
+        icon: icons["ability_hunter_swiftstrike"], 
+        maxRank: 3, 
+        reqPoints: 20, 
+        description: talentText`Increases the damage you deal with all weapons by ${[
+          2,
+          4,
+          6,
+        ]}%.`,
       "Armaments of Storm": {
         name: "Armaments of Storm", 
         pos: "f1", 

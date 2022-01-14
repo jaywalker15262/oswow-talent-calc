@@ -437,7 +437,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_shamanrage"], 
         maxRank: 1, 
         reqPoints: 20, 
-        description: talentText`Increases a friendly target's attack speed by 30% and movement speed by 20%.  If the target is someone other than the Shaman, then you will recieve half of the effect as well.  Lasts 20 sec.`, 
+        description: talentText`Increases a friendly target's attack speed by 30% and movement speed by 20%.  If the target is someone other than the Shaman, then you will recieve half of the effect as well.  Lasts 15 sec.`, 
       },
       "Weapon Mastery": {
         name: "Weapon Mastery", 
@@ -450,6 +450,14 @@ export const data: TalentData = {
           4,
           6,
         ]}%.`,
+      },
+      "Sprit Weapons": {
+        name: "Sprit Weapons", 
+        pos: "e2", 
+        icon: icons["ability_dualwieldspecialization"], 
+        maxRank: 1, 
+        reqPoints: 20, 
+        description: talentText`Gives a chance to parry enemy melee attacks and allows one-hand and off-hand weapons to be equipped in the off-hand.`, 
       },
       "Maelstrom Weapon": {
         name: "Maelstrom Weapon", 

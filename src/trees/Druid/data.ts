@@ -579,7 +579,7 @@ This ability can be used in Cat Form or Dire Bear Form.`,
           45,
           60,
           75,
-        ]}%chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.`,
+        ]}% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.`,
       },
       "Natural Shapeshifter": {
         name: "Natural Shapeshifter",

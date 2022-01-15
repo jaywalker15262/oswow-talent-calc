@@ -492,8 +492,8 @@ Each effect has a separate 5 sec cooldown.`,
           20,
           40,
         ]}% for 5 sec after casting your Cower ability and increases the threat reduction by ${[
-          10,
-          20,
+          15,
+          30,
         ]}%.`,
       },
       "Heart of the Wild": {
@@ -523,6 +523,16 @@ Each effect has a separate 5 sec cooldown.`,
           8,
           10,
         ]}%.`,
+      },
+      "Mangle": {
+        name: "Mangle",
+        pos: "g2",
+        icon: icons["ability_druid_mangle2"],
+        maxRank: 1,
+        reqPoints: 30,
+        description: talentText`Mangle the target, inflicting damage and granting an additional effect based on which form you are shapeshifted into.
+
+This ability can be used in Cat Form or Dire Bear Form.`,
       },
     },
   },

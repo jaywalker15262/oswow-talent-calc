@@ -25,7 +25,21 @@ export const data: TalentData = {
           0.4,
           0.5,
         ]} sec.`,
-      },        
+      },
+      "Genesis": {
+        name: "Genesis",
+        pos: "a2",
+        icon: icons["spell_arcane_arcane03"],
+        maxRank: 5,
+        reqPoints: 0,
+        description: talentText`Increases the damage and healing done by your periodic spell damage and healing effects by ${[
+          1,
+          2,
+          3,
+          4,
+          5,
+        ]}%.`,
+      },    
       "Nature's Grasp": {
         name: "Nature's Grasp",
         pos: "a3",
@@ -187,7 +201,7 @@ export const data: TalentData = {
         pos: "e3",
         icon: icons["nature_balancer"],
         maxRank: 2,
-        reqPoints: 25,
+        reqPoints: 20,
         description: talentText`Reduces the chance that the opponent can resist your Balance spells by ${[
           2,
           4,

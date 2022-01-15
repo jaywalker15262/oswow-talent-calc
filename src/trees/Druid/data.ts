@@ -677,6 +677,8 @@ This ability can be used in Cat Form or Dire Bear Form.`,
         icon: icons["spell_nature_ravenform"],
         maxRank: 1,
         reqPoints: 20,
+        prereq: "Reflection",
+        arrows: [{ dir: "down", from: "c1", to: "e1" }],
         description: talentText`When activated, your next Nature spell becomes an instant cast spell.`,
       },
       "Swiftmend": {

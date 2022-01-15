@@ -669,7 +669,7 @@ This ability can be used in Cat Form or Dire Bear Form.`,
         icon: icons["spell_nature_natureguardian"],
         maxRank: 2,
         reqPoints: 15,
-        description: talentText`Increases the duration of your Moonfire and Rejuvenation spells by 3 sec${["", " on targets at or below 50% of their total health"]}.`,
+        description: talentText`Increases the duration of your Moonfire and Rejuvenation spells by 3 sec${[" on targets at or below 50% of their total health", ""]}.`,
       },
       "Nature's Swiftness": {
         name: "Nature's Swiftness",

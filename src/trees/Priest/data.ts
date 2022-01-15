@@ -183,7 +183,7 @@ export const data: TalentData = {
         icon: icons["innerwill"], 
         maxRank: 1, 
         reqPoints: 20,
-        prereq: "Inner Fire", 
+        prereq: "Improved Inner Fire", 
         arrows: [{ dir: "down", from: "d1", to: "e1" }],
         description: talentText`A burst of Holy energy fills the caster, reducing the mana cost of instant cast spells by 10% and increasing your movement speed by 12%.  Lasts 10 min.
 

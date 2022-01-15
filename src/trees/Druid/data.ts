@@ -635,7 +635,7 @@ This ability can be used in Cat Form or Dire Bear Form.`,
         icon: icons["spell_nature_crystalball"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Each of the Druid's damage and healing spells has a chance of causing the caster to enter a Clearcasting state.  The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage, healing spell or offensive ability by $16870s1%.`,
+        description: talentText`Each of the Druid's damage and healing spells has a chance of causing the caster to enter a Clearcasting state.  The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage, healing spell or offensive ability by 100%.`,
       },
       "Gift of Nature": {
         name: "Gift of Nature",

@@ -669,27 +669,6 @@ This ability can be used in Cat Form or Dire Bear Form.`,
           10,
         ]}%.`,
       },
-      "Custody of the Nature": {
-        name: "Custody of the Nature",
-        pos: "d4",
-        icon: icons["custody_of_the_nature"],
-        maxRank: 3,
-        reqPoints: 15,
-        description: talentText`After being struck by a critical hit, you become immune to critical strikes for the next ${[
-          1,
-          2,
-          3,
-        ]} attack(s) or ${[
-          3,
-          4,
-          5,
-        ]} sec. In addition, gives your spell effects additional ${[
-          15,
-          20,
-          25,
-        ]}% chance to resist dispel effects.`,
-      },
-
       "Nature's Swiftness": {
         name: "Nature's Swiftness",
         pos: "e1",
@@ -719,22 +698,21 @@ This ability can be used in Cat Form or Dire Bear Form.`,
           100,
         ]}%.`,
       },
-
-      "Catharsis": {
-        name: "Catharsis",
+      "Improved Regrowth": {
+        name: "Improved Regrowth",
         pos: "e4",
-        icon: icons["catharsis"],
-        maxRank: 3,
+        icon: icons["spell_nature_resistnature"],
+        maxRank: 5,
         reqPoints: 20,
-        description: talentText`Reduces the Mana cost of your Soothe Animal, Hibernate, Remove Curse, Cure Poison, Abolish Poisin, Rebirth and Revive spells by ${[
-          15,
-          30,
-          45,
-        ]}%.\nIn addition, your innervate casts grants you ${[
-          7,
-          14,
+        prereq: "Improved Rejuvenation",
+        arrows: [{ dir: "down", from: "b4", to: "e4" }],
+        description: talentText`Increases the critical effect chance of your Regrowth spell by ${[
+          10,
           20,
-        ]} sec of Innervate effect.`,
+          30,
+          40,
+          50,
+        ]}%.`,
       },
       
       "Animism": {
@@ -751,24 +729,6 @@ This ability can be used in Cat Form or Dire Bear Form.`,
           40,
         ]}% of your total Spirit.`,
       },
-
-      "Improved Regrowth": {
-        name: "Improved Regrowth",
-        pos: "f3",
-        icon: icons["spell_nature_resistnature"],
-        maxRank: 5,
-        reqPoints: 25,
-        prereq: "Improved Rejuvenation",
-        arrows: [{ dir: "down", from: "d3", to: "f3" }],
-        description: talentText`Increases the critical effect chance of your Regrowth spell by ${[
-          15,
-          30,
-          45,
-          60,
-          75,
-        ]}%.`,
-      },
-
       "Swiftmend": {
         name: "Swiftmend",
         pos: "g2",

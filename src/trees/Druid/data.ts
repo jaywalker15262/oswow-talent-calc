@@ -275,7 +275,7 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
         icon: icons["ability_hunter_pet_hyena"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Reduces the cost of your Maul, Swipe, Claw and Rake abilities by ${[
+        description: talentText`Reduces the cost of your Maul, Claw, Rake, and Mangle(Cat) abilities by ${[
           1,
           2,
           3,
@@ -283,52 +283,52 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
           5,
         ]} Rage or Energy.`,
       },
-      
       "Feral Aggression": {
         name: "Feral Aggression",
-        pos: "a2",
-        icon: icons["ability_druid_demoralizingroar"],
-        maxRank: 2,
-        reqPoints: 0,
-        description: talentText`Increases the effectiveness of your Demoralizing Roar by ${[
-          20,
-          40
-        ]}% and the damage caused by your Ferocious Bite and Rip by ${[
-          5,
-          10,
-        ]}%.`,
-      },
-      
-      "Thick Hide": {
-        name: "Thick Hide",
         pos: "a3",
-        icon: icons["inv_misc_pelt_bear_03"],
-        maxRank: 3,
+        icon: icons["ability_druid_demoralizingroar"],
+        maxRank: 5,
         reqPoints: 0,
-        description: talentText`Increases your Armor contribution from items by ${[
-          5,
-          10,
-          15,
+        description: talentText`Increases the Attack Power reduction of your Demoralizing Roar by ${[
+          9,
+          18,
+          27,
+          36,
+          45,
+        ]}% and the damage caused by your Ferocious Bite by ${[
+          4,
+          8,
+          12,
+          16,
+          20,
         ]}%.`,
       },
-      
-      "Primal Tenacity": {
-        name: "Primal Tenacity",
-        pos: "b1",
-        icon: icons["primal_tenacity"],
+      "Furor": {
+        name: "Furor",
+        pos: "a3",
+        icon: icons["spell_holy_blessingofstamina"],
         maxRank: 3,
-        reqPoints: 5,
-        description: talentText`Increases your chance to resist Stun and Fear effects by an additional ${[
+        reqPoints: 0,
+        description: talentText`Gives you ${[
+          33,
+          66,
+          100,
+        ]}%% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 30 Energy when you shapeshift into Cat Form.
+        
+Each effect has a separate 5 sec cooldown.`,
+      },
+      "Feral Instinct": {
+        name: "Feral Instinct",
+        pos: "b1",
+        icon: icons["ability_ambush"],
+        maxRank: 3,
+        reqPoints: 15,
+        description: talentText`Increases the threat caused in Bear and Dire Bear Form by ${[
           5,
           10,
           15,
-        ]}% and reduces the cooldown of your Enrage by ${[
-          10,
-          20,
-          30,
-        ]} sec.`,
-      },
-      
+        ]}%, reduces the chance enemies have to detect you while Prowling.`,
+      },        
       "Brutal Impact": {
         name: "Brutal Impact",
         pos: "b2",
@@ -336,38 +336,24 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
         maxRank: 2,
         reqPoints: 5,
         description: talentText`Increases the stun duration of your Bash and Pounce abilities by ${[
+          0.5,
           1,
-          2,
         ]} sec.`,
       },
-      
-      "Sharpened Claws": {
-        name: "Sharpened Claws",
+      "Thick Hide": {
+        name: "Thick Hide",
         pos: "b3",
-        icon: icons["inv_misc_monsterclaw_04"],
-        maxRank: 3,
+        icon: icons["inv_misc_pelt_bear_03"],
+        maxRank: 5,
         reqPoints: 5,
-        description: talentText`Increases your critical strike chance while in Bear, Dire Bear or Cat Form by ${[
+        description: talentText`Increases your Armor contribution from items by ${[
           2,
           4,
           6,
+          8,
+          10,
         ]}%.`,
       },
-      
-      "Primal Fury": {
-        name: "Primal Fury",
-        pos: "b4",
-        icon: icons["ability_racial_cannibalize"],
-        maxRank: 2,
-        reqPoints: 5,
-        prereq: "Sharpened Claws",
-        arrows: [{ dir: "right", from: "b3", to: "b4" }],
-        description: talentText`Gives you a ${[
-          50,
-          100,
-        ]}% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form.`,
-      },
-      
       "Feline Swiftness": {
         name: "Feline Swiftness",
         pos: "c1",
@@ -391,21 +377,18 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
         reqPoints: 10,
         description: talentText`Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.`,
       },
-      
-      "Blood Frenzy": {
-        name: "Blood Frenzy",
+      "Sharpened Claws": {
+        name: "Sharpened Claws",
         pos: "c3",
-        icon: icons["ability_ghoulfrenzy"],
-        maxRank: 2,
+        icon: icons["inv_misc_monsterclaw_04"],
+        maxRank: 3,
         reqPoints: 10,
-        prereq: "Sharpened Claws",
-        arrows: [{ dir: "down", from: "b3", to: "c3" }],
-        description: talentText`Your critial strikes from Cat Form abilities that add combo points have a ${[
-          50,
-          100,
-        ]}% chance to add an additional combo point.`,
-      },
-      
+        description: talentText`Increases your critical strike chance while in Bear, Dire Bear or Cat Form by ${[
+          2,
+          4,
+          6,
+        ]}%.`,
+      },      
       "Leap": {
         name: "leap",
         pos: "c4",
@@ -413,153 +396,97 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
         maxRank: 1,
         reqPoints: 10,
         description: talentText`Remove all movement impairing effects and leap forward. The distance you leap is highly dependent on the terrain.`,
-      },
-      
-      "Feral Instinct": {
-        name: "Feral Instinct",
-        pos: "d1",
-        icon: icons["ability_ambush"],
-        maxRank: 3,
-        reqPoints: 15,
-        description: talentText`Increases the threat caused in Bear and Dire Bear Form by ${[
-          5,
-          10,
-          15,
-        ]}%, reduces the chance enemies have to detect you while Prowling and increases the duration of your Tiger's Fury and Challenging Roar abilities by ${[
-          3,
-          6,
-          9,
-        ]} sec.`,
-      },
-      
-      "Stalking": {
-        name: "Stalking",
+      },  
+      "Predatory Strikes": {
+        name: "Predatory Strikes",
         pos: "d2",
-        icon: icons["spell_shadow_vampiricaura"],
+        icon: icons["ability_hunter_pet_cat"],
+        maxRank: 3,
+        reqPoints: 20,
+        description: talentText`Increases your melee attack power in Cat, Bear and Dire Bear Forms by ${[
+          50,
+          100,
+          150,
+        ]}% of your level.`,
+      },
+      "Primal Fury": {
+        name: "Primal Fury",
+        pos: "d3",
+        icon: icons["ability_racial_cannibalize"],
         maxRank: 2,
         reqPoints: 15,
-        description: talentText`Increases the critical strike chance of your Ravage and Shred abilities by ${[
-          15,
-          30,
-        ]}%.`,
-      },
-      
-      "Heart of the Wild": {
-        name: "Heart of the Wild",
-        pos: "d3",
-        icon: icons["spell_holy_blessingofagility"],
-        maxRank: 5,
-        reqPoints: 15,
-        description: talentText`Increases your Intellect and Spirit by ${[
-          6,
-          12,
-          18,
-          24,
-          30,
-        ]}%. In addition, while in Bear or Dire Bear Form your Stamina is increased by ${[
-          3,
-          6,
-          9,
-          12,
-          15,
-        ]}% and while in Cat Form your Strength is increased by ${[
-          3,
-          6,
-          9,
-          12,
-          15,
-        ]}%.`,
-      },
-      
+        prereq: "Sharpened Claws",
+        arrows: [{ dir: "down", from: "c3", to: "d3" }],
+        description: talentText`Gives you a ${[
+          50,
+          100,
+        ]}% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form and your critical strikes from Cat Form abilities that add combo points have a ${[
+          50,
+          100,
+        ]}% to add an additional combo point.`,
+      },      
       "Savage Fury": {
         name: "Savage Fury",
         pos: "e1",
         icon: icons["ability_druid_swipe"],
         maxRank: 2,
         reqPoints: 20,
-        description: talentText`Increases the damage caused by your Claw, Rake, Maul and Swipe abilities by ${[
+        description: talentText`Increases the damage caused by your Ravage, Claw, Rake, Maul and Swipe abilities by ${[
           10,
           20,
         ]}%.`,
       },
-      
-      "Predatory Strikes": {
-        name: "Predatory Strikes",
-        pos: "e2",
-        icon: icons["ability_hunter_pet_cat"],
-        maxRank: 3,
-        reqPoints: 20,
-        description: talentText`Increases your melee attack power in Cat, Bear and Dire Bear Forms by ${[
-          100,
-          200,
-          300,
-        ]}% of your level. Also, increases Attack Rating skill by ${[
-          3,
-          6,
-          10,
-        ]}.`,
-      },
-      
-      "Untamed Heart": {
-        name: "Untamed Heart",
-        pos: "e3",
-        icon: icons["untamed_heart"],
-        maxRank: 1,
-        reqPoints: 20,
-        prereq: "Heart of the Wild",
-        arrows: [{ dir: "down", from: "d3", to: "e3" },],
-        description: talentText`Heal yourself for 30% of your maximum health, and increases your maximum health by 30% for 20 sec.`,
-      },
-      
-      "Killer Instincts": {
-        name: "Killer Instincts",
-        pos: "f2",
-        icon: icons["killer_instincts"],
-        maxRank: 5,
-        reqPoints: 25,
-        description: talentText`Increases all damage caused by ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}%. In addition, your melee critical strikes will increase yout attack speed by ${[
-          10,
-          15,
-          20,
-          25,
-          30,
-        ]}% for your next 3 attacks.`,
-      },
-      
-      "Survival Instincts": {
-        name: "Survival Instincts",
-        pos: "f3",
-        icon: icons["survival_instincts"],
-        maxRank: 5,
-        reqPoints: 25,
-        description: talentText`Reduces the chance you'll be critically hit by melee attacks by ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}%. In addition, your critical strikes restore ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}% of your maximum health. This effect can only occur once every 8 sec.`
-      },
-
       "Leader of the Pack": {
         name: "Leader of the Pack",
-        pos: "g2",
+        pos: "e2",
         icon: icons["spell_nature_unyeildingstamina"],
         maxRank: 1,
-        reqPoints: 30,
-        description: talentText`While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 20 yards by 3%`,
+        reqPoints: 20,
+        description: talentText`While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases their ranged and melee critical chance by 5%, and of all party members within 45 yards by 3%.`,
+      },
+      "Primal Tenacity": {
+        name: "Primal Tenacity",
+        pos: "e3",
+        icon: icons["primal_tenacity"],
+        maxRank: 3,
+        reqPoints: 20,
+        description: talentText`Increases your chance to resist Stun and Fear mechanics by ${[
+          5,
+          10,
+          15,
+        ]}% and reduces chance you'll be critically hit by melee and ranged attacks by ${[
+          1,
+          2,
+          3,
+        ]}%.`,
+      },
+      "Heart of the Wild": {
+        name: "Heart of the Wild",
+        pos: "f2",
+        icon: icons["spell_holy_blessingofagility"],
+        maxRank: 5,
+        reqPoints: 25,
+        prereq: "Leader of the Pack",
+        arrows: [{ dir: "down", from: "e2", to: "f2" }],
+        description: talentText`Increases your Intellect by ${[
+          4,
+          8,
+          12,
+          16,
+          20,
+        ]}%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by ${[
+          4,
+          8,
+          12,
+          16,
+          20,
+        ]}% and while in Cat Form your attack power is increased by ${[
+          2,
+          4,
+          6,
+          8,
+          10,
+        ]}%.`,
       },
     },
   },
@@ -596,19 +523,6 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
           75,
         ]}% chance to avoid interruption caused by damage while casting.`,
       },
-
-      "Furor": {
-        name: "Furor",
-        pos: "a3",
-        icon: icons["spell_nature_unyeildingstamina"],
-        maxRank: 2,
-        reqPoints: 0,
-        description: talentText`You gain 15 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form. This effect can only occur once every ${[
-          24,
-          12,
-        ]} sec.`,
-      },
-
       "Natural Shapeshifter": {
         name: "Natural Shapeshifter",
         pos: "a4",

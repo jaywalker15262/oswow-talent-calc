@@ -285,7 +285,7 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
       },
       "Feral Aggression": {
         name: "Feral Aggression",
-        pos: "a3",
+        pos: "a2",
         icon: icons["ability_druid_demoralizingroar"],
         maxRank: 5,
         reqPoints: 0,

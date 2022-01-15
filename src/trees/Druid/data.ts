@@ -11,8 +11,7 @@ export const data: TalentData = {
     name: "Balance",
     background: backgrounds["balance"],
     icon: icons["spell_nature_starfall"],
-    talents: {
-      
+    talents: { 
       "Starlight Wrath": {
         name: "Starlight Wrath",
         pos: "a1",
@@ -26,53 +25,47 @@ export const data: TalentData = {
           0.4,
           0.5,
         ]} sec.`,
-      },
-      
+      },   
       "Improved Moonfire": {
         name: "Improved Moonfire",
         pos: "a2",
         icon: icons["spell_nature_starfall"],
         maxRank: 3,
         reqPoints: 0,
-        description: talentText`Increases the critical strike chance of your Moonfire spell by ${[
-          10,
-          20,
-          30,
+        description: talentText`Increases the damage and critical strike chance of your Moonfire spell by ${[
+          3,
+          6,
+          9,
         ]}%.`,
-      },
-      
-      "Cycle of Life": {
-        name: "Cycle of Life",
+      },     
+      "Nature's Grasp": {
+        name: "Nature's Grasp",
         pos: "a3",
-        icon: icons["cycle_of_life"],
+        icon: icons["spell_nature_natureswrath"],
+        maxRank: 1,
+        reqPoints: 0,
+        description: talentText`While active, any time an enemy strikes the caster they have a 35% chance to become afflicted by Entangling Roots (Rank 1).  Only useable outdoors.  2 charges.  Lasts 45 sec.`,
+      },
+      "Improved Nature's Grasp": {
+        name: "Improved Nature's Grasp",
+        pos: "b4",
+        icon: icons["spell_nature_natureswrath"],
         maxRank: 2,
         reqPoints: 0,
-        description: talentText`Gives you a ${[
+        prereq: "Nature's Grasp",
+        arrows: [{ dir: "right", from: "a3", to: "a4" }],
+        description: talentText`Increases the chance for your Nature's Grasp to entangle an enemy by ${[
+          25,
           50,
-          100,
-        ]}% chance to gain a 100% bonus to your Spirit after killing a target that yields experience or honor. This effect also allows 50% of your Mana Regeneration to continue while casting. Lasts 15 seconds.`,
-      },
-      
-      "Mighty Roots": {
-        name: "Mighty Roots",
-        pos: "b1",
-        icon: icons["spell_nature_thorns"],
-        maxRank: 3,
-        reqPoints: 5,
-        description: talentText`Improves the duration and damage of your Entangling roots and Thorns spells by ${[
-          40,
-          70,
-          100,
         ]}%.`,
-      },
-      
-      "Natural Weapons": {
-        name: "Natural Weapons",
+      }, 
+      "Focused Starlight": {
+        name: "Focused Starlight",
         pos: "b2",
         icon: icons["inv_staff_01"],
         maxRank: 5,
         reqPoints: 5,
-        description: talentText`Increases the damage you deal with all attacks and spells by ${[
+        description: talentText`Increases the critical strike chance of your Starfire, Moonfire, and Wrath spells by ${[
           1,
           2,
           3,
@@ -80,7 +73,6 @@ export const data: TalentData = {
           5,
         ]}%.`,
       },
-      
       "Unity With Nature": {
         name: "Unity With Nature",
         pos: "b3",
@@ -97,20 +89,18 @@ export const data: TalentData = {
           15,
         ]}%.`,
       },
-      
-      "Improved Faerie Fire": {
-        name: "Improved Faerie Fire",
+      "Brambles": {
+        name: "Brambles",
         pos: "c1",
-        icon: icons["spell_nature_faeriefire"],
+        icon: icons["spell_nature_thorns"],
         maxRank: 3,
         reqPoints: 10,
-        description: talentText`Icreases the range and armor reduction of your Faerie Fire and Faerie Fire (Feral) spells by ${[
-          10,
-          20,
-          30,
+        description: talentText`Increases damage caused by your Thorns and Entangling Roots spells by ${[
+          25,
+          50,
+          75,
         ]}%.`,
-      },
-      
+      },      
       "Hurricane": {
         name: "Hurricane",
         pos: "c3",
@@ -119,119 +109,109 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`Creates a violent storm in the target area causing 27 Nature damage to enemies every 1 sec, slowing their movement speed by 50% and silencing them. Lasts 10 sec.`,
       },
-      
-      "Starfall": {
-        name: "Starfall",
+      "Nature's Reach": {
+        name: "Nature's Reach",
         pos: "c4",
-        icon: icons["spell_arcane_starfire"],
-        maxRank: 5,
-        reqPoints: 10,
-        description: talentText`Cause your Starfire and Moonfire spells to stun the target for 4 sec if the target is withing 8yds. Can occur once per ${[
-          60,
-          55,
-          50,
-          45,
-          40,
-        ]} sec.`,
-      },
-      
-      "Omnipresence": {
-        name: "Omnipresence",
-        pos: "d1",
         icon: icons["spell_nature_naturetouchgrow"],
         maxRank: 2,
-        reqPoints: 15,
-        description: talentText`Increases the range of you offensive Balance spells by ${[
+        reqPoints: 10,
+        description: talentText`Increases the range of your Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire, Hurricane and Insect Swarm spells by ${[
           10,
           20,
-        ]}% and reduces the chance enemies will resist them by ${[
-          2,
-          4,
+        ]}% and reduces the threat caused by those spells by ${[
+          5,
+          10,
         ]}%.`,
       },
-      
+      "Moonglow": {
+        name: "Moonglow",
+        pos: "d1",
+        icon: icons["spell_nature_sentinal"],
+        maxRank: 3,
+        reqPoints: 15,
+        description: talentText`Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by ${[
+          3,
+          6,
+          9,
+        ]}%.`
+      },
       "Vengeance": {
         name: "Vengenace",
         pos: "d2",
         icon: icons["spell_nature_purge"],
         maxRank: 5,
         reqPoints: 15,
-        prereq: "Natural Weapons",
+        prereq: "Focused Starlight",
         arrows: [{ dir: "down", from: "b2", to: "d2" }],
-        description: talentText`Increases the critical strike damage bonus of your offensive spells by ${[
+        description: talentText`Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by ${[
           20,
           40,
           60,
           80,
           100,
-        ]}%. and for your feral abilites by ${[
-          10,
-          20,
-          30,
-          40,
-          50,
         ]}%.`,
       },
-      
-      "Power of Nature": {
-        name: "Power of Nature",
+      "Celestial Focus": {
+        name: "Celestial Focus",
         pos: "d3",
-        icon: icons["power_of_nature"],
-        maxRank: 2,
+        icon: icons["spell_arcane_starfire"],
+        maxRank: 3,
         reqPoints: 15,
-        description: talentText`Increases the duration of your Barkskin, Nature's Grasp, Moonfire, Insect Swarm, Faerie Fire, Rejuvenation, Regrowth, Hibernate, Soothe Animal and Abolish Poison by ${[
+        description: talentText`Gives your Starfire spell a ${[
+          5,
+          10,
+          15,
+        ]}% to stun the target for 3 sec and increases the chance you'll resist spell interruption when casting your Wrath and Hurricane spells by ${[
           25,
           50,
-        ]}%. In addition, increases the number of charges of your Nature's Grasp spell by ${[
-          2,
-          4,
-        ]}.`,
+          75,
+        ]}%.`,
       },
-      
+      "Improved Faerie Fire": {
+        name: "Improved Faerie Fire",
+        pos: "d4",
+        icon: icons["spell_nature_faeriefire"],
+        maxRank: 2,
+        reqPoints: 10,
+        description: talentText`Icreases armor reduced of your Faerie Fire and Faerie Fire (Feral) spells by ${[
+          12,
+          25,
+        ]}%.`,
+      },
       "Dreamstate": {
         name: "Dreamstate",
         pos: "e1",
         icon: icons["dreamstate"],
         maxRank: 3,
         reqPoints: 20,
-        description: talentText`Regenerates ${[
-          1,
-          2,
-          3,
-        ]}% of your total Mana every 10 seconds`,
+        description: talentText`Regenerate mana equal to ${[
+          4,
+          8,
+          12,
+        ]}% of your Intellect every 5 sec, even while casting.`,
       },
-      
-      "Moonkin Form": {
-        name: "Moonkin Form",
-        pos: "e2",
-        icon: icons["spell_nature_forceofnature"],
-        maxRank: 1,
-        reqPoints: 20,
-        description: talentText`Transforms the Druid into Moonkin Form, increasing spell critical chance by 2% and armor contribution from items by 360%. The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.`,
-      },
-      
       "Nature's Grace": {
         name: "Nature's Grace",
-        pos: "e3",
+        pos: "e2",
         icon: icons["spell_nature_naturesblessing"],
         maxRank: 1,
         reqPoints: 20,
         description: talentText`All spell criticals grace you with a blessing of nature, reducing the casting time of your next spell by 0.5 sec.`,
       },
-      
-      "Moonglow":{
-        name: "Moonglow",
-        pos: "e4",
-        icon: icons["spell_nature_sentinal"],
-        maxRank: 3,
-        reqPoints: 20,
-        description: talentText`Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by ${[
-          5,
-          10,
-          15,
-        ]}%.`
+      "Balance of Power": {
+        name: "Balance of Power",
+        pos: "e3",
+        icon: icons["nature_balancer"],
+        maxRank: 2,
+        reqPoints: 25,
+        description: talentText`Reduces the chance that the opponent can resist your Balance spells by ${[
+          2,
+          4,
+        ]}% and reduces the chance you'll be hit by spells by ${[
+          2,
+          4,
+        ]}%.`,
       },
-      
       "Moonfury": {
         name: "Moonfury",
         pos: "f1",
@@ -244,41 +224,19 @@ export const data: TalentData = {
           6,
           8,
           10,
-        ]}%`,
+        ]}%.`,
       },
-      
-      "Nature Balancer": {
-        name: "Nature Balancer",
-        pos: "f3",
-        icon: icons["nature_balancer"],
-        maxRank: 5,
-        reqPoints: 25,
-        prereq: "Nature's Grace",
-        arrows: [{dir: "down", from: "e3", to: "f3"}],
-        description: talentText`Your Wrath spell have a ${[
-          4,
-          8,
-          12,
-          16,
-          20,
-        ]}% chance of your next Moonfire or Starfire by 50%, and your Moonfire or Starfire spells have a ${[
-          4,
-          8,
-          12,
-          16,
-          20,
-        ]}% chance to increase critical strike chance of your next Wrath by 50%`
-      },
-      
-      "Moonkin Aura": {
-        name: "Moonkin Aura",
+      "Moonkin Form": {
+        name: "Moonkin Form",
         pos: "g2",
-        icon: icons["spell_nature_moonglow"],
+        icon: icons["spell_nature_forceofnature"],
         maxRank: 1,
         reqPoints: 30,
-        prereq: "Moonkin Form",
+        prereq: "Nature's Grace",
         arrows: [{dir: "down", from: "e2", to: "g2"}],
-        description: talentText`While in Moonkin Form, the Moonkin Aura increases spell critical chance of all raid members within 30 yards by 3%.`,
+        description: talentText`Transforms the Druid into Moonkin Form.  While in this form the damage done by your Balance spells is increased by 10%, armor contribution from items is increased by 270%, total mana is increased by 25%, and all party members within 30 yards have their spell critical chance increased by 3%.  The Moonkin can only cast Balance, Mark of the Wild, and Remove Curse spells while shapeshifted.
+
+The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.`,
       },
     },
   },

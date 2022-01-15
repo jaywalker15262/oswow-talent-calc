@@ -189,6 +189,18 @@ export const data: TalentData = {
 
 You can only have Inner Will or Inner Fire active at a time.`, 
       },
+      "Divine Aegis": {
+        name: "Divine Aegis", 
+        pos: "e2", 
+        icon: icons["spell_holy_devineaegis"], 
+        maxRank: 3, 
+        reqPoints: 20, 
+        description: talentText`Critical heals create a protective shield on the target, absorbing ${[
+          10,
+          20,
+          30,
+        ]}% of the amount healed.  Lasts 12 sec.`, 
+      },
       "Divine Spirit": {
         name: "Divine Spirit", 
         pos: "e3", 
@@ -199,17 +211,20 @@ You can only have Inner Will or Inner Fire active at a time.`,
         arrows: [{ dir: "down", from: "c3", to: "e3" }],
         description: talentText`Holy power infuses the target, increasing their Spirit by 20 for 30 min.`, 
       },
-      "Improved Memory": {
-        name: "Improved Memory", 
-        pos: "f1", 
-        icon: icons["inv_misc_organ_03"], 
-        maxRank: 5, 
-        reqPoints: 25, description: talentText`Increases your casting speed by ${[
-          5,
-          10,
-          15,
-          20,
-          25
+      "Soul Warding": {
+        name: "Soul Warding", 
+        pos: "e4", 
+        icon: icons["spell_holy_holyprotection"], 
+        maxRank: 3, 
+        reqPoints: 20, 
+        description: talentText`Reduces the duration of the Weakened Soul effect from your Power World: Shield by ${[
+          2,
+          4,
+          6,
+        ]} sec and the mana cost of your Power Word: Shield by ${[
+          2,
+          4,
+          6,
         ]}%.`, 
       },
       "Force of Will": {

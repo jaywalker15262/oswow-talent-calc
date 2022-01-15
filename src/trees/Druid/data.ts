@@ -654,7 +654,7 @@ This ability can be used in Cat Form or Dire Bear Form.`,
         pos: "d2",
         icon: icons["spell_holy_elunesgrace"],
         maxRank: 5,
-        reqPoints: 20,
+        reqPoints: 15,
         description: talentText`Reduces the mana cost of your Healing Touch and Tranquility spells by ${[
           4,
           8,

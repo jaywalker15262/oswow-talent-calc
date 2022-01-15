@@ -25,19 +25,7 @@ export const data: TalentData = {
           0.4,
           0.5,
         ]} sec.`,
-      },   
-      "Improved Moonfire": {
-        name: "Improved Moonfire",
-        pos: "a2",
-        icon: icons["spell_nature_starfall"],
-        maxRank: 3,
-        reqPoints: 0,
-        description: talentText`Increases the damage and critical strike chance of your Moonfire spell by ${[
-          3,
-          6,
-          9,
-        ]}%.`,
-      },     
+      },        
       "Nature's Grasp": {
         name: "Nature's Grasp",
         pos: "a3",
@@ -73,20 +61,16 @@ export const data: TalentData = {
           5,
         ]}%.`,
       },
-      "Unity With Nature": {
-        name: "Unity With Nature",
+      "Improved Moonfire": {
+        name: "Improved Moonfire",
         pos: "b3",
-        icon: icons["unity_with_nature"],
+        icon: icons["spell_nature_starfall"],
         maxRank: 3,
-        reqPoints: 5,
-        description: talentText`Reduces the cooldown of your Barkskin by ${[
-          1,
-          2,
+        reqPoints: 0,
+        description: talentText`Increases the damage and critical strike chance of your Moonfire spell by ${[
           3,
-        ]}min and reduces damage taken from Arcane and Nature effects by ${[
-          5,
-          10,
-          15,
+          6,
+          9,
         ]}%.`,
       },
       "Brambles": {

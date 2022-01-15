@@ -322,7 +322,7 @@ Each effect has a separate 5 sec cooldown.`,
         pos: "b1",
         icon: icons["ability_ambush"],
         maxRank: 3,
-        reqPoints: 15,
+        reqPoints: 5,
         description: talentText`Increases the threat caused in Bear and Dire Bear Form by ${[
           5,
           10,

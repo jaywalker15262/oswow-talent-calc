@@ -221,19 +221,35 @@ export const data: TalentData = {
           4,
         ]}%.`,
       },
-      "Moonfury": {
-        name: "Moonfury",
-        pos: "f1",
+      "Eclipse": {
+        name: "Eclipse",
+        pos: "f2",
         icon: icons["moonfury"],
         maxRank: 5,
         reqPoints: 25,
-        description: talentText`Increases the damage done by your Starfire, Moonfire and Wrath spells by ${[
+        prereq: "Nature's Grace",
+        arrows: [{dir: "down", from: "e2", to: "f2"}],
+        description: talentText`When you hit with Starfire you have a ${[
+          5,
+          10,
+          15,
+          20,
+          25,
+        ]}% chance, or when you hit with Moonfire you have a ${[
           2,
           4,
           6,
           8,
           10,
-        ]}%.`,
+        ]}% chance, of increasing damage done by Wrath by 40%.  When you hit with Wrath, you have a ${[
+          3,
+          6,
+          9,
+          12,
+          15,
+        ]}% chance of increasing your critical strike chance with Starfire by 40%.
+
+Each effect lasts 15 sec and each has a separate 30 sec cooldown.  Both effects cannot occur simultaneously.`,
       },
       "Moonkin Form": {
         name: "Moonkin Form",
@@ -241,8 +257,6 @@ export const data: TalentData = {
         icon: icons["spell_nature_forceofnature"],
         maxRank: 1,
         reqPoints: 30,
-        prereq: "Nature's Grace",
-        arrows: [{dir: "down", from: "e2", to: "g2"}],
         description: talentText`Transforms the Druid into Moonkin Form.  While in this form the damage done by your Balance spells is increased by 10%, armor contribution from items is increased by 270%, total mana is increased by 25%, and all party members within 30 yards have their spell critical chance increased by 3%.  The Moonkin can only cast Balance, Mark of the Wild, and Remove Curse spells while shapeshifted.
 
 The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.`,

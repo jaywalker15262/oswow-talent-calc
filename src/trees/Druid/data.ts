@@ -224,7 +224,7 @@ export const data: TalentData = {
       "Eclipse": {
         name: "Eclipse",
         pos: "f2",
-        icon: icons["moonfury"],
+        icon: icons["ability_druid_eclipse"],
         maxRank: 5,
         reqPoints: 25,
         prereq: "Nature's Grace",

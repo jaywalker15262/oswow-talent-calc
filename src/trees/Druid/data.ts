@@ -402,7 +402,7 @@ Each effect has a separate 5 sec cooldown.`,
         pos: "d2",
         icon: icons["ability_hunter_pet_cat"],
         maxRank: 3,
-        reqPoints: 20,
+        reqPoints: 15,
         description: talentText`Increases your melee attack power in Cat, Bear and Dire Bear Forms by ${[
           50,
           100,

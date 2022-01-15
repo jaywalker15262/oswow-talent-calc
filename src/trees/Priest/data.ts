@@ -221,18 +221,18 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 25, 
         description: talentText`Increases your spell damage by ${[
-          2,
-          4,
-          6,
-          8,
-          10,
-        ]}% and the critical strike chance of your offensive spells by ${[
           1,
           2,
           3,
           4,
           5,
-        ]}`, 
+        ]}% and the critical strike chance of your healing spells by ${[
+          1,
+          2,
+          3,
+          4,
+          5,
+        ]}%.`, 
       },
       "Power Infusion": {
         name: "Power Infusion", 

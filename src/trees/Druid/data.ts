@@ -681,6 +681,18 @@ This ability can be used in Cat Form or Dire Bear Form.`,
         arrows: [{ dir: "down", from: "c1", to: "e1" }],
         description: talentText`Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.`,
       },
+      "Living Spirit": {
+        name: "Living Spirit",
+        pos: "e2",
+        icon: icons["spell_nature_starfall"],
+        maxRank: 3,
+        reqPoints: 20,
+        description: talentText`Increases your total Spirit by ${[
+          5,
+          10,
+          15,
+        ]}%.`,
+      },
       "Nature's Swiftness": {
         name: "Nature's Swiftness",
         pos: "e3",

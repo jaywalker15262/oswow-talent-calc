@@ -267,8 +267,7 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
     name: "Feral Combat",
     background: backgrounds["feral"],
     icon: icons["ability_racial_bearform"],
-    talents: {
-      
+    talents: { 
       "Ferocity": {
         name: "Ferocity",
         pos: "a1",
@@ -367,8 +366,7 @@ Each effect has a separate 5 sec cooldown.`,
           2,
           4,
         ]}%.`,
-      },
-      
+      },    
       "Feral Charge": {
         name: "Feral Charge",
         pos: "c2",
@@ -541,121 +539,67 @@ This ability can be used in Cat Form or Dire Bear Form.`,
     background: backgrounds["restoration"],
     icon: icons["spell_nature_healingtouch"],
     talents: {
-      
-      "Accuracy": {
-        name: "Accuracy",
-        pos: "a1",
-        icon: icons["accuracy"],
-        maxRank: 3,
-        reqPoints: 0,
-        description: talentText`Increases your chance to hit with all attacks and spells by ${[
-          1,
-          2,
-          3,
-        ]}%.`
-      },
-
-      "Nature's Focus": {
-        name: "Nature's Focus",
+      "Improved Mark of the Wild": {
+        name: "Improved Mark of the Wild",
         pos: "a2",
-        icon: icons["spell_nature_healingwavegreater"],
+        icon: icons["spell_nature_regeneration"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Gives you a ${[
-          15,
-          30,
-          45,
-          60,
-          75,
-        ]}% chance to avoid interruption caused by damage while casting.`,
+        description: talentText`Increases the effects of your Mark of the Wild and Gift of the Wild spells by ${[
+          7,
+          14,
+          21,
+          28,
+          35,
+        ]}%.`,
       },
-      "Natural Shapeshifter": {
-        name: "Natural Shapeshifter",
-        pos: "a4",
-        icon: icons["spell_nature_wispsplode"],
-        maxRank: 3,
-        reqPoints: 0,
-        description: talentText`Reduces the mana cost of all shapeshifting by ${[
-          10,
-          20,
-          30,
-        ]}%.`
-      },
-
-      "Naturalist": {
-        name: "Naturalist",
-        pos: "b1",
+      "Improved Healing Touch": {
+        name: "Improved Healing Touch",
+        pos: "a3",
         icon: icons["spell_nature_healingtouch"],
         maxRank: 5,
-        reqPoints: 5,
+        reqPoints: 0,
         description: talentText`Reduces the cast time of your Healing Touch spell by ${[
           0.1,
           0.2,
           0.3,
           0.4,
           0.5,
-        ]} sec and increases you Mana regeneration by ${[
-          10,
-          20,
-          30,
-          40,
-          50,
-        ]}% while in Cat, Bear or Dire Bear form.`,
+        ]} sec.`,
       },
-      
-      "Subtlety": {
-        name: "Subtlety",
+      "Nature's Focus": {
+        name: "Nature's Focus",
         pos: "b2",
-        icon: icons["ability_eyeoftheowl"],
+        icon: icons["spell_nature_healingwavegreater"],
         maxRank: 5,
         reqPoints: 5,
-        description: talentText`Reduces the threat you generate by ${[
-          6,
-          12,
-          18,
-          24,
+        description: talentText`Gives you a ${[
+          15,
           30,
-        ]}% and increases the chance to avoid area of effect spells by an additional ${[
-          6,
-          12,
-          18,
-          24,
-          30,
-        ]}%.`,
+          45,
+          60,
+          75,
+        ]}%chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.`,
       },
-      
-      "Improved Enrage": {
-        name: "Improved Enrage",
+      "Natural Shapeshifter": {
+        name: "Natural Shapeshifter",
         pos: "b3",
-        icon: icons["ability_druid_enrage"],
-        maxRank: 2,
+        icon: icons["spell_nature_wispsplode"],
+        maxRank: 3,
         reqPoints: 5,
-        description: talentText`The Enrage ability now instantly generates ${[
+        description: talentText`Reduces the mana cost of all shapeshifting by ${[
           10,
           20,
-        ]} Rage.`,
-      },
-      "Revive": {
-        name: "Revive",
-        pos: "c1",
-        icon: icons["revive"],
-        maxRank: 1,
-        reqPoints: 10,
-        description: talentText`Returns the spirit to the body, restoring a dead target to life with 20% of their health and mana. Cannot be cast when in combat.`
-      },
-
-      "Omen of Clarity": {
-        name: "Omen of Clarity",
-        pos: "c2",
-        icon: icons["spell_nature_crystalball"],
-        maxRank: 1,
-        reqPoints: 10,
-        description: talentText`Imbues the Druid with natural energy. Each of the Druid's melee attack has a chance to reduce the cost and cast time of your next damage or healing spell by 75%. Lasts 5 min.`,
-      },
-
+          30,
+        ]}% and increases the duration of your Tree Form by ${[
+          2,
+          4,
+          6,
+        ]} secs.`
+      },    
       "Reflection": {
         name: "Reflection",
-        pos: "c3",
+        pos: "c1",
         icon: icons["spell_frost_windwalkon"],
         maxRank: 3,
         reqPoints: 10,
@@ -663,26 +607,36 @@ This ability can be used in Cat Form or Dire Bear Form.`,
           7,
           14,
           20,
-        ]}% of your Mana regeneration to continue while casting.`,
+        ]}% of your Mana regeneration to continue while casting and causes your Enrage ability to instantly generate ${[
+          4,
+          7,
+          10,
+        ]}.`,
       },
-
-      "Improved Mark of the Wild": {
-        name: "Improved Mark of the Wild",
-        pos: "c4",
-        icon: icons["spell_nature_regeneration"],
+      "Subtlety": {
+        name: "Subtlety",
+        pos: "c2",
+        icon: icons["ability_eyeoftheowl"],
         maxRank: 3,
         reqPoints: 10,
-        description: talentText`Increases the effects of your Mark of the Wild and Gift of the Wild spells by ${[
+        description: talentText`Reduces the threat generated by your healing spells ${[
+          7,
+          14,
           20,
-          40,
-          60,
-        ]}%. and reduces the chance listed spells will be dispelled by ${[
+        ]}% reduces the chance your spells will be dispelled by ${[
+          10,
+          20,
           30,
-          60,
-          90,
-        ]}%`,
+        ]}%.`,
       },
-
+      "Omen of Clarity": {
+        name: "Omen of Clarity",
+        pos: "c3",
+        icon: icons["spell_nature_crystalball"],
+        maxRank: 1,
+        reqPoints: 10,
+        description: talentText`Each of the Druid's damage and healing spells has a chance of causing the caster to enter a Clearcasting state.  The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage, healing spell or offensive ability by $16870s1%.`,
+      },
       "Gift of Nature": {
         name: "Gift of Nature",
         pos: "d2",

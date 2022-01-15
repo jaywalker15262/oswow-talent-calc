@@ -428,7 +428,7 @@ Each effect has a separate 5 sec cooldown.`,
       "Savage Fury": {
         name: "Savage Fury",
         pos: "e1",
-        icon: icons["ability_druid_swipe"],
+        icon: icons["ability_druid_ravage"],
         maxRank: 2,
         reqPoints: 20,
         description: talentText`Increases the damage caused by your Ravage, Claw, Rake, Maul and Swipe abilities by ${[

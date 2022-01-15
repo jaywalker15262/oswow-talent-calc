@@ -60,6 +60,17 @@ export const data: TalentData = {
           25,
           50,
         ]}%.`,
+      },
+      "Control of Nature": {
+        name: "Control of Nature",
+        pos: "b1",
+        icon: icons["spell_nature_stranglevines"],
+        maxRank: 2,
+        reqPoints: 5,
+        description: talentText`Gives you a ${[
+          50,
+          100,
+        ]}% chance to avoid interruption caused by damage while casting Entangling Roots, Hibernate, and Soothe Animal.`,
       }, 
       "Focused Starlight": {
         name: "Focused Starlight",

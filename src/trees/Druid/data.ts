@@ -363,9 +363,9 @@ Each effect has a separate 5 sec cooldown.`,
         description: talentText`Increases your movement speed by ${[
           15,
           30,
-        ]}% while outdoors in Cat Form and increases your chance to dodge by ${[
-          3,
-          6,
+        ]}% while in Cat Form and increases your chance to dodge while in Cat Form by ${[
+          2,
+          4,
         ]}%.`,
       },
       

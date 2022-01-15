@@ -178,13 +178,15 @@ export const data: TalentData = {
           "1 sec",
         ]}.`, 
       },
-      "Power Word: Requital": {
-        name: "Power Word: Requital", 
+      "Divine Spirit": {
+        name: "Divine Spirit", 
         pos: "e3", 
-        icon: icons["spell_fire_elementaldevastation"], 
+        icon: icons["spell_holy_divinespirit"], 
         maxRank: 1, 
-        reqPoints: 20, 
-        description: talentText`Blasts an enemy with Light, instantly causing 173.5 holy damage, 347 if the target is feared, stunned or incapacitated.`, 
+        reqPoints: 20,
+        prereq: "Meditation", 
+        arrows: [{ dir: "down", from: "c3", to: "e3" }],
+        description: talentText`Holy power infuses the target, increasing their Spirit by 20 for 30 min.`, 
       },
       "Twin Disciplines": {
         name: "Twin Disciplines", 

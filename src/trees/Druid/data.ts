@@ -483,9 +483,9 @@ Each effect has a separate 5 sec cooldown.`,
         ]}%.`,
       },
       "Improved Cower": {
-        name: "Improved Cowe",
+        name: "Improved Cower",
         pos: "e4",
-        icon: icons["primal_tenacity"],
+        icon: icons["ability_druid_cower"],
         maxRank: 2,
         reqPoints: 20,
         description: talentText`Increases your chance to avoid area of effect attacks by ${[

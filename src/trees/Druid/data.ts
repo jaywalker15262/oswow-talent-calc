@@ -482,6 +482,20 @@ Each effect has a separate 5 sec cooldown.`,
           3,
         ]}%.`,
       },
+      "Improved Cower": {
+        name: "Improved Cowe",
+        pos: "e4",
+        icon: icons["primal_tenacity"],
+        maxRank: 2,
+        reqPoints: 20,
+        description: talentText`Increases your chance to avoid area of effect attacks by ${[
+          20,
+          40,
+        ]}% for 5 sec after casting your Cower ability and increases the threat reduction by ${[
+          10,
+          20,
+        ]}%.`,
+      },
       "Heart of the Wild": {
         name: "Heart of the Wild",
         pos: "f2",

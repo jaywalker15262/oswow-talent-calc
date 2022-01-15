@@ -48,7 +48,7 @@ export const data: TalentData = {
       },
       "Improved Nature's Grasp": {
         name: "Improved Nature's Grasp",
-        pos: "b4",
+        pos: "a4",
         icon: icons["spell_nature_natureswrath"],
         maxRank: 2,
         reqPoints: 0,

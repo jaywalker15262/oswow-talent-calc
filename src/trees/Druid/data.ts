@@ -596,7 +596,19 @@ This ability can be used in Cat Form or Dire Bear Form.`,
           4,
           6,
         ]} secs.`
-      },    
+      },
+      "Improved Rejuvenation": {
+        name: "Improved Rejuvenation",
+        pos: "b4",
+        icon: icons["spell_nature_rejuvenation"],
+        maxRank: 3,
+        reqPoints: 5,
+        description: talentText`Increases the effect of your Rejuvenation spell by ${[
+          5,
+          10,
+          15,
+        ]}%.`,
+      },
       "Reflection": {
         name: "Reflection",
         pos: "c1",
@@ -657,20 +669,6 @@ This ability can be used in Cat Form or Dire Bear Form.`,
           10,
         ]}%.`,
       },
-
-      "Improved Rejuvenation": {
-        name: "Improved Rejuvenation",
-        pos: "d3",
-        icon: icons["spell_nature_rejuvenation"],
-        maxRank: 3,
-        reqPoints: 15,
-        description: talentText`Increases the effect of your Rejuvenation spell by ${[
-          5,
-          10,
-          15,
-        ]}%.`,
-      },
-
       "Custody of the Nature": {
         name: "Custody of the Nature",
         pos: "d4",

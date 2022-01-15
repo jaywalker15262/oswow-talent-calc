@@ -731,6 +731,18 @@ This ability can be used in Cat Form or Dire Bear Form.`,
           10,
         ]}%`,
       },
+      "Tree Form": {
+        name: "Tree Form",
+        pos: "g2",
+        icon: icons["ability_druid_treeoflife"],
+        maxRank: 1,
+        reqPoints: 30,
+        prereq: "Gift of Nature",
+        arrows: [{ dir: "down", from: "f2", to: "g2" }],
+        description: talentText`Transforms the Druid into Tree Form, removing all harmful physical effects and protecting from all physical attacks for the first 6 sec, but during that time you cannot move.  While in this form you increase your healing done by 40% of your total Spirit, your movement speed is reduced by 20%, and you can only cast Restoration spells, but the mana cost of these spells is reduced by 15%.  Lasts 40 sec.
+
+The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.`,
+      },
     },
   },
 };

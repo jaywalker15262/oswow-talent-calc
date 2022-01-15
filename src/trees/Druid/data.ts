@@ -389,14 +389,36 @@ Each effect has a separate 5 sec cooldown.`,
           6,
         ]}%.`,
       },      
-      "Leap": {
-        name: "leap",
+      "Natural Reaction": {
+        name: "Natural Reaction",
         pos: "c4",
-        icon: icons["leap"],
-        maxRank: 1,
+        icon: icons["ability_bullrush"],
+        maxRank: 3,
         reqPoints: 10,
-        description: talentText`Remove all movement impairing effects and leap forward. The distance you leap is highly dependent on the terrain.`,
-      },  
+        description: talentText`Increases your dodge while in Bear Form or Dire Bear Form by ${[
+          1,
+          2,
+          3,
+          ]}%, and grants you a ${[
+            33,
+            66,
+            100,
+          ]}% chance to generate 3 rage every time you dodge while in Bear Form or Dire Bear Form.`,
+      },
+      "Improved Shred": {
+        name: "Improved Shred",
+        pos: "d1",
+        icon: icons["spell_shadow_vampiricaura"],
+        maxRank: 2,
+        reqPoints: 15,
+        description: talentText`Reduces the Energy cost of your Shred ability by ${[
+          6,
+          12,
+        ]} and increases its critical strike damage bonus by ${[
+          5,
+          10,
+        ]}%.`,
+      },
       "Predatory Strikes": {
         name: "Predatory Strikes",
         pos: "d2",

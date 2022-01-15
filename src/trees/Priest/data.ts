@@ -165,7 +165,6 @@ export const data: TalentData = {
           15,
         ]}%.`, 
       },
-
       "Dominate Mind": {
         name: "Dominate Mind", 
         pos: "d4", 
@@ -178,6 +177,18 @@ export const data: TalentData = {
           "1 sec",
         ]}.`, 
       },
+      "Inner Will": {
+        name: "Inner Will", 
+        pos: "e1", 
+        icon: icons["innerwill"], 
+        maxRank: 1, 
+        reqPoints: 20,
+        prereq: "Inner Fire", 
+        arrows: [{ dir: "down", from: "d1", to: "e1" }],
+        description: talentText`A burst of Holy energy fills the caster, reducing the mana cost of instant cast spells by 10% and increasing your movement speed by 12%.  Lasts 10 min.
+
+You can only have Inner Will or Inner Fire active at a time.`, 
+      },
       "Divine Spirit": {
         name: "Divine Spirit", 
         pos: "e3", 
@@ -187,21 +198,6 @@ export const data: TalentData = {
         prereq: "Meditation", 
         arrows: [{ dir: "down", from: "c3", to: "e3" }],
         description: talentText`Holy power infuses the target, increasing their Spirit by 20 for 30 min.`, 
-      },
-      "Twin Disciplines": {
-        name: "Twin Disciplines", 
-        pos: "e4", 
-        icon: icons["spell_holy_blessingofstrength"], 
-        maxRank: 3, 
-        reqPoints: 20, description: talentText`Your Holy damage spells have a ${[
-          10,
-          20,
-          30,
-        ]}% chance to reduce the mana cost of your next Shadow damage spell by 100% and your Shadow damage spells have a ${[
-          10,
-          20,
-          30,
-        ]}% chance to reduce the Mana cost of your next Holy damage spell by 100%`, 
       },
       "Improved Memory": {
         name: "Improved Memory", 

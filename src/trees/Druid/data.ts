@@ -110,13 +110,13 @@ export const data: TalentData = {
           75,
         ]}%.`,
       },      
-      "Hurricane": {
-        name: "Hurricane",
+      "Insect Swarm": {
+        name: "Insect Swarm",
         pos: "c3",
-        icon: icons["spell_nature_cyclone"],
+        icon: icons["spell_nature_insectswarm"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Creates a violent storm in the target area causing 27 Nature damage to enemies every 1 sec, slowing their movement speed by 50% and silencing them. Lasts 10 sec.`,
+        description: talentText`The enemy target is swarmed by insects, decreasing their chance to hit by 3% and causing 110 Nature damage over 20 sec.`,
       },
       "Nature's Reach": {
         name: "Nature's Reach",

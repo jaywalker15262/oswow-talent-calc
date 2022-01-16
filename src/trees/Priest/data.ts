@@ -409,7 +409,7 @@ You can only have Inner Will or Inner Fire active at a time.`,
         icon: icons["spell_holy_searinglight"], 
         maxRank: 3, 
         reqPoints: 15,
-        prereq: "Arcane Power", 
+        prereq: "Searing Light", 
         arrows: [{ dir: "right", from: "d3", to: "d4" }],
         description: talentText`Increases the critical strike damage bonus of your Smite spell by ${[
           33,

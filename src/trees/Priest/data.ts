@@ -655,7 +655,7 @@ You can only have Inner Will or Inner Fire active at a time.`,
         icon: icons["spell_shadow_shadowform"], 
         maxRank: 1, 
         reqPoints: 20, 
-        description: talentText`Assume a Shadowform, increasing your Shadow damage by 15% and reducing Physical damage done to you by 20%.  However, you may not cast Holy spells while in this form.`, 
+        description: talentText`Assume a Shadowform, increasing your Shadow damage by 15% and reducing Physical damage done to you by 15%.  However, you may not cast Holy spells while in this form.`, 
       },
       "Improved Vampiric Embrace": {
         name: "Improved Vampiric Embrace", 

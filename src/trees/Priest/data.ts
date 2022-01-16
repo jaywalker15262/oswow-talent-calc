@@ -510,7 +510,7 @@ You can only have Inner Will or Inner Fire active at a time.`,
     talents: {
       "Spirit Tap": {
         name: "Spirit Tap", 
-        pos: "b1", 
+        pos: "a2", 
         icon: icons["spell_shadow_requiem"], 
         maxRank: 5, 
         reqPoints: 0, 
@@ -538,7 +538,7 @@ You can only have Inner Will or Inner Fire active at a time.`,
       },
       "Shadow Affinity": {
         name: "Shadow Affinity", 
-        pos: "a1", 
+        pos: "b1", 
         icon: icons["spell_shadow_shadowward"], 
         maxRank: 3, 
         reqPoints: 0, 

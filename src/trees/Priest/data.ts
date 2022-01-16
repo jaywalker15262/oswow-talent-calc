@@ -403,8 +403,8 @@ You can only have Inner Will or Inner Fire active at a time.`,
           20,
         ]}%.`, 
       },
-      "Searing Light": {
-        name: "Searing Light", 
+      "Divine Punishment": {
+        name: "Divine Punishment", 
         pos: "d4", 
         icon: icons["spell_holy_searinglight"], 
         maxRank: 3, 

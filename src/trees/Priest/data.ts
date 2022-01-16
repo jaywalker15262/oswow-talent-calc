@@ -442,7 +442,7 @@ You can only have Inner Will or Inner Fire active at a time.`,
       "Light's Grace": {
         name: "Light's Grace", 
         pos: "f1", 
-        icon: icons["spell_nature_moonglow"], 
+        icon: icons["spell_holy_unyieldingfaith"], 
         maxRank: 5, 
         reqPoints: 25, 
         description: talentText`Increases your total Spirit by ${[

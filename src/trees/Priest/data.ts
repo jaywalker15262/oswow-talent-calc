@@ -413,8 +413,8 @@ You can only have Inner Will or Inner Fire active at a time.`,
           10,
           20,
         ]}% and its casting time by ${[
-          0.25
-          0.5
+          0.25,
+          0.5,
         ]} sec.`, 
       },
       "Sacrifice": {

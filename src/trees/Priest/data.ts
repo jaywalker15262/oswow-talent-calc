@@ -626,7 +626,7 @@ You can only have Inner Will or Inner Fire active at a time.`,
       "Focused Mind": {
         name: "Focused Mind", 
         pos: "d3", 
-        icon: icons["spell_nature_focusedmind"], 
+        icon: icons["spell_shadow_shadowworddominate"], 
         maxRank: 3, 
         reqPoints: 15,
         description: talentText`Reduces the Mana cost of your Mind Blast, Mind Control and Mind Control spells by ${[

@@ -292,7 +292,7 @@ You can only have Inner Will or Inner Fire active at a time.`,
       },
       "Holy Specialization": {
         name: "Holy Specialization", 
-        pos: "c3", 
+        pos: "a3", 
         icon: icons["spell_holy_sealofsalvation"], 
         maxRank: 5, 
         reqPoints: 0, 

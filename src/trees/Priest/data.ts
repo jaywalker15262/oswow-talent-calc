@@ -592,7 +592,7 @@ You can only have Inner Will or Inner Fire active at a time.`,
       },
       "Improved Mind Blast": {
         name: "Improved Mind Blast", 
-        pos: "b2", 
+        pos: "c2", 
         icon: icons["spell_shadow_unholyfrenzy"], 
         maxRank: 5, 
         reqPoints: 10, 

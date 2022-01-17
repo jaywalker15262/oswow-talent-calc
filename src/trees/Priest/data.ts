@@ -674,8 +674,7 @@ You can only have Inner Will or Inner Fire active at a time.`,
         icon: icons["spell_shadow_shadowpower"], 
         maxRank: 3, 
         reqPoints: 20,
-        description: talentText`
-Increases the critical strike damage bonus of your Mind Blast and Shadow Word: Death spells by ${[
+        description: talentText`Increases the critical strike damage bonus of your Mind Blast and Shadow Word: Death spells by ${[
           33,
           66,
           100,

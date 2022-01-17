@@ -657,28 +657,30 @@ You can only have Inner Will or Inner Fire active at a time.`,
         reqPoints: 20, 
         description: talentText`Assume a Shadowform, increasing your Shadow damage by 15% and reducing Physical damage done to you by 15%.  However, you may not cast Holy spells while in this form.`, 
       },
+      "Shadow Power": {
+        name: "Shadow Power", 
+        pos: "e3", 
+        icon: icons["spell_shadow_shadowpower"], 
+        maxRank: 3, 
+        reqPoints: 20,
+        prereq: "Shadowform", 
+        arrows: [{ dir: "right", from: "e2", to: "e3" }], 
+        description: talentText`
+Increases the critical strike damage bonus of your Mind Blast and Shadow Word: Death spells by ${[
+          33,
+          66,
+          100,
+        ]}%.`, 
+      },
       "Improved Vampiric Embrace": {
         name: "Improved Vampiric Embrace", 
-        pos: "e3", 
+        pos: "e4", 
         icon: icons["spell_shadow_improvedvampiricembrace"], 
         maxRank: 2, 
         reqPoints: 20, 
         description: talentText`Increases the percentage healed by Vampiric Embrace by an additional ${[
           5,
           10,
-        ]}%.`, 
-      },
-      "Shadow Power": {
-        name: "Shadow Power", 
-        pos: "e4", 
-        icon: icons["spell_shadow_shadowpower"], 
-        maxRank: 3, 
-        reqPoints: 20, 
-        description: talentText`
-Increases the critical strike damage bonus of your Mind Blast and Shadow Word: Death spells by ${[
-          33,
-          66,
-          100,
         ]}%.`, 
       },
       "Darkness": {

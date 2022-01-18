@@ -430,7 +430,10 @@ This chance is increased to ${[
         description: talentText`Reduces the Rage cost of your Execute ability by ${[
           2,
           5,
-        ]}.`,
+        ]} and reduces the cooldown of your Execute by ${[
+          0.5,
+          1,
+        ]} sec.`,
       },
       "Enrage": {
         name: "Enrage",

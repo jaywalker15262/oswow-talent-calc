@@ -530,7 +530,7 @@ This chance is increased to ${[
         reqPoints: 30,
         prereq: "Death Wish",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Instantly attack the target causing damage equal to 45% of your attack power.  In addition, the next 3 successful melee attacks will restore 20 health.  This effect lasts 8 sec.`,
+        description: talentText`Instantly attack the target causing damage equal to 50% of your attack power.  In addition, the next 3 successful melee attacks will restore 20 health.  This effect lasts 8 sec.`,
       },
     },
   },

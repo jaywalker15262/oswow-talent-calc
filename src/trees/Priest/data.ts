@@ -689,8 +689,8 @@ You can only have Inner Will or Inner Fire active at a time.`,
           10,
         ]}%.`, 
       },
-      "Shadow Power": {
-        name: "Shadow Power", 
+      "Death and Madness": {
+        name: "Death and Madness", 
         pos: "e4", 
         icon: icons["spell_shadow_shadowpower"], 
         maxRank: 3, 

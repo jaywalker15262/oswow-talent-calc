@@ -1,4 +1,4 @@
-# WoW Vanilla+ Talent Calculator
+# Old School WoW Talent Calculator
 
 CSS-grid based talent calculator  
 Usable talent calculator hosted here: https://jaywalker15262.github.io/oswow-talent-calc/

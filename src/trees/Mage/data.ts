@@ -235,7 +235,7 @@ export const data: TalentData = {
       },
       "Arcane Power": {
         name: "Arcane Power", 
-        pos: "f2", 
+        pos: "g2", 
         icon: icons["spell_nature_lightning"], 
         maxRank: 1, 
         reqPoints: 30, 

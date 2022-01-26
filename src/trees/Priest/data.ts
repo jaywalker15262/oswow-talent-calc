@@ -16,8 +16,6 @@ export const data: TalentData = {
         name: "Twin Disciplines", 
         pos: "a1", 
         icon: icons["spell_holy_blessingofstrength"], 
-cached modules 3.41 MiB (javascript) 843 KiB (asset) [cached] 917 modules
-runtime modules 31.3 KiB 15 modules
         maxRank: 5, 
         reqPoints: 0, 
         description: talentText`Increases the damage and healing done by your instant cast spells by ${[

@@ -9,6 +9,8 @@ import arrowDown from "../assets/arrows/down.png";
 import arrowDownGold from "../assets/arrows/down--gold.png";
 import arrowRightDown from "../assets/arrows/right-down.png";
 import arrowRightDownGold from "../assets/arrows/right-down--gold.png";
+import arrowLeftDown from "../assets/arrows/left-down.png";
+import arrowLeftDownGold from "../assets/arrows/left-down--gold.png";
 
 import { Position, ArrowDir } from "../TalentContext";
 

@@ -350,22 +350,36 @@ export const data: TalentData = {
       },
       "Improved Scorch": {
         name: "Improved Scorch", 
-        pos: "e1", 
+        pos: "d1", 
         icon: icons["spell_fire_soulburn"], 
         maxRank: 3, 
-        reqPoints: 20, 
+        reqPoints: 15, 
         description: talentText`Your Scorch spells have a ${[
           33,
           66,
           99,
         ]}% chance to cause your target to be voulnerable to Fire damage dealt to your target by 2% and lasts 15 seconds.  Stacks up to 5 times.`, 
       },
+      "Burning Soul": {
+        name: "Burning Soul", 
+        pos: "d2", 
+        icon: icons["spell_fire_fire"], 
+        maxRank: 2, 
+        reqPoints: 15, 
+        description: talentText`Gives your Fire spells a ${[
+          35,
+          75,
+        ]}% chance not to lose casting time when you take damage and reduces the threat caused by your Fire spells by ${[
+          15,
+          30,
+        ]}%.`, 
+      },
       "Ignite": {
         name: "Ignite", 
-        pos: "e4", 
+        pos: "d4", 
         icon: icons["spell_fire_incinerate"], 
         maxRank: 5, 
-        reqPoints: 20, 
+        reqPoints: 15, 
         description: talentText`Your critical strikes from Fire damage spells cause the target to burn for an additional ${[
           8,
           16,
@@ -377,9 +391,9 @@ export const data: TalentData = {
       "Critical Mass": {
         name: "Critical Mass", 
         pos: "e2", 
-        icon: icons["inv_summerfest_firepotion"], 
+        icon: icons["spell_nature_wispheal"], 
         maxRank: 3, 
-        reqPoints: 10, 
+        reqPoints: 20, 
         description: talentText`Increases the critical strike chance of your Fire spells by ${[
           2,
           4,

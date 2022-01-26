@@ -708,22 +708,6 @@ This chance is increased to ${[
           4,
         ]} sec.`,
       },
-      "Vitality": {
-        name: "Vitality",
-        pos: "e1",
-        icon: icons["inv_helmet_21"],
-        maxRank: 3,
-        reqPoints: 20,
-        description: talentText`Increases your total Stamina by ${[
-          2,
-          4,
-          6,
-        ]}% and your total Strength by ${[
-          1,
-          2,
-          3,
-        ]}%.`,
-      },
       "Improved Shield Wall": {
         name: "Improved Shield Wall",
         pos: "e1",

@@ -84,8 +84,8 @@ export const data: TalentData = {
           30,
         ]}%.`, 
       },
-      "Vile poisons": {
-        name: "Vile poisons", 
+      "Vile Poisons": {
+        name: "Vile Poisons", 
         pos: "c2", 
         icon: icons["ability_rogue_feigndeath"], 
         maxRank: 5, 

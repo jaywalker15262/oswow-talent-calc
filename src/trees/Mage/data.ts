@@ -154,7 +154,7 @@ export const data: TalentData = {
         name: "Improved Counterspell", 
         pos: "d2", 
         icon: icons["spell_frost_iceshock"], 
-        maxRank: 5, 
+        maxRank: 2, 
         reqPoints: 15, 
         description: talentText`Gives your Counterspell a 100% chance to silence the target for ${[
           2,

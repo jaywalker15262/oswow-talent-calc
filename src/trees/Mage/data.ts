@@ -150,19 +150,16 @@ export const data: TalentData = {
           30,
         ]}%.`, 
       },
-      "Arcane Instability": {
-        name: "Arcane Instability", 
+      "Improved Counterspell": {
+        name: "Improved Counterspell", 
         pos: "d2", 
-        icon: icons["spell_shadow_teleport"], 
+        icon: icons["spell_frost_iceshock"], 
         maxRank: 5, 
         reqPoints: 15, 
-        description: talentText`Increases your spell damage and critical strike chance by ${[
-          1,
+        description: talentText`Gives your Counterspell a 100% chance to silence the target for ${[
           2,
-          3,
           4,
-          5,
-        ]}%.`, 
+        ]} sec.`, 
       },
       "Arcane Meditation": {
         name: "Arcane Meditation", 
@@ -175,16 +172,6 @@ export const data: TalentData = {
           14,
           20,
         ]}% of your Mana regeneration to continue while casting.`, 
-      },
-      "Arcane Power": {
-        name: "Arcane Power", 
-        pos: "e2", 
-        icon: icons["spell_nature_lightning"], 
-        maxRank: 1, 
-        reqPoints: 20, 
-        prereq: "Arcane Instability", 
-        arrows: [{ dir: "down", from: "d2", to: "e2" }], 
-        description: talentText`When activated, your spells deal 30% more damage while costing 30% more Mana to cast. This effect lasts 15 seconds.`, 
       },
       "Arcane Mind": {
         name: "Arcane Mind", 
@@ -214,21 +201,17 @@ export const data: TalentData = {
           20,
         ]}%.`, 
       },
-      "Improved Arcane Power": {
-        name: "Improved Arcane Power", 
+      "Arcane Instability": {
+        name: "Arcane Instability", 
         pos: "f2", 
-        icon: icons["spell_nature_wispheal"], 
-        maxRank: 2, 
+        icon: icons["spell_shadow_teleport"], 
+        maxRank: 5, 
         reqPoints: 25, 
-        prereq: "Arcane Power", 
-        arrows: [{ dir: "down", from: "e2", to: "f2"}], 
-        description: talentText`Reduces the cooldown of your Arcane Power by ${[
+        description: talentText`Increases your spell damage and critical strike chance by ${[
           1,
           2,
-        ]} min and increases the duration by ${[
           3,
-          5,
-        ]} sec.`, 
+        ]}%.`, 
       },
       "Mind Mastery": {
         name: "Mind Mastery", 
@@ -250,13 +233,15 @@ export const data: TalentData = {
           25,
         ]}%.`, 
       },
-      "Brilliance Aura": {
-        name: "Brilliance Aura", 
-        pos: "g2", 
-        icon: icons["spell_nature_brilliance"], 
+      "Arcane Power": {
+        name: "Arcane Power", 
+        pos: "f2", 
+        icon: icons["spell_nature_lightning"], 
         maxRank: 1, 
         reqPoints: 30, 
-        description: talentText`Generates 1% of total Mana every 10 sec to all party members within 30 yards.`, 
+        prereq: "Arcane Instability", 
+        arrows: [{ dir: "down", from: "f2", to: "g2" }], 
+        description: talentText`When activated, your spells deal 30% more damage while costing 30% more Mana to cast. This effect lasts 15 seconds.`, 
       },
     },
   },

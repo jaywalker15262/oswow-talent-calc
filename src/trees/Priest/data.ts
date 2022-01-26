@@ -169,11 +169,10 @@ export const data: TalentData = {
         name: "Dominate Mind", 
         pos: "d4", 
         icon: icons["spell_shadow_manaburn"], 
-        maxRank: 3, 
+        maxRank: 2, 
         reqPoints: 15, 
         description: talentText`Reduces the casting time of your Mana Burn and Mind Control spells by ${[
-          "0.4 secs",
-          "0.7 secs",
+          "0.5 secs",
           "1 sec",
         ]}.`, 
       },

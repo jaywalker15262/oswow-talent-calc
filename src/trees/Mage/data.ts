@@ -173,6 +173,14 @@ export const data: TalentData = {
           20,
         ]}% of your Mana regeneration to continue while casting.`, 
       },
+      "Presence of Mind": {
+        name: "Presence of Mind", 
+        pos: "e2", 
+        icon: icons["spell_nature_enchantarmor"], 
+        maxRank: 1, 
+        reqPoints: 20, 
+        description: talentText`When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell.`, 
+      },
       "Arcane Mind": {
         name: "Arcane Mind", 
         pos: "e4", 
@@ -180,11 +188,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 20, 
         description: talentText`Increases your total Intellect by ${[
-          2,
-          4,
-          6,
-          8,
+          5,
           10,
+          15,
+          20,
+          25,
         ]}%.`, 
       },
       "Time Pressure": {
@@ -207,6 +215,8 @@ export const data: TalentData = {
         icon: icons["spell_shadow_teleport"], 
         maxRank: 5, 
         reqPoints: 25, 
+        prereq: "Presence of Mind", 
+        arrows: [{ dir: "down", from: "e2", to: "f2" }], 
         description: talentText`Increases your spell damage and critical strike chance by ${[
           1,
           2,

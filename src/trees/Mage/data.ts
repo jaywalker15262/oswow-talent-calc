@@ -195,6 +195,19 @@ export const data: TalentData = {
         reqPoints: 20, 
         description: talentText`When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell.`, 
       },
+      "Invocation": {
+        name: "Invocation", 
+        pos: "e3", 
+        icon: icons["spell_arcane_arcanepotency"], 
+        maxRank: 2, 
+        reqPoints: 20, 
+        prereq: "Arcane Concentration", 
+        arrows: [{ dir: "down", from: "b3", to: "e3" }], 
+        description: talentText`Increases the critical strike chance of any spell cast while Clearcasting by ${[
+          15,
+          30,
+        ]}%.`, 
+      },
       "Arcane Mind": {
         name: "Arcane Mind", 
         pos: "e4", 
@@ -226,7 +239,7 @@ export const data: TalentData = {
       "Missile Barrage": {
         name: "Missile Barrage", 
         pos: "f3", 
-        icon: icons["sability_mage_missilebarrage"], 
+        icon: icons["ability_mage_missilebarrage"], 
         maxRank: 2, 
         reqPoints: 25, 
         description: talentText`Gives your Arcane Blast ${[

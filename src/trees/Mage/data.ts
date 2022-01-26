@@ -209,20 +209,6 @@ export const data: TalentData = {
           25,
         ]}%.`, 
       },
-      "Time Pressure": {
-        name: "Time Pressure", 
-        pos: "f1", 
-        icon: icons["inv_misc_pocketwatch_01"], 
-        maxRank: 5, 
-        reqPoints: 25, 
-        description: talentText`Increases the casting speed by ${[
-          4,
-          8,
-          12,
-          16,
-          20,
-        ]}%.`, 
-      },
       "Arcane Instability": {
         name: "Arcane Instability", 
         pos: "f2", 
@@ -237,25 +223,19 @@ export const data: TalentData = {
           3,
         ]}%.`, 
       },
-      "Mind Mastery": {
-        name: "Mind Mastery", 
+      "Missile Barrage": {
+        name: "Missile Barrage", 
         pos: "f3", 
-        icon: icons["spell_arcane_mindmastery"], 
-        maxRank: 5, 
+        icon: icons["sability_mage_missilebarrage"], 
+        maxRank: 2, 
         reqPoints: 25, 
-        description: talentText`Increases spell damage by up to ${[
-          5,
-          10,
-          15,
-          20,
-          25,
-        ]}% of your total Intellect and increases the effect of your Arcane Intellect by ${[
-          5,
-          10,
-          15,
-          20,
-          25,
-        ]}%.`, 
+        description: talentText`Gives your Arcane Blast ${[
+          "an 8%",
+          "a 16%",
+        ]} chance, and your Fireball and Frostbolt spells ${[
+          "a 4%",
+          "n 8%",
+        ]} chance to reduce your next Arcane Missiles' channeled duration by 2.5 secs, reduce its mana cost by 66%, and cause it to fire missiles every .5 secs.`, 
       },
       "Arcane Power": {
         name: "Arcane Power", 

@@ -697,6 +697,17 @@ This chance is increased to ${[
           8,
         ]}%.`,
       },
+      "Improved Shield Bash": {
+        name: "Improved Shield Bash",
+        pos: "d4",
+        icon: icons["ability_warrior_shieldbash"],
+        maxRank: 2,
+        reqPoints: 15,
+        description: talentText`Gives your Shield Bash ability a 100% chance to silence the target for ${[
+          2,
+          4,
+        ]} sec.`,
+      },
       "Vitality": {
         name: "Vitality",
         pos: "e1",
@@ -713,6 +724,20 @@ This chance is increased to ${[
           3,
         ]}%.`,
       },
+      "Improved Shield Wall": {
+        name: "Improved Shield Wall",
+        pos: "e1",
+        icon: icons["ability_warrior_shieldwall"],
+        maxRank: 2,
+        reqPoints: 20,
+        description: talentText`Increases the effect duration of your Shield Wall ability by ${[
+          3,
+          6,
+        ]} secs and reduces the cooldown by ${[
+          5,
+          10,
+        ]} min.`,
+      }, 
       "Concussion Blow": {
         name: "Concussion Blow",
         pos: "e2",
@@ -721,31 +746,22 @@ This chance is increased to ${[
         reqPoints: 20,
         description: talentText`Stuns the opponent for 5 sec.  If the target is immune to stuns, instead deals 72% weapon damage and causes an extreme amount of threat.`,
       },
-      "Improved Shield Bash": {
-        name: "Improved Shield Bash",
+      "Vitality": {
+        name: "Vitality",
         pos: "e3",
-        icon: icons["ability_warrior_shieldbash"],
-        maxRank: 2,
+        icon: icons["inv_helmet_21"],
+        maxRank: 3,
         reqPoints: 20,
-        description: talentText`Gives your Shield Bash ability a ${[
-          50,
-          100,
-        ]}% chance to silence the target for 3 sec.`,
-      },
-      "Improved Shield Wall": {
-        name: "Improved Shield Wall",
-        pos: "f1",
-        icon: icons["ability_warrior_shieldwall"],
-        maxRank: 2,
-        reqPoints: 25,
-        description: talentText`Increases the effect duration of your Shield Wall ability by ${[
-          3,
+        description: talentText`Increases your total Stamina by ${[
+          2,
+          4,
           6,
-        ]} secs and reduces the cooldown by ${[
-          5,
-          10,
-        ]} min.`,
-      },      
+        ]}% and your total Strength by ${[
+          1,
+          2,
+          3,
+        ]}%.`,
+      },     
       "One-Handed Weapon Specialization": {
         name: "One-Handed Weapon Specialization",
         pos: "f3",

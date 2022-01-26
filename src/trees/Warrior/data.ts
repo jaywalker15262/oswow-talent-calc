@@ -428,8 +428,8 @@ This chance is increased to ${[
         maxRank: 2,
         reqPoints: 15,
         description: talentText`Reduces the Rage cost of your Execute ability by ${[
-          2,
           5,
+          10,
         ]} and the cooldown by ${[
           0.5,
           1,

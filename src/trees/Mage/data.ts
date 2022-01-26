@@ -173,6 +173,20 @@ export const data: TalentData = {
           20,
         ]}% of your Mana regeneration to continue while casting.`, 
       },
+      "Improved Blink": {
+        name: "Improved Blink", 
+        pos: "e1", 
+        icon: icons["spell_arcane_blink"], 
+        maxRank: 2, 
+        reqPoints: 20, 
+        description: talentText`Reduces the mana cost of your Blink by ${[
+          17,
+          35,
+        ]}% and for 4 sec after casting your your chance to be hit by all attacks and spells is reduced ${[
+          10,
+          20,
+        ]}%.`, 
+      },
       "Presence of Mind": {
         name: "Presence of Mind", 
         pos: "e2", 

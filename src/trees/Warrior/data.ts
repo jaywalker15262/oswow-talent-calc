@@ -708,8 +708,8 @@ This chance is increased to ${[
           4,
         ]} sec.`,
       },
-      "Improved Shield Wall": {
-        name: "Improved Shield Wall",
+      "Improved Disciplines": {
+        name: "Improved Disciplines",
         pos: "e1",
         icon: icons["ability_warrior_shieldwall"],
         maxRank: 2,
@@ -717,7 +717,7 @@ This chance is increased to ${[
         description: talentText`Increases the effect duration of your Shield Wall ability by ${[
           3,
           6,
-        ]} secs and reduces the cooldown by ${[
+        ]} secs and reduces the cooldown of your Shield Wall, Retaliation and Recklessness abilities by ${[
           5,
           10,
         ]} min.`,

@@ -267,17 +267,6 @@ export const data: TalentData = {
     background: backgrounds["fire"],
     icon: icons["spell_fire_firebolt02"],
     talents: {
-      "Flame Throwing": {
-        name: "Flame Throwing", 
-        pos: "a1", 
-        icon: icons["spell_fire_flare"], 
-        maxRank: 2, 
-        reqPoints: 0, 
-        description: talentText`Increases the range of your Fire spells and the radius of your Blast Wave spell by ${[
-          3,
-          6,
-        ]} yards.`, 
-      },
       "Improved Fireball": {
         name: "Improved Fireball", 
         pos: "a2", 
@@ -337,16 +326,16 @@ export const data: TalentData = {
         reqPoints: 10, 
         description: talentText`Hurls an immense fiery boulder that causes 141 to 187 Fire damage and an additional 56 Fire damage over 12 seconds.`, 
       },
-      "Fire Warding": {
-        name: "Fire Warding", 
+      "Flame Throwing": {
+        name: "Flame Throwing", 
         pos: "c4", 
-        icon: icons["spell_fire_firearmor"], 
+        icon: icons["spell_fire_flare"], 
         maxRank: 2, 
         reqPoints: 10, 
-        description: talentText`Causes your Fire Ward to have a ${[
-          10,
-          20,
-        ]}% chance to reflect Fire spells while active.`, 
+        description: talentText`Increases the range of your Fire spells and the radius of your Blast Wave spell by ${[
+          3,
+          6,
+        ]} yards.`, 
       },
       "Improved Scorch": {
         name: "Improved Scorch", 
@@ -409,6 +398,17 @@ export const data: TalentData = {
         prereq: "Pyroblast", 
         arrows: [{ dir: "down", from: "c3", to: "e3" }], 
         description: talentText`A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 186 Fire damage and dazing them for 6 seconds.`, 
+      },
+      "Fire Warding": {
+        name: "Fire Warding", 
+        pos: "e4", 
+        icon: icons["spell_fire_firearmor"], 
+        maxRank: 2, 
+        reqPoints: 20, 
+        description: talentText`Causes your Fire Ward to have a ${[
+          10,
+          20,
+        ]}% chance to reflect Fire spells while active.`, 
       },
       "Fire Power": {
         name: "Fire Power", 

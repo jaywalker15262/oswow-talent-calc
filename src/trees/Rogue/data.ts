@@ -371,8 +371,8 @@ Additionally increases the chance to apply poisons to your target by ${[
         maxRank: 2, 
         reqPoints: 15, 
         description: talentText`Gives your Kick ability a 100% chance to silence the target for ${[
-          2,
-          4,
+          1.5,
+          3,
         ]} sec.`, 
       },
       "Aggression": {

@@ -314,7 +314,7 @@ export const data: TalentData = {
         pos: "b2", 
         icon: icons["spell_fire_flare"], 
         maxRank: 2, 
-        reqPoints: 10, 
+        reqPoints: 5, 
         description: talentText`Increases the range of your Fire spells and the radius of your Blast Wave spell by ${[
           3,
           6,

@@ -343,6 +343,18 @@ export const data: TalentData = {
           4,
         ]}%.`, 
       },
+      "Improved Flamestrike": {
+        name: "Improved Flamestrike", 
+        pos: "c2", 
+        icon: icons["spell_fire_selfdestruct"], 
+        maxRank: 3, 
+        reqPoints: 10, 
+        description: talentText`Increases the critical strike chance of your Flamestrike spell by ${[
+          5,
+          10,
+          15,
+        ]}%.`, 
+      },
       "Pyroblast": {
         name: "Pyroblast", 
         pos: "c3", 
@@ -365,6 +377,22 @@ export const data: TalentData = {
           30,
         ]}%.`, 
       },
+      "Playing with Fire": {
+        name: "Playing with Fire", 
+        pos: "d1", 
+        icon: icons["spell_fire_playingwithfire"], 
+        maxRank: 3, 
+        reqPoints: 15, 
+        description: talentText`Increases all spell damage caused by ${[
+          1,
+          2,
+          3,
+        ]}% and all spell damage taken by ${[
+          1,
+          2,
+          3,
+        ]}%.`, 
+      },
       "Fire Warding": {
         name: "Fire Warding", 
         pos: "d2", 
@@ -375,6 +403,18 @@ export const data: TalentData = {
           10,
           20,
         ]}% chance to reflect Fire spells while active.`, 
+      },
+      "Master of Elements": {
+        name: "Master of Elements", 
+        pos: "d4", 
+        icon: icons["spell_fire_masterofelements"], 
+        maxRank: 3, 
+        reqPoints: 15, 
+        description: talentText`Your Fire and Frost spell criticals will refund ${[
+          10,
+          20,
+          30,
+        ]}% of their base mana cost.`, 
       },
       "Improved Scorch": {
         name: "Improved Scorch", 

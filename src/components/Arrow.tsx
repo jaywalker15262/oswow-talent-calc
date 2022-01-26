@@ -25,6 +25,10 @@ const imageMap = {
   "right-down--gold": arrowRightDownGold,
   "right-down-down": arrowDown,
   "right-down-down--gold": arrowDownGold,
+  "left-down": arrowLeftDown
+  "left-down--gold": arrowLeftDownGold,
+  "left-down-down": arrowDown,
+  "left-down-down--gold": arrowDownGold,
 };
 
 interface Props {

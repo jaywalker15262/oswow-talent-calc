@@ -716,7 +716,7 @@ This chance is increased to ${[
         reqPoints: 20,
         description: talentText`Increases the effect duration of your Shield Wall ability by ${[
           3,
-          6,
+          5,
         ]} secs and reduces the cooldown of your Shield Wall, Retaliation and Recklessness abilities by ${[
           5,
           10,

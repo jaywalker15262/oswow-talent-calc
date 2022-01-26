@@ -385,7 +385,7 @@ export const data: TalentData = {
         description: talentText`Your Scorch spells have a ${[
           33,
           66,
-          99,
+          100,
         ]}% chance to cause your target to be voulnerable to Fire damage dealt to your target by 2% and lasts 15 seconds.  Stacks up to 5 times.`, 
       },
       "Critical Mass": {

@@ -395,7 +395,7 @@ You can only have Inner Will or Inner Fire active at a time.`,
         reqPoints: 15, 
         prereq: "Divine Fury", 
         arrows: [{ dir: "down", from: "b3", to: "d3"}], 
-        description: talentText`Increases the damage of your Smite and Holy Fire spells by ${[
+        description: talentText`Increases the damage of your Smite, Holy Fire and Holy Nova spells by ${[
           5,
           10,
           15,
@@ -409,7 +409,7 @@ You can only have Inner Will or Inner Fire active at a time.`,
         reqPoints: 15,
         prereq: "Searing Light", 
         arrows: [{ dir: "right", from: "d3", to: "d4" }],
-        description: talentText`Increases the critical strike damage bonus of your Smite spell by ${[
+        description: talentText`Increases the critical strike damage bonus of your Smite and Holy Nova spells by ${[
           33,
           66,
           100,

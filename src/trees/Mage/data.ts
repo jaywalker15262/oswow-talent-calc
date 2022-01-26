@@ -226,7 +226,7 @@ export const data: TalentData = {
         name: "Arcane Instability", 
         pos: "f2", 
         icon: icons["spell_shadow_teleport"], 
-        maxRank: 5, 
+        maxRank: 3, 
         reqPoints: 25, 
         prereq: "Presence of Mind", 
         arrows: [{ dir: "down", from: "e2", to: "f2" }], 

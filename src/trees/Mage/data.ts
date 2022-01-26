@@ -247,7 +247,7 @@ export const data: TalentData = {
           "a 16%",
         ]} chance, and your Fireball and Frostbolt spells ${[
           "a 4%",
-          "n 8%",
+          "an 8%",
         ]} chance to reduce your next Arcane Missiles' channeled duration by 2.5 secs, reduce its mana cost by 66%, and cause it to fire missiles every .5 secs.`, 
       },
       "Arcane Power": {

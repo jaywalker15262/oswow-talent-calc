@@ -584,9 +584,32 @@ This chance is increased to ${[
           15,
         ]}.`,
       },
+      "Improved Taunt": {
+        name: "Improved Taunt",
+        pos: "b1",
+        icon: icons["spell_nature_reincarnation"],
+        maxRank: 2,
+        reqPoints: 5,
+        description: talentText`Improves your chance to hit with your Taunt ability by ${[
+          4,
+          8,
+        ]}%.`,
+      },
+      "Improved Revenge": {
+        name: "Improved Revenge",
+        pos: "b3",
+        icon: icons["ability_warrior_revenge"],
+        maxRank: 3,
+        reqPoints: 5,
+        description: talentText`Gives your Revenge ability a ${[
+          15,
+          30,
+          45,
+        ]}% chance to stun the target for 3 sec.`,
+      },
       "Iron Will": {
         name: "Iron Will",
-        pos: "b1",
+        pos: "b4",
         icon: icons["spell_magic_magearmor"],
         maxRank: 5,
         reqPoints: 5,
@@ -596,20 +619,6 @@ This chance is increased to ${[
           9,
           12,
           15
-        ]}%.`,
-      },
-      "Toughness": {
-        name: "Toughness",
-        pos: "b3",
-        icon: icons["spell_holy_devotion"],
-        maxRank: 5,
-        reqPoints: 5,
-        description: talentText`Increases your armor value from items by ${[
-          2,
-          4,
-          6,
-          8,
-          10,
         ]}%.`,
       },
       "Last Stand": {
@@ -638,17 +647,17 @@ This chance is increased to ${[
           45,
         ]}% for the duration.`,
       },
-      "Improved Revenge": {
-        name: "Improved Revenge",
+      "Improved Disarm": {
+        name: "Improved Disarm",
         pos: "c3",
-        icon: icons["ability_warrior_revenge"],
+        icon: icons["ability_warrior_disarm"],
         maxRank: 3,
         reqPoints: 10,
-        description: talentText`Gives your Revenge ability a ${[
+        description: talentText`Reduces the cooldown of your Disarm ability by ${[
+          5,
+          10,
           15,
-          30,
-          45,
-        ]}% chance to stun the target for 3 sec.`,
+        ]} secs.`,
       },
       "Defiance": {
         name: "Defiance",
@@ -674,32 +683,23 @@ This chance is increased to ${[
           "3 rage points",
         ]}.`,
       },
-      "Improved Disarm": {
-        name: "Improved Disarm",
-        pos: "d2",
-        icon: icons["ability_warrior_disarm"],
-        maxRank: 3,
+      "Toughness": {
+        name: "Toughness", 
+        pos: "d2", 
+        icon: icons["spell_holy_devotion"], 
+        maxRank: 5, 
         reqPoints: 15,
-        description: talentText`Reduces the cooldown of your Disarm ability by ${[
-          5,
-          10,
-          15,
-        ]} secs.`,
-      },
-      "Improved Taunt": {
-        name: "Improved Taunt",
-        pos: "d3",
-        icon: icons["spell_nature_reincarnation"],
-        maxRank: 2,
-        reqPoints: 15,
-        description: talentText`Improves your chance to hit with your Taunt ability by ${[
+        description: talentText`Increases your armor value from items by ${[
+          2,
           4,
+          6,
           8,
-        ]}%.`,
+          10,
+        ]}%.`, 
       },
       "Improved Shield Bash": {
         name: "Improved Shield Bash",
-        pos: "d4",
+        pos: "d3",
         icon: icons["ability_warrior_shieldbash"],
         maxRank: 2,
         reqPoints: 15,

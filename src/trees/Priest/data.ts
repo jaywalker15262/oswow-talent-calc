@@ -16,6 +16,8 @@ export const data: TalentData = {
         name: "Twin Disciplines", 
         pos: "a1", 
         icon: icons["spell_holy_blessingofstrength"], 
+cached modules 3.41 MiB (javascript) 843 KiB (asset) [cached] 917 modules
+runtime modules 31.3 KiB 15 modules
         maxRank: 5, 
         reqPoints: 0, 
         description: talentText`Increases the damage and healing done by your instant cast spells by ${[
@@ -391,16 +393,14 @@ You can only have Inner Will or Inner Fire active at a time.`,
         name: "Searing Light", 
         pos: "d3", 
         icon: icons["spell_holy_searinglightpriest"], 
-        maxRank: 5, 
+        maxRank: 3, 
         reqPoints: 15, 
         prereq: "Divine Fury", 
         arrows: [{ dir: "down", from: "b3", to: "d3"}], 
         description: talentText`Increases the damage of your Smite and Holy Fire spells by ${[
-          4,
-          8,
-          12,
-          16,
-          20,
+          5,
+          10,
+          15,
         ]}%.`, 
       },
       "Divine Punishment": {

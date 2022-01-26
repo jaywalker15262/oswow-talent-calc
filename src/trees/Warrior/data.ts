@@ -570,19 +570,19 @@ This chance is increased to ${[
           100,
         ]}% chance to generate 3 rage when a block occurs.`,
       },
-      "Anticipation": {
-        name: "Anticipation",
+      "Iron Will": {
+        name: "Iron Will",
         pos: "a3",
-        icon: icons["spell_nature_mirrorimage"],
+        icon: icons["spell_magic_magearmor"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Increases your Defense skill by ${[
+        description: talentText`Increases your chance to resist Stun, Fear and Charm effects by an additional ${[
           3,
           6,
           9,
           12,
-          15,
-        ]}.`,
+          15
+        ]}%.`,
       },
       "Improved Taunt": {
         name: "Improved Taunt",
@@ -607,19 +607,19 @@ This chance is increased to ${[
           45,
         ]}% chance to stun the target for 3 sec.`,
       },
-      "Iron Will": {
-        name: "Iron Will",
+      "Anticipation": {
+        name: "Anticipation",
         pos: "b4",
-        icon: icons["spell_magic_magearmor"],
+        icon: icons["spell_nature_mirrorimage"],
         maxRank: 5,
         reqPoints: 5,
-        description: talentText`Increases your chance to resist Stun, Fear and Charm effects by an additional ${[
+        description: talentText`Increases your Defense skill by ${[
           3,
           6,
           9,
           12,
-          15
-        ]}%.`,
+          15,
+        ]}.`,
       },
       "Last Stand": {
         name: "Last Stand",

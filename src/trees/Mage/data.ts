@@ -241,7 +241,7 @@ export const data: TalentData = {
         reqPoints: 30, 
         prereq: "Arcane Instability", 
         arrows: [{ dir: "down", from: "f2", to: "g2" }], 
-        description: talentText`When activated, your spells deal 30% more damage while costing 30% more Mana to cast. This effect lasts 15 seconds.`, 
+        description: talentText`When activated, your spells deal 30% more damage while costing 20% more Mana to cast.  This effect lasts 15 seconds.`, 
       },
     },
   },

@@ -44,11 +44,10 @@ export const data: TalentData = {
         name: "Wand Specialization", 
         pos: "a3", 
         icon: icons["inv_wand_01"], 
-        maxRank: 3, 
+        maxRank: 2, 
         reqPoints: 0, 
         description: talentText`Increases your damage with Wands by ${[
-          8,
-          16,
+          13,
           25,
         ]}%.`, 
       },

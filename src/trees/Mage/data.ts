@@ -332,15 +332,20 @@ export const data: TalentData = {
           1.5,
         ]} sec.`, 
       },
-      "Incinerate": {
-        name: "Incinerate", 
+      "Playing with Fire": {
+        name: "Playing with Fire", 
         pos: "c1", 
-        icon: icons["spell_fire_flameshock"], 
-        maxRank: 2, 
+        icon: icons["spell_fire_playingwithfire"], 
+        maxRank: 3, 
         reqPoints: 10, 
-        description: talentText`Increases the critical strike chance of your Fire Blast and Scorch spells by ${[
+        description: talentText`Increases all spell damage caused by ${[
+          1,
           2,
-          4,
+          3,
+        ]}% and all spell damage taken by ${[
+          1,
+          2,
+          3,
         ]}%.`, 
       },
       "Improved Flamestrike": {
@@ -377,20 +382,15 @@ export const data: TalentData = {
           30,
         ]}%.`, 
       },
-      "Playing with Fire": {
-        name: "Playing with Fire", 
+      "Incinerate": {
+        name: "Incinerate", 
         pos: "d1", 
-        icon: icons["spell_fire_playingwithfire"], 
-        maxRank: 3, 
-        reqPoints: 15, 
-        description: talentText`Increases all spell damage caused by ${[
-          1,
+        icon: icons["spell_fire_flameshock"], 
+        maxRank: 2, 
+        reqPoints: 10, 
+        description: talentText`Increases the critical strike chance and damage of your Fire Blast and Scorch spells by ${[
           2,
-          3,
-        ]}% and all spell damage taken by ${[
-          1,
-          2,
-          3,
+          4,
         ]}%.`, 
       },
       "Fire Warding": {

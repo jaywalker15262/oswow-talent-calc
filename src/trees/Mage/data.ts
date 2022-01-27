@@ -651,7 +651,7 @@ export const data: TalentData = {
       },
       "Winter's Chill": {
         name: "Winter's Chill", 
-        pos: "f3", 
+        pos: "e1", 
         icon: icons["spell_frost_chillingblast"], 
         maxRank: 3, 
         reqPoints: 20, 
@@ -671,7 +671,7 @@ export const data: TalentData = {
       },
       "Improved Cone of Cold": {
         name: "Improved Cone of Cold", 
-        pos: "d4", 
+        pos: "e3", 
         icon: icons["spell_frost_glacier"], 
         maxRank: 3, 
         reqPoints: 20, 

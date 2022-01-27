@@ -429,7 +429,7 @@ export const data: TalentData = {
         ]}% and Physical attacks by ${[
           2,
           4,
-          6,
+          5,
         ]}%.`, 
       },
       "Critical Mass": {

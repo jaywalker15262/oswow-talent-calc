@@ -18,50 +18,50 @@ export const data: TalentData = {
         icon: icons["spell_shadow_unsummonbuilding"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Reduces the chaance for enemies to resist your Affliction spells by ${[
+        description: talentText`Increases your chance to hit with spells by ${[
+          1,
           2,
+          3,
           4,
-          6,
-          8,
-          10,
+          5,
         ]}%.`,
       },
-      "Improved Corruption": {
-        name: "Improved Corruption",
+      "Fel Concentration": {
+        name: "Fel Concentration",
         pos: "a3",
-        icon: icons["spell_shadow_abominationexplosion"],
+        icon: icons["spell_shadow_fingerofdeath"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Reduces the casting time of your Corruption spell by ${[
-          0.4,
-          0.8,
-          1.2,
-          1.6,
-          2,
-        ]} sec.`,
+        description: talentText`Gives you a ${[
+          14,
+          28,
+          42,
+          56,
+          70,
+        ]}% chance to avoid interruption caused by damage while casting or channeling the Drain Life, Drain Mana, Drain Soul, or Seed of Corruption spell.`,
       },
       "Improved Curse of Weakness": {
         name: "Improved Curse of Weakness",
         pos: "b1",
         icon: icons["spell_shadow_curseofmannoroth"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 5,
         description: talentText`Increases the effect of your Curse of Weakness by ${[
-          6,
-          13,
+          10,
           20,
         ]}%.`,
       },
-      "Improved Drain Soul": {
-        name: "Improved Drain Soul",
+      "Improved Drain Life": {
+        name: "Improved Drain Life",
         pos: "b2",
-        icon: icons["spell_shadow_haunting"],
-        maxRank: 2,
+        icon: icons["spell_shadow_lifedrain02"],
+        maxRank: 3,
         reqPoints: 5,
-        description: talentText`Gives you a ${[
-          50,
-          100,
-        ]}% chance to get a 100% increase to your Mana regeneration for 10 sec if the target is killed by you while you drain its soul. In addition your Mana may continue to regenerate while casting at 50% of normal.`,
+        description: talentText`Increases the Health drained by your Drain Life spell by ${[
+          4,
+          7,
+          10,
+        ]}%.`,
       },
       "Improved Life Tap": {
         name: "Improved Life Tap",
@@ -74,53 +74,42 @@ export const data: TalentData = {
           20,
         ]}%.`,
       },
-      "Improved Drain Life": {
-        name: "Improved Drain Life",
-        pos: "b4",
-        icon: icons["spell_shadow_lifedrain02"],
-        maxRank: 5,
-        reqPoints: 5,
-        description: talentText`Increases the Health drained by your Drain Life spell by ${[
-          2,
-          4,
-          6,
-          8,
-          10,
-        ]}%.`,
-      },
-      "Improved Curse of Agony": {
-        name: "Improved Curse of Agony",
+      "Improved Drain Soul": {
+        name: "Improved Drain Soul",
         pos: "c1",
-        icon: icons["spell_shadow_curseofsargeras"],
-        maxRank: 3,
+        icon: icons["spell_shadow_haunting"],
+        maxRank: 2,
         reqPoints: 10,
-        description: talentText`Increases the damage done by your Curse of Agony by ${[
-          2,
-          4,
-          6,
-        ]}%.`,
+        description: talentText`When the target is below or at 25% health your Drain Soul spell has a ${[
+          50,
+          100,
+        ]}% to cause four times the normal damage.`,
       },
-      "Fel Concentration": {
-        name: "Fel Concentration",
-        pos: "c2",
-        icon: icons["spell_shadow_fingerofdeath"],
+      "Improved Corruptions": {
+        name: "Improved Corruptions",
+        pos: "a3",
+        icon: icons["spell_shadow_abominationexplosion"],
         maxRank: 5,
         reqPoints: 10,
-        description: talentText`Gives you a ${[
-          14,
-          28,
-          42,
-          56,
-          70,
-        ]}% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell.`,
+        description: talentText`Gives your Corruption spell a ${[
+          4,
+          8,
+          12,
+          16,
+          20,
+        ]}% chance to tick for double the damage.
+
+In addition, increases the critical strike chance of your Seed of Corruption spell by ${[1,2,3,4,5]}% and its critical strike damage bonus by ${[20,40,60,80,100]}%.`,
       },
-      "Amplify Curse": {
-        name: "Amplify Curse",
+      "Dark Pact": {
+        name: "Dark Pact",
         pos: "c3",
-        icon: icons["spell_shadow_contagion"],
+        icon: icons["spell_shadow_darkritual"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Increases the effect of your next Curse of Weakness or Curse of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec.`,
+        prereq: "Improved Life Tap",
+        arrows: [{ dir: "right", from: "b3", to: "c3" }],
+        description: talentText`Drains 115 of your pet's Mana, returning 100% to you.`,
       },
       "Grim Reach": {
         name: "Grim Reach",
@@ -139,10 +128,26 @@ export const data: TalentData = {
         icon: icons["spell_shadow_twilight"],
         maxRank: 2,
         reqPoints: 15,
-        description: talentText`Gives your Corruption and Drain Life spells a ${[
+        description: talentText`Gives your Corruption, Seed of Corruption, Drain Life and Drain Soul spells a ${[
           2,
           4,
-        ]}% chance to cause you to enter a Shadow Trance state after damaging the opponent. The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.`,
+        ]}% chance to cause you to enter a Shadow Trance state after damaging the opponent.
+
+The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.`,
+      },
+      "Doom and Gloom": {
+        name: "Doom and Gloom",
+        pos: "d3",
+        icon: icons["spell_shadow_curseofsargeras"],
+        maxRank: 2,
+        reqPoints: 15,
+        description: talentText`Increases the damage done by your Curse of Agony by ${[
+          5,
+          10,
+        ]}% and reduces the cooldown and duration of your Curse of Doom by ${[
+          5,
+          10,
+        ]} sec.`,
       },
       "Improved Drain Mana": {
         name: "Improved Drain Mana",
@@ -150,7 +155,10 @@ export const data: TalentData = {
         icon: icons["spell_shadow_siphonmana"],
         maxRank: 2,
         reqPoints: 15,
-        description: talentText`Causes 15% of the Mana drained by your Drain Mana spell to damage the opponent.`,
+        description: talentText`Causes ${[
+          15,
+          30,
+        ]}% of the Mana drained by your Drain Mana spell to damage the opponent.`,
       },
       "Siphon Life": {
         name: "Siphon Life",
@@ -158,7 +166,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_requiem"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`Transfers 15 health from the target to the caster every 3 sec. Lasts 30 sec.`,
+        description: talentText`Transfers 15 health from the target to the caster every 2 sec.  Lasts 30 sec.`,
       },
       "Curse of Exhaustion": {
         name: "Curse of Exhaustion",
@@ -166,24 +174,9 @@ export const data: TalentData = {
         icon: icons["spell_shadow_grimward"],
         maxRank: 1,
         reqPoints: 20,
-        prereq: "Amplify Curse",
-        arrows: [{ dir: "down", from: "c3", to: "e3" }],
-        description: talentText`Reduces the target's movement speed by 10% for 12 sec. Only one Curse per Warlock can be active on any one target.`,
-      },
-      "Improved Curse of Exhaustion": {
-        name: "Improved Curse of Exhaustion",
-        pos: "e4",
-        icon: icons["spell_shadow_grimward"],
-        maxRank: 4,
-        reqPoints: 20,
-        prereq: "Curse of Exhaustion",
-        arrows: [{ dir: "right", from: "e3", to: "e4" }],
-        description: talentText`Increases the speed reduction of your Curse of Exhaustion by ${[
-          5,
-          10,
-          15,
-          20,
-        ]}%.`,
+        description: talentText`Reduces your target's movement speed by up to 70% for $d.  The slow is weak at first, initially reducing your target's movement speed by $s1%, but gets stronger as it reaches its full duration.
+
+Only one Curse per Warlock can be active on any one target.`,
       },
       "Shadow Mastery": {
         name: "Shadow Mastery",
@@ -201,13 +194,15 @@ export const data: TalentData = {
           10,
         ]}%.`,
       },
-      "Dark Pact": {
-        name: "Dark Pact",
+      "Seed of Corruption": {
+        name: "Seed of Corruption",
         pos: "g2",
-        icon: icons["spell_shadow_darkritual"],
+        icon: icons["spell_shadow_seedofdestruction"],
         maxRank: 1,
         reqPoints: 30,
-        description: talentText`Drains 150 of your pet's Mana, returning 100% to you.`,
+        description: talentText`Imbeds a demon seed in the enemy target, causing 444 Shadow damage over 18 sec.  When the debuff expires or when the target dies, the seed will inflict 472 to 548 Shadow damage to all other enemies within 15 yards of the target.
+
+Only one Corruption spell per Warlock can be active on any one target.`,
       },
     },
   },
@@ -462,7 +457,7 @@ export const data: TalentData = {
           12,
           16,
           20,
-        ]}% until 4 non-periodic damage sources are applied. Effect lasts a maximum of 12 sec.`,
+        ]}% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec.`,
       },
       Cataclysm: {
         name: "Cataclysm",
@@ -499,19 +494,17 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 5,
         description: talentText`Gives your Destruction spells a ${[
-          2,
           4,
-          6,
-          8,
+          7,
           10,
         ]}% chance to daze the target for 5 sec.`,
       },
       "Improved Firebolt": {
         name: "Improved Firebolt",
-        pos: "c1",
+        pos: "b1",
         icon: icons["spell_fire_firebolt"],
         maxRank: 2,
-        reqPoints: 10,
+        reqPoints: 5,
         description: talentText`Reduces the casting time of your Imp's Firebolt spell by ${[
           0.5,
           1,
@@ -519,7 +512,7 @@ export const data: TalentData = {
       },
       "Improved Lash of Pain": {
         name: "Improved Lash of Pain",
-        pos: "c2",
+        pos: "c1",
         icon: icons["spell_shadow_curse"],
         maxRank: 2,
         reqPoints: 10,
@@ -548,7 +541,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_scourgebuild"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Instantly blasts the target for 91 to 104 Shadow damage. If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.`,
+        description: talentText`Instantly blasts the target for 87 to 99 Shadow damage.  If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.`,
       },
       Intensity: {
         name: "Intensity",
@@ -559,7 +552,7 @@ export const data: TalentData = {
         description: talentText`Gives you a ${[
           35,
           70,
-        ]}% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell.`,
+        ]}% chance to resist interruption caused by damage while casting or channeling any Destruction spell.`,
       },
       "Destructive Reach": {
         name: "Destructive Reach",
@@ -579,11 +572,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 15,
         description: talentText`Increases the critical strike chance of your Searing Pain spell by ${[
-          2,
-          4,
+          3,
           6,
-          8,
-          10,
+          9,
+          12,
+          15,
         ]}%.`,
       },
       Pyroclasm: {
@@ -603,13 +596,11 @@ export const data: TalentData = {
         name: "Improved Immolate",
         pos: "e2",
         icon: icons["spell_fire_immolation"],
-        maxRank: 5,
+        maxRank: 3,
         reqPoints: 20,
         description: talentText`Increases the initial damage of your Immolate spell by ${[
-          5,
-          10,
-          15,
-          20,
+          8,
+          17,
           25,
         ]}%.`,
       },
@@ -645,7 +636,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Improved Immolate",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Ignites a target that is already afflicted by Immolate, dealing 249 to 316 Fire damage and consuming the Immolate spell.`,
+        description: talentText`Ignites a target that is already afflicted by Immolate, dealing 240 to 306 Fire damage and consuming the Immolate spell.`,
       },
     },
   },

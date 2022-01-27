@@ -156,11 +156,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 15,
         description: talentText`Increases the critical strike chance of your pets by ${[
-          3,
+          2,
+          4,
           6,
-          9,
-          12,
-          15,
+          8,
+          10,
         ]}%.`,
       },
       "Spirit Bond": {

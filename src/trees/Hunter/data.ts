@@ -308,6 +308,17 @@ export const data: TalentData = {
           1.5,
         ]} sec.`,
       },
+      "Rapid Killing": {
+        name: "Rapid Killing",
+        pos: "c1",
+        icon: icons["ability_hunter_rapidkilling"],
+        maxRank: 2,
+        reqPoints: 10,
+        description: talentText`Reduces the cooldown of your Rapid Fire ability by ${["30 sec", "1 min"]}.  In addition, after killing an opponent that yields experience or honor, your next Aimed Shot, Arcane Shot, Auto Shot or True Shot causes ${[
+          20,
+          10,,
+        ]}% additional damage.  Lasts 20 sec.`,
+      },
       "Aimed Shot": {
         name: "Aimed Shot",
         pos: "c2",
@@ -371,6 +382,19 @@ export const data: TalentData = {
           20,
           25,
         ]}%.`,
+      },
+      "Rapid Recuperation": {
+        name: "Rapid Recuperation",
+        pos: "e1",
+        icon: icons["ability_hunter_runningshot"],
+        maxRank: 2,
+        reqPoints: 20,
+        prereq: "Rapid Killing",
+        arrows: [{ dir: "down", from: "c1", to: "e1" }],
+        description: talentText`You gain ${[
+          3,
+          6,,
+        ]}% of your total mana every 3 sec while under the effect of Rapid Fire.`,
       },
       "Scatter Shot": {
         name: "Scatter Shot",

@@ -316,7 +316,7 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`Reduces the cooldown of your Rapid Fire ability by ${["30 sec", "1 min"]}.  In addition, after killing an opponent that yields experience or honor, your next Aimed Shot, Arcane Shot, Auto Shot or True Shot causes ${[
           20,
-          10,,
+          10,
         ]}% additional damage.  Lasts 20 sec.`,
       },
       "Aimed Shot": {

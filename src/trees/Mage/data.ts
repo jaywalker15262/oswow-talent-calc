@@ -509,6 +509,18 @@ export const data: TalentData = {
           0.5,
         ]} sec.`, 
       },
+      "Improved Frostbolt": {
+        name: "Improved Frostbolt", 
+        pos: "a3", 
+        icon: icons["spell_ice_magicdamage"], 
+        maxRank: 3, 
+        reqPoints: 0, 
+        description: talentText`Reduces the chance that the opponent can resist your Frost and Fire spells by ${[
+          1,
+          2,
+          3,
+        ]}%.`, 
+      },
       "Ice Shards": {
         name: "Ice Shards", 
         pos: "b1", 

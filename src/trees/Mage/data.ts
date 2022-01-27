@@ -387,7 +387,7 @@ export const data: TalentData = {
         pos: "d1", 
         icon: icons["spell_fire_flameshock"], 
         maxRank: 2, 
-        reqPoints: 10, 
+        reqPoints: 15, 
         description: talentText`Increases the critical strike chance and damage of your Fire Blast and Scorch spells by ${[
           2,
           4,

@@ -427,9 +427,9 @@ export const data: TalentData = {
           10,
           15,
         ]}% and Physical attacks by ${[
+          1,
           2,
-          4,
-          5,
+          3,
         ]}%.`, 
       },
       "Critical Mass": {

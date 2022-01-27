@@ -166,7 +166,7 @@ export const data: TalentData = {
       "Spirit Bond": {
         name: "Spirit Bond",
         pos: "e1",
-        icon: icons["ability_druid_demoralizingroar"],
+        icon: icons["classic_ability_druid_demoralizingroar"],
         maxRank: 2,
         reqPoints: 20,
         description: talentText`While your pet is active, you and your pet will regenerate ${[

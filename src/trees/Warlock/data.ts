@@ -160,6 +160,19 @@ The Shadow Trance state reduces the casting time of your next Shadow Bolt spell 
           30,
         ]}% of the Mana drained by your Drain Mana spell to damage the opponent.`,
       },
+      "Malediction": {
+        name: "Malediction",
+        pos: "e1",
+        icon: icons["spell_shadow_chilltouch"],
+        maxRank: 3,
+        reqPoints: 20,
+        description: talentText`
+Increases the damage bonus effect of your Curse of the Elements and Curse of Shadow spells by an additional ${[
+          1,
+          2,
+          3,
+        ]}%.`,
+      },
       "Siphon Life": {
         name: "Siphon Life",
         pos: "e2",
@@ -203,6 +216,17 @@ Only one Curse per Warlock can be active on any one target.`,
         description: talentText`Imbeds a demon seed in the enemy target, causing 444 Shadow damage over 18 sec.  When the debuff expires or when the target dies, the seed will inflict 472 to 548 Shadow damage to all other enemies within 15 yards of the target.
 
 Only one Corruption spell per Warlock can be active on any one target.`,
+      },
+      "Improved Howl of Terror": {
+        name: "Improved Howl of Terror",
+        pos: "g3",
+        icon: icons["spell_shadow_deathscream"],
+        maxRank: 2,
+        reqPoints: 30,
+        description: talentText`Reduces the casting time of your Howl of Terror spell by ${[
+          0.75,
+          1.5,
+        ]} sec.`,
       },
     },
   },

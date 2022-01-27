@@ -393,7 +393,7 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "c1", to: "e1" }],
         description: talentText`You gain ${[
           3,
-          6,,
+          6,
         ]}% of your total mana every 3 sec while under the effect of Rapid Fire.`,
       },
       "Scatter Shot": {

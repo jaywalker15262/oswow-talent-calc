@@ -416,17 +416,17 @@ export const data: TalentData = {
           30,
         ]}% of their base mana cost.`, 
       },
-      "Improved Scorch": {
-        name: "Improved Scorch", 
+      "Molten Core": {
+        name: "Molten Core", 
         pos: "e1", 
-        icon: icons["spell_fire_soulburn"], 
+        icon: icons["ability_warlock_moltencore"], 
         maxRank: 3, 
         reqPoints: 20, 
-        description: talentText`Your Scorch spells have a ${[
-          33,
-          66,
-          100,
-        ]}% chance to cause your target to be voulnerable to Fire damage dealt to your target by 2% and lasts 15 seconds.  Stacks up to 5 times.`, 
+        description: talentText`Reduces the damage taken by Fire effects by ${[
+          5,
+          10,
+          15,
+        ]}%.`, 
       },
       "Critical Mass": {
         name: "Critical Mass", 
@@ -450,17 +450,17 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "c3", to: "e3" }], 
         description: talentText`A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 186 Fire damage and dazing them for 6 seconds.`, 
       },
-      "Molten Core": {
-        name: "Molten Core", 
+      "Improved Scorch": {
+        name: "Improved Scorch", 
         pos: "e4", 
-        icon: icons["ability_warlock_moltencore"], 
+        icon: icons["spell_fire_soulburn"], 
         maxRank: 3, 
         reqPoints: 20, 
-        description: talentText`Reduces the damage taken by Fire effects by ${[
-          5,
-          10,
-          15,
-        ]}%.`, 
+        description: talentText`Your Scorch spells have a ${[
+          33,
+          66,
+          100,
+        ]}% chance to cause your target to be voulnerable to Fire damage dealt to your target by 2% and lasts 15 seconds.  Stacks up to 5 times.`, 
       },
       "Fire Power": {
         name: "Fire Power", 

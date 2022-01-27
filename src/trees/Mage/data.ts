@@ -378,8 +378,8 @@ export const data: TalentData = {
           35,
           75,
         ]}% chance not to lose casting time when you take damage and reduces the threat caused by your Fire spells by ${[
-          15,
-          30,
+          10,
+          20,
         ]}%.`, 
       },
       "Incinerate": {

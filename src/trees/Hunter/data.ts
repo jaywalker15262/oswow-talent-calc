@@ -448,18 +448,6 @@ In addition, reduces the chance your Stings will dispelled by ${[
           30,
         ]}%.`,
       },
-      "Improved Scorpid Sting": {
-        name: "Improved Scorpid Sting",
-        pos: "e3",
-        icon: icons["ability_hunter_criticalshot"],
-        maxRank: 3,
-        reqPoints: 20,
-        description: talentText`Reduces the Stamina of targets affected by your Scorpid Sting by ${[
-          10,
-          20,
-          30,
-        ]}% of the amount of Strength reduced.`,
-      },
       "Trueshot": {
         name: "Trueshot",
         pos: "g2",

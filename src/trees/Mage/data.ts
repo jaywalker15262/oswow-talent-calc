@@ -699,7 +699,6 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "e2", to: "g2" }], 
         description: talentText`Instantly shields you, absorbing 438 damage.  Lasts 1 min.  While the shield holds, spells will not be interrupted.`, 
       }, 
-      },
     },
   },
 };

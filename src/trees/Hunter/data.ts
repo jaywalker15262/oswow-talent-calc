@@ -152,7 +152,7 @@ export const data: TalentData = {
       "Improved Aspect of the Wolf": {
         name: "Improved Aspect of the Wolf",
         pos: "d2",
-        icon: icons["ability_hunter_pet_wolf.jpg"],
+        icon: icons["ability_hunter_pet_wolf"],
         maxRank: 5,
         reqPoints: 15,
         description: talentText`Increases the melee attack power bonus of your Aspect of the Wolf by ${[

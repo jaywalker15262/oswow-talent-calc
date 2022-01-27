@@ -509,8 +509,8 @@ export const data: TalentData = {
           0.5,
         ]} sec.`, 
       },
-      "Improved Frostbolt": {
-        name: "Improved Frostbolt", 
+      "Elemental Precision": {
+        name: "Elemental Precision", 
         pos: "a3", 
         icon: icons["spell_ice_magicdamage"], 
         maxRank: 3, 

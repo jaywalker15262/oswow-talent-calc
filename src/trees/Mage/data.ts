@@ -562,6 +562,18 @@ export const data: TalentData = {
           10,
         ]}%.`, 
       },
+      "Piercing Ice": {
+        name: "Piercing Ice", 
+        pos: "c1", 
+        icon: icons["spell_frost_frostbolt"], 
+        maxRank: 3, 
+        reqPoints: 10, 
+        description: talentText`Increases the damage done by your Frost spells by ${[
+          2,
+          4,
+          6,
+        ]}%.`, 
+      },
       "Cold Snap": {
         name: "Cold Snap", 
         pos: "c2", 
@@ -650,7 +662,7 @@ export const data: TalentData = {
         pos: "d4", 
         icon: icons["spell_frost_glacier"], 
         maxRank: 3, 
-        reqPoints: 15, 
+        reqPoints: 20, 
         description: talentText`Increases the damage dealt by your Cone of Cold spell by ${[
           15,
           25,

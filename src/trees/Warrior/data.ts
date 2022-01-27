@@ -19,13 +19,13 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 0,
         description: talentText`Reduces the rage cost of your Heroic Strike ability by ${[
-          1,
           2,
-          3,
           4,
-          5,
+          6,
+          8,
+          10,
         ]} rage ${[
-          "point",
+          "points",
           "points",
           "points",
           "points",

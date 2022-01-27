@@ -208,8 +208,8 @@ export const data: TalentData = {
           75
         ]}%.`,
       },
-      "Kill Command": {
-        name: "Kill Command", 
+      "Improved Kill Command": {
+        name: "Improved Kill Command", 
         pos: "f1", 
         icon: icons["ability_hunter_killcommand"], 
         maxRank: 2, 

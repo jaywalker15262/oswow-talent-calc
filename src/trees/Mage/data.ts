@@ -450,6 +450,18 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "c3", to: "e3" }], 
         description: talentText`A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 186 Fire damage and dazing them for 6 seconds.`, 
       },
+      "Molten Core": {
+        name: "Molten Core", 
+        pos: "e4", 
+        icon: icons["ability_warlock_moltencore"], 
+        maxRank: 3, 
+        reqPoints: 20, 
+        description: talentText`Reduces the damage taken by Fire effects by ${[
+          5,
+          10,
+          15,
+        ]}%.`, 
+      },
       "Fire Power": {
         name: "Fire Power", 
         pos: "f3", 
@@ -649,17 +661,17 @@ export const data: TalentData = {
           50,
         ]}%.`, 
       },
-      "Winter's Chill": {
-        name: "Winter's Chill", 
+      "Frozen Core": {
+        name: "Frozen Core", 
         pos: "e1", 
-        icon: icons["spell_frost_chillingblast"], 
+        icon: icons["spell_frost_frozencore"], 
         maxRank: 3, 
         reqPoints: 20, 
-        description: talentText`Gives your Frost damage spells a ${[
-          25,
-          60,
-          100,
-        ]}% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times.`, 
+        description: talentText`Reduces the damage taken by Frost and Fire effects by ${[
+          4,
+          7,
+          10,
+        ]}%.`, 
       },
       "Ice Block": {
         name: "Ice Block", 
@@ -680,6 +692,18 @@ export const data: TalentData = {
           25,
           35,
         ]}%.`, 
+      },
+      "Winter's Chill": {
+        name: "Winter's Chill", 
+        pos: "e4", 
+        icon: icons["spell_frost_chillingblast"], 
+        maxRank: 3, 
+        reqPoints: 20, 
+        description: talentText`Gives your Frost damage spells a ${[
+          25,
+          60,
+          100,
+        ]}% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times.`, 
       },
       "Arctic Winds": {
         name: "Arctic Winds", 

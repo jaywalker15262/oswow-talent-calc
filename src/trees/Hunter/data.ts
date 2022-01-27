@@ -448,6 +448,20 @@ In addition, reduces the chance your Stings will dispelled by ${[
           30,
         ]}%.`,
       },
+      "Marked for Death": {
+        name: "Marked for Death",
+        pos: "f3",
+        icon: icons["ability_hunter_assassinate"],
+        maxRank: 5,
+        reqPoints: 25,
+        description: talentText`All physical damage done by the Hunter and his pet on marked targets ignores ${[
+          4,
+          8,
+          12,
+          16,
+          20,
+        ]}% of the target's armor.`,
+      },
       "Trueshot": {
         name: "Trueshot",
         pos: "g2",

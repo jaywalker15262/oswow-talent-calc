@@ -422,10 +422,14 @@ export const data: TalentData = {
         icon: icons["ability_warlock_moltencore"], 
         maxRank: 3, 
         reqPoints: 20, 
-        description: talentText`Reduces Fire and Physical damage taken by by ${[
-          4,
-          7,
+        description: talentText`Reduces the damage taken by Fire effects by ${[
+          5,
           10,
+          15,
+        ]}% and Physical attacks by ${[
+          2,
+          4,
+          6,
         ]}%.`, 
       },
       "Critical Mass": {

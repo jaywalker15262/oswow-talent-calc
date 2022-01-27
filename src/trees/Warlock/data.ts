@@ -87,7 +87,7 @@ export const data: TalentData = {
       },
       "Improved Corruptions": {
         name: "Improved Corruptions",
-        pos: "a3",
+        pos: "c2",
         icon: icons["spell_shadow_abominationexplosion"],
         maxRank: 5,
         reqPoints: 10,
@@ -108,7 +108,7 @@ In addition, increases the critical strike chance of your Seed of Corruption spe
         maxRank: 1,
         reqPoints: 10,
         prereq: "Improved Life Tap",
-        arrows: [{ dir: "right", from: "b3", to: "c3" }],
+        arrows: [{ dir: "down", from: "b3", to: "c3" }],
         description: talentText`Drains 115 of your pet's Mana, returning 100% to you.`,
       },
       "Grim Reach": {
@@ -174,7 +174,7 @@ The Shadow Trance state reduces the casting time of your next Shadow Bolt spell 
         icon: icons["spell_shadow_grimward"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`Reduces your target's movement speed by up to 70% for $d.  The slow is weak at first, initially reducing your target's movement speed by $s1%, but gets stronger as it reaches its full duration.
+        description: talentText`Reduces your target's movement speed by up to 70% for 12 sec.  The slow is weak at first, initially reducing your target's movement speed by 10%, but gets stronger as it reaches its full duration.
 
 Only one Curse per Warlock can be active on any one target.`,
       },

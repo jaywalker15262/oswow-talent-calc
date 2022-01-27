@@ -116,7 +116,7 @@ export const data: TalentData = {
           50,
         ]}% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick.`,
       },
-      Pathfinding: {
+      "Pathfinding": {
         name: "Pathfinding",
         pos: "c2",
         icon: icons["ability_mount_jungletiger"],
@@ -149,7 +149,21 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`Increases the outdoor movement speed of your pets by 30%`,
       },
-      Ferocity: {
+      "Improved Aspect of the Wolf": {
+        name: "Improved Aspect of the Wolf",
+        pos: "d2",
+        icon: icons["ability_hunter_pet_wolf.jpg"],
+        maxRank: 5,
+        reqPoints: 15,
+        description: talentText`Increases the melee attack power bonus of your Aspect of the Wolf by ${[
+          10,
+          20,
+          30,
+          40,
+          50,
+        ]}%.`,
+      },
+      "Ferocity": {
         name: "Ferocity",
         pos: "d3",
         icon: icons["inv_misc_monsterclaw_04"],
@@ -174,7 +188,7 @@ export const data: TalentData = {
           2,
         ]}% of total health every 10 sec.`,
       },
-      Intimidation: {
+      "Intimidation": {
         name: "Intimidation",
         pos: "e2",
         icon: icons["ability_devour"],
@@ -194,7 +208,18 @@ export const data: TalentData = {
           75
         ]}%.`,
       },
-      Frenzy: {
+      "Kill Command": {
+        name: "Kill Command", 
+        pos: "f1", 
+        icon: icons["ability_hunter_killcommand"], 
+        maxRank: 2, 
+        reqPoints: 25,
+        description: talentText`Increases the critical strike chance of your Kill Command ability by ${[
+          20,
+          40,
+        ]}%.`, 
+      },
+      "Frenzy": {
         name: "Frenzy",
         pos: "f3",
         icon: icons["inv_misc_monsterclaw_03"],

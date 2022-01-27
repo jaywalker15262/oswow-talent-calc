@@ -651,7 +651,7 @@ export const data: TalentData = {
       },
       "Ice Block": {
         name: "Ice Block", 
-        pos: "e1", 
+        pos: "e2", 
         icon: icons["spell_frost_frost"], 
         maxRank: 1, 
         reqPoints: 20, 

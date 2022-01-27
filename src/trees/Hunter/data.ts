@@ -299,7 +299,7 @@ export const data: TalentData = {
         pos: "b3",
         icon: icons["ability_impalingbolt"],
         maxRank: 5,
-        reqPoints: 10,
+        reqPoints: 5,
         description: talentText`Reduces the cooldown of your Arcane Shot by ${[
           0.3,
           0.6,
@@ -321,7 +321,7 @@ export const data: TalentData = {
         pos: "c3",
         icon: icons["ability_searingarrow"],
         maxRank: 5,
-        reqPoints: 5,
+        reqPoints: 10,
         description: talentText`Increases your critical strike chance with ranged weapons by ${[
           1,
           2,

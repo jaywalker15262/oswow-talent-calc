@@ -262,8 +262,8 @@ You can only have Inner Will or Inner Fire active at a time.`,
     background: backgrounds["holy"],
     icon: icons["spell_holy_holybolt"],
     talents: {
-      "Holy Focus": {
-        name: "Holy Focus", 
+      "Healing Focus": {
+        name: "Healing Focus", 
         pos: "a1", 
         icon: icons["spell_holy_healingfocus"], 
         maxRank: 2, 

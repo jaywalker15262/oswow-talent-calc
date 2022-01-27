@@ -385,12 +385,12 @@ export const data: TalentData = {
       },
       "Rapid Recuperation": {
         name: "Rapid Recuperation",
-        pos: "e1",
+        pos: "f1",
         icon: icons["ability_hunter_runningshot"],
         maxRank: 2,
         reqPoints: 20,
         prereq: "Rapid Killing",
-        arrows: [{ dir: "down", from: "c1", to: "e1" }],
+        arrows: [{ dir: "down", from: "c1", to: "f1" }],
         description: talentText`You gain ${[
           3,
           6,

@@ -229,8 +229,8 @@ export const data: TalentData = {
           3,
           6,
         ]}%.  In addition, your Rend and Deep Wounds abilities also increase all physical damage caused to that target by ${[
-          1,
           2,
+          4,
         ]}%.`,
       },
       "Improved Hamstring": {

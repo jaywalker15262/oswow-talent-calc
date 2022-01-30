@@ -2,7 +2,7 @@
   "name": "talent-calc",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://jaywalker15262.github.io/oswow-talent-calc",
+  "homepage": "http://talentcalculator.oswow.org/",
   "dependencies": {
     "-": "0.0.1",
     "gh-pages": "^3.2.3",

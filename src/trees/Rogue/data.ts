@@ -370,7 +370,7 @@ Additionally increases the chance to apply poisons to your target by ${[
         icon: icons["ability_kick"], 
         maxRank: 2, 
         reqPoints: 15, 
-        description: talentText`Gives your Kick ability a 100% chance to silence the target for ${[
+        description: talentText`Causes your Kick ability to also silence the target for ${[
           1.5,
           3,
         ]} sec.`, 

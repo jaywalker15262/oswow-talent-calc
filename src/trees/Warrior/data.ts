@@ -737,13 +737,13 @@ This chance is increased to ${[
         maxRank: 3,
         reqPoints: 20,
         description: talentText`Increases your total Stamina by ${[
-          2,
-          4,
-          6,
-        ]}% and your total Strength by ${[
           1,
           2,
           3,
+        ]}% and your total Strength by ${[
+          2,
+          4,
+          6,
         ]}%.`,
       },     
       "One-Handed Weapon Specialization": {

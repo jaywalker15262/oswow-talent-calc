@@ -89,7 +89,7 @@ export const data: TalentData = {
         description: talentText`Reduces the cost of your Thunder Clap ability by ${[
           1,
           2,
-          3,
+          4,
         ]} rage ${[
           "point",
           "points",

@@ -1,7 +1,7 @@
 # Old School WoW Talent Calculator
 
 CSS-grid based talent calculator  
-Usable talent calculator hosted here: https://jaywalker15262.github.io/oswow-talent-calc/
+Usable talent calculator hosted here: https://talentcalculator.oswow.org/
 ## Features
 
 - URL encoded app state (for shareable talent builds)

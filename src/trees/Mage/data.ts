@@ -156,7 +156,7 @@ export const data: TalentData = {
         icon: icons["spell_frost_iceshock"], 
         maxRank: 2, 
         reqPoints: 15, 
-        description: talentText`Gives your Counterspell a 100% chance to silence the target for ${[
+        description: talentText`Causes your Counterspell to also silence the target for ${[
           2,
           4,
         ]} sec.`, 

@@ -703,7 +703,7 @@ This chance is increased to ${[
         icon: icons["ability_warrior_shieldbash"],
         maxRank: 2,
         reqPoints: 15,
-        description: talentText`Causes your Counterspell to also silence the target for ${[
+        description: talentText`Causes your Shield Bash ability to also silence the target for ${[
           2,
           4,
         ]} sec.`,

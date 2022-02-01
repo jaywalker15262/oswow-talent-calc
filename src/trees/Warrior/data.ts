@@ -703,7 +703,7 @@ This chance is increased to ${[
         icon: icons["ability_warrior_shieldbash"],
         maxRank: 2,
         reqPoints: 15,
-        description: talentText`Gives your Shield Bash ability a 100% chance to silence the target for ${[
+        description: talentText`Causes your Counterspell to also silence the target for ${[
           2,
           4,
         ]} sec.`,
@@ -768,7 +768,7 @@ This chance is increased to ${[
         reqPoints: 30,
         prereq: "Concussion Blow",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Slam the target with your shield, causing 225 to 235 damage, modified by your shield block value, and has a 50% chance of dispelling 1 magic effect on the target.  Also causes a high amount of threat.`,
+        description: talentText`Slam the target with your shield, causing 225 to 235 damage, modified by your shield block value, and dispells 1 magic effect on the target.  Also causes a high amount of threat.`,
       },
     },
   },

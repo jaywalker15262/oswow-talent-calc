@@ -118,7 +118,7 @@ Additionally increases the chance to apply poisons to your target by ${[
         icon: icons["ability_creature_poison_06"], 
         maxRank: 1,
         reqPoints: 10, 
-        description: talentText`Your poisons are infused with Fel magic and can Elementals and Mechanical creatures.  The infused Fel magic causes your maximum energy capacity to swell up by 10 Energy.`, 
+        description: talentText`Your poisons are infused with Fel magic and can affect Elementals and Mechanical creatures.  The infused Fel magic causes your maximum energy capacity to swell up by 10 Energy.`, 
       },
       "Lethality": {
         name: "Lethality", 

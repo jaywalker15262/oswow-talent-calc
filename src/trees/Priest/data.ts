@@ -14,7 +14,7 @@ export const data: TalentData = {
     talents: {
       "Twin Discipline": {
         name: "Twin Disciplines", 
-        pos: "a1", 
+        pos: "a2", 
         icon: icons["spell_holy_blessingofstrength"], 
         maxRank: 5, 
         reqPoints: 0, 
@@ -28,7 +28,7 @@ export const data: TalentData = {
       },
       "Unbreakable Will": {
         name: "Unbreakable Will", 
-        pos: "a2", 
+        pos: "a3", 
         icon: icons["spell_magic_magearmor"], 
         maxRank: 5, 
         reqPoints: 0, 
@@ -38,17 +38,6 @@ export const data: TalentData = {
           9,
           12,
           15,
-        ]}%.`, 
-      },
-      "Wand Specialization": {
-        name: "Wand Specialization", 
-        pos: "a3", 
-        icon: icons["inv_wand_01"], 
-        maxRank: 2, 
-        reqPoints: 0, 
-        description: talentText`Increases your damage with Wands by ${[
-          13,
-          25,
         ]}%.`, 
       },
       "Silent Resolve": {
@@ -63,18 +52,15 @@ export const data: TalentData = {
           20,
         ]}%.`, 
       },
-      "Martyrdom": {
-        name: "Martyrdom", 
+      "Wand Specialization": {
+        name: "Wand Specialization", 
         pos: "b2", 
-        icon: icons["spell_nature_tranquility"], 
+        icon: icons["inv_wand_01"], 
         maxRank: 2, 
         reqPoints: 5, 
-        description: talentText`Gives you a ${[
-          50,
-          100,
-        ]}% chance to gain the Focused Castin effect that lasts for 6 sec after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents your from losing casting time when taking damage and increases resistance to Interrupt effects by ${[
-          10,
-          20,
+        description: talentText`Increases your damage with Wands by ${[
+          13,
+          25,
         ]}%.`, 
       },
       "Improved Power Word: Shield": {
@@ -87,6 +73,20 @@ export const data: TalentData = {
           5,
           10,
           15,
+        ]}%.`, 
+      },
+      "Martyrdom": {
+        name: "Martyrdom", 
+        pos: "b4", 
+        icon: icons["spell_nature_tranquility"], 
+        maxRank: 2, 
+        reqPoints: 5, 
+        description: talentText`Gives you a ${[
+          50,
+          100,
+        ]}% chance to gain the Focused Castin effect that lasts for 6 sec after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents your from losing casting time when taking damage and increases resistance to Interrupt effects by ${[
+          10,
+          20,
         ]}%.`, 
       },
       "Improved Power Word: Fortitude": {

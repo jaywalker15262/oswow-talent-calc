@@ -111,6 +111,20 @@ In addition, increases the critical strike chance of your Seed of Corruption spe
         arrows: [{ dir: "down", from: "b3", to: "c3" }],
         description: talentText`Drains 115 of your pet's Mana, returning 100% to you.`,
       },
+      "Black Speech": {
+        name: "Black Speech",
+        pos: "c4",
+        icon: icons["pell_shadow_curseoftounges"],
+        maxRank: 2,
+        reqPoints: 10,
+        description: talentText`Increases the effectiveness of your Curse of Tongues by an additional ${[
+          5,
+          10,
+        ]}%.  In addition, reduces the chance your Affliction spells will be dispelled by ${[
+          15,
+          30,
+        ]}%.`,
+      },
       "Grim Reach": {
         name: "Grim Reach",
         pos: "d1",
@@ -166,8 +180,7 @@ The Shadow Trance state reduces the casting time of your next Shadow Bolt spell 
         icon: icons["spell_shadow_chilltouch"],
         maxRank: 3,
         reqPoints: 20,
-        description: talentText`
-Increases the damage bonus effect of your Curse of the Elements and Curse of Shadow spells by an additional ${[
+        description: talentText`Increases the damage bonus effect of your Curse of the Elements and Curse of Shadow spells by an additional ${[
           1,
           2,
           3,

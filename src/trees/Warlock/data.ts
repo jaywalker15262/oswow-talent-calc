@@ -114,7 +114,7 @@ In addition, increases the critical strike chance of your Seed of Corruption spe
       "Black Speech": {
         name: "Black Speech",
         pos: "c4",
-        icon: icons["pell_shadow_curseoftounges"],
+        icon: icons["spell_shadow_curseoftounges"],
         maxRank: 2,
         reqPoints: 10,
         description: talentText`Increases the effectiveness of your Curse of Tongues by an additional ${[

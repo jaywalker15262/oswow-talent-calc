@@ -1,5 +1,6 @@
 import { TalentData } from "../../TalentContext";
 import { talentText, requireAll } from "../../utils";
+
 const backgrounds = requireAll(
   require.context("../../assets/tree-backgrounds/hunter"),
 );

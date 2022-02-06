@@ -2,7 +2,7 @@
   "name": "talent-calc",
   "version": "1.0.0",
   "private": true,
-  "homepage": "http://talents.oswow.org/",
+  "homepage": "http://talentcalculator.oswow.org/",
   "dependencies": {
     "-": "0.0.1",
     "gh-pages": "^3.2.3",

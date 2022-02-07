@@ -672,7 +672,7 @@ export const data: TalentData = {
         pos: "e4", 
         icon: icons["spell_nature_healingwavegreater"], 
         maxRank: 2, 
-        reqPoints: 25, 
+        reqPoints: 20, 
         description: talentText`Increases the amount healed and the critical effect chance of your Chain Heal spell by ${[
           6,
           12,

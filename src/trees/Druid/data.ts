@@ -257,7 +257,7 @@ Each effect lasts 15 sec and each has a separate 30 sec cooldown.  Both effects 
         icon: icons["spell_nature_forceofnature"],
         maxRank: 1,
         reqPoints: 30,
-        description: talentText`Transforms the Druid into Moonkin Form.  While in this form the damage done by your Balance spells is increased by 10%, armor contribution from items is increased by 270%, total mana is increased by 25%, and all party members within 30 yards have their spell critical chance increased by 3%.  The Moonkin can only cast Balance, Mark of the Wild, and Remove Curse spells while shapeshifted.
+        description: talentText`Transforms the Druid into Moonkin Form.  While in this form the damage done by your Balance spells is increased by 10%, armor contribution from leather and cloth items is increased by 300%, total mana is increased by 25%, and all party members within 30 yards have their spell critical chance increased by 3%.  The Moonkin can only cast Balance, Mark of the Wild, and Remove Curse spells while shapeshifted.
 
 The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.`,
       },
@@ -424,9 +424,9 @@ Each effect has a separate 5 sec cooldown.`,
         maxRank: 3,
         reqPoints: 15,
         description: talentText`Increases your melee attack power in Cat, Bear and Dire Bear Forms by ${[
-          50,
-          100,
+          75,
           150,
+          225,
         ]}% of your level.`,
       },
       "Primal Fury": {

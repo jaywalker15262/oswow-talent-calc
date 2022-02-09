@@ -220,9 +220,9 @@ You can only have Inner Will or Inner Fire active at a time.`,
           4,
           6,
         ]} sec and the mana cost of your Power Word: Shield by ${[
-          2,
-          4,
+          3,
           6,
+          9,
         ]}%.`, 
       },
       "Force of Will": {

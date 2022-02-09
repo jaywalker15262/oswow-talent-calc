@@ -329,7 +329,7 @@ export const data: TalentData = {
         ]}%.`, 
       },
       "Elemental Devastation": {
-        name: "Elemental Devastationy", 
+        name: "Elemental Devastation", 
         pos: "c2", 
         icon: icons["classic_spell_fire_elementaldevastation"], 
         maxRank: 5, 
@@ -342,7 +342,7 @@ export const data: TalentData = {
           15,
           20,
           25,
-        ]}% for 10 sec.`, 
+        ]}% for 12 sec.`, 
       },
       "Shamanistic Focus": {
         name: "Shamanistic Focus", 

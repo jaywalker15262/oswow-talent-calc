@@ -476,14 +476,12 @@ export const data: TalentData = {
         name: "Unleashed Rage", 
         pos: "f3", 
         icon: icons["spell_nature_unleashedrage"], 
-        maxRank: 5, 
+        maxRank: 3, 
         reqPoints: 25, 
         description: talentText`Causes your critical hits with melee attacks to increase all party members' melee attack power by ${[
-          2,
-          4,
+          3,
           6,
-          8,
-          10,
+          9,
         ]}% if within 20 yards of the Shaman.  Lasts 10 sec.`, 
       },
       "Stormstrike": {

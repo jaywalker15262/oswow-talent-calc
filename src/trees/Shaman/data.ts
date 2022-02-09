@@ -589,7 +589,7 @@ export const data: TalentData = {
         icon: icons["spell_frost_manarecharge"], 
         maxRank: 5, 
         reqPoints: 10, 
-        description: talentText`Reduces the Mana cost of your healing and lightning spells by ${[
+        description: talentText`Reduces the Mana cost of your healing by ${[
           1,
           2,
           3,
@@ -639,7 +639,7 @@ export const data: TalentData = {
         name: "Restorative Totems", 
         pos: "d3", 
         icon: icons["spell_nature_manaregentotem"], 
-        maxRank: 2, 
+        maxRank: 3, 
         reqPoints: 15, 
         description: talentText`Increases the effect of your Mana Spring and Healing Stream Totems by ${[
           8,

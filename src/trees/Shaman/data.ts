@@ -587,7 +587,7 @@ export const data: TalentData = {
         icon: icons["spell_frost_manarecharge"], 
         maxRank: 5, 
         reqPoints: 10, 
-        description: talentText`Reduces the Mana cost of your healing by ${[
+        description: talentText`Reduces the Mana cost of your healing spells by ${[
           1,
           2,
           3,

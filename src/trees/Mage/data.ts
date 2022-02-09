@@ -73,11 +73,12 @@ export const data: TalentData = {
         name: "Magic Attunement", 
         pos: "b2", 
         icon: icons["spell_nature_abolishmagic"], 
-        maxRank: 2, 
+        maxRank: 3, 
         reqPoints: 5, 
         description: talentText`Increases the effect of your Amplify Magic and Dampen Magic spells by ${[
           25,
           50,
+          75,
         ]}%.`, 
       },
       "Arcane Concentration": {

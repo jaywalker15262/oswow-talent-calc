@@ -528,7 +528,7 @@ Only one Corruption spell per Warlock can be active on any one target.`,
         name: "Aftermath",
         pos: "b3",
         icon: icons["spell_fire_fire"],
-        maxRank: 5,
+        maxRank: 3,
         reqPoints: 5,
         description: talentText`Gives your Destruction spells a ${[
           4,

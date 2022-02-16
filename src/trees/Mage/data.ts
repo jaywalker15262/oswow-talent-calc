@@ -621,7 +621,7 @@ export const data: TalentData = {
           25,
           40,
           50,
-        ]}%. Lasts 1.25 sec.`, 
+        ]}%. Lasts 1.5 sec.`, 
       },
       "Arctic Reach": {
         name: "Arctic Reach", 

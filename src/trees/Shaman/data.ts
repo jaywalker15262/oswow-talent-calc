@@ -492,7 +492,7 @@ export const data: TalentData = {
         reqPoints: 30, 
         prereq: "Bloodlust", 
         arrows: [{ dir: "down", from: "e2", to: "g2" }], 
-        description: talentText`Gives you an extra attack.  In addition, your 2 next Nature spells that damage an enemy target restores 20% of your base mana.  Lasts 10 sec.`, 
+        description: talentText`Instantly attack with both weapons.  In addition, your 2 next Nature spells that damage an enemy target restores 20% of your base mana.  Lasts 10 sec.`, 
       },
     },
   },

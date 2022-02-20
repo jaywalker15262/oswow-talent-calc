@@ -198,7 +198,7 @@ export const data: TalentData = {
           2,
           4,
           6,
-        ]}% if within 20 yards of the Shaman.  Lasts 8 sec.`, 
+        ]}% if within 20 yards of the Shaman.  Lasts 14 sec.`, 
       },
       "Elemental Precision": {
         name: "Elemental Precision", 

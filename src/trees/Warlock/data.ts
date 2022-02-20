@@ -74,9 +74,19 @@ export const data: TalentData = {
           20,
         ]}%.`,
       },
+      "Curse of Exhaustion": {
+        name: "Curse of Exhaustion",
+        pos: "c1",
+        icon: icons["spell_shadow_grimward"],
+        maxRank: 1,
+        reqPoints: 10,
+        description: talentText`Reduces your target's movement speed by up to 70% for 12 sec.  The slow is weak at first, initially reducing your target's movement speed by 10%, but gets stronger as it reaches its full duration.
+
+Only one Curse per Warlock can be active on any one target.`,
+      },
       "Improved Drain Soul": {
         name: "Improved Drain Soul",
-        pos: "c1",
+        pos: "c2",
         icon: icons["spell_shadow_haunting"],
         maxRank: 2,
         reqPoints: 10,
@@ -85,9 +95,19 @@ export const data: TalentData = {
           100,
         ]}% to cause four times the normal damage.`,
       },
+      "Dark Pact": {
+        name: "Dark Pact",
+        pos: "c3",
+        icon: icons["spell_shadow_darkritual"],
+        maxRank: 1,
+        reqPoints: 10,
+        prereq: "Improved Life Tap",
+        arrows: [{ dir: "down", from: "b3", to: "c3" }],
+        description: talentText`Drains 115 of your pet's Mana, returning 100% to you.`,
+      },
       "Improved Corruptions": {
         name: "Improved Corruptions",
-        pos: "c2",
+        pos: "c4",
         icon: icons["spell_shadow_abominationexplosion"],
         maxRank: 5,
         reqPoints: 10,
@@ -100,30 +120,6 @@ export const data: TalentData = {
         ]}% chance to tick for double the damage.
 
 In addition, increases the critical strike chance of your Seed of Corruption spell by ${[1,2,3,4,5]}% and its critical strike damage bonus by ${[20,40,60,80,100]}%.`,
-      },
-      "Dark Pact": {
-        name: "Dark Pact",
-        pos: "c3",
-        icon: icons["spell_shadow_darkritual"],
-        maxRank: 1,
-        reqPoints: 10,
-        prereq: "Improved Life Tap",
-        arrows: [{ dir: "down", from: "b3", to: "c3" }],
-        description: talentText`Drains 115 of your pet's Mana, returning 100% to you.`,
-      },
-      "Black Speech": {
-        name: "Black Speech",
-        pos: "c4",
-        icon: icons["spell_shadow_curseoftounges"],
-        maxRank: 2,
-        reqPoints: 10,
-        description: talentText`Increases the effectiveness of your Curse of Tongues by an additional ${[
-          5,
-          10,
-        ]}%.  In addition, reduces the chance your Affliction spells will be dispelled by ${[
-          15,
-          30,
-        ]}%.`,
       },
       "Grim Reach": {
         name: "Grim Reach",
@@ -194,15 +190,19 @@ The Shadow Trance state reduces the casting time of your next Shadow Bolt spell 
         reqPoints: 20,
         description: talentText`Transfers 15 health from the target to the caster every 2 sec.  Lasts 30 sec.`,
       },
-      "Curse of Exhaustion": {
-        name: "Curse of Exhaustion",
+      "Black Speech": {
+        name: "Black Speech",
         pos: "e3",
-        icon: icons["spell_shadow_grimward"],
-        maxRank: 1,
+        icon: icons["spell_shadow_curseoftounges"],
+        maxRank: 2,
         reqPoints: 20,
-        description: talentText`Reduces your target's movement speed by up to 70% for 12 sec.  The slow is weak at first, initially reducing your target's movement speed by 10%, but gets stronger as it reaches its full duration.
-
-Only one Curse per Warlock can be active on any one target.`,
+        description: talentText`Increases the effectiveness of your Curse of Tongues by an additional ${[
+          5,
+          10,
+        ]}%.  In addition, reduces the chance your Affliction spells will be dispelled by ${[
+          15,
+          30,
+        ]}%.`,
       },
       "Shadow Mastery": {
         name: "Shadow Mastery",

@@ -95,13 +95,13 @@ export const data: TalentData = {
           "points",
           "points",
         ]} and increases the damage by ${[
-          10,
-          20,
+          15,
           30,
+          45,
         ]}% and the slowing effect by an additional ${[
+          2,
           4,
-          7,
-          10,
+          6,
         ]}%.`,
       },
       "Improved Overpower": {

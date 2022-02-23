@@ -141,7 +141,7 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`Generates 1 rage per 3 seconds.`,
       },
-      "Two-Handed Weapong Specialization": {
+      "Two-Handed Weapon Specialization": {
         name: "Two-Handed Weapon Specialization",
         pos: "d2",
         icon: icons["inv_axe_09"],

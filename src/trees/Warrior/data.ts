@@ -351,7 +351,7 @@ This chance is increased to ${[
           24,
           32,
           40
-        ]}% when wielding a two-handed weapon.`,
+        ]}% for auto attacks while wielding a two-handed weapon.`,
       },
       "Booming Voice": {
         name: "Booming Voice",

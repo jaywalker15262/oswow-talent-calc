@@ -463,7 +463,7 @@ This chance is increased to ${[
           33,
           66,
           100,
-        ]} chance to not lose casting time when you take damage`,
+        ]}% chance to not lose casting time when you take damage`,
       },
       "Death Wish": {
         name: "Death Wish",

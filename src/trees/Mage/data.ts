@@ -23,9 +23,21 @@ export const data: TalentData = {
           25,
         ]}%.`, 
       },
+      "Improved Arcane Missiles": {
+        name: "Improved Arcane Missiles", 
+        pos: "a2", 
+        icon: icons["spell_nature_starfall"],
+        maxRank: 3, 
+        reqPoints: 0, 
+        description: talentText`Gives you a ${[
+          33,
+          66,
+          100,
+        ]}% to avoid interruption caused by damage while channeling Arcane Missiles.`, 
+      },
       "Arcane Focus": {
         name: "Arcane Focus", 
-        pos: "a2", 
+        pos: "a3", 
         icon: icons["spell_holy_devotion"], 
         maxRank: 5, 
         reqPoints: 0, 
@@ -42,18 +54,6 @@ export const data: TalentData = {
           4,
           5,
         ]}%.`, 
-      },
-      "Improved Arcane Missiles": {
-        name: "Improved Arcane Missiles", 
-        pos: "a3", 
-        icon: icons["spell_nature_starfall"],
-        maxRank: 3, 
-        reqPoints: 0, 
-        description: talentText`Gives you a ${[
-          33,
-          66,
-          100,
-        ]}% to avoid interruption caused by damage while channeling Arcane Missiles.`, 
       },
       "Arcane Subtlety": {
         name: "Arcane Subtlety", 

@@ -458,10 +458,8 @@ This chance is increased to ${[
         description: talentText`Decreases the casting time of your Slam ability by ${[
           0.25,
           0.5,
-          0.75,
         ]} sec and gives your Slam a ${[
-          33,
-          66,
+          50,
           100,
         ]}% chance to not lose casting time when you take damage`,
       },

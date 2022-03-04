@@ -344,18 +344,16 @@ export const data: TalentData = {
           100,
         ]}% whenever you block to restore 2% of your total mana.`, 
       },
-      "Toughness": {
-        name: "Toughness", 
+      "Precision": {
+        name: "Precision", 
         pos: "c4", 
-        icon: icons["spell_holy_devotion"], 
-        maxRank: 5, 
+        icon: icons["ability_rogue_ambush"], 
+        maxRank: 3,
         reqPoints: 10,
-        description: talentText`Increases your armor value from items by ${[
+        description: talentText`Increases your chance to hit with melee attack and spells by ${[
+          1,
           2,
-          4,
-          6,
-          8,
-          10,
+          3,
         ]}%.`, 
       },
       "Divine Sacrifice": {
@@ -384,20 +382,18 @@ export const data: TalentData = {
           15,
         ]} sec.`, 
       },
-      "Stoicism": {
-        name: "Stoicism", 
+      "Toughness": {
+        name: "Toughness", 
         pos: "d3", 
-        icon: icons["inv_helmet_21"], 
-        maxRank: 3, 
-        reqPoints: 15, 
-        description: talentText`Increases your resistance to Stun effects by an additional ${[
-          5,
+        icon: icons["spell_holy_devotion"], 
+        maxRank: 5, 
+        reqPoints: 15,
+        description: talentText`Increases your armor value from items by ${[
+          2,
+          4,
+          6,
+          8,
           10,
-          15,
-        ]}% and reduces the chance your spells will be dispelled by an additional ${[
-          10,
-          20,
-          30,
         ]}%.`, 
       },
       "Spell Warding": {
@@ -550,16 +546,20 @@ export const data: TalentData = {
           5,
         ]}%.`, 
       },
-      "Precision": {
-        name: "Precision", 
+      "Stoicism": {
+        name: "Stoicism", 
         pos: "c1", 
-        icon: icons["ability_rogue_ambush"], 
-        maxRank: 3,
-        reqPoints: 10,
-        description: talentText`Increases your chance to hit with melee attack and spells by ${[
-          1,
-          2,
-          3,
+        icon: icons["inv_helmet_21"], 
+        maxRank: 3, 
+        reqPoints: 10, 
+        description: talentText`Increases your resistance to Stun effects by an additional ${[
+          5,
+          10,
+          15,
+        ]}% and reduces the chance your spells will be dispelled by an additional ${[
+          10,
+          20,
+          30,
         ]}%.`, 
       },
       "Pursuit of Justice": {

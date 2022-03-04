@@ -370,21 +370,9 @@ export const data: TalentData = {
           20,
         ]} min.`, 
       },
-      "Improved Hammer of Justice": {
-        name: "Improved Hammer of Justice", 
-        pos: "d2", 
-        icon: icons["spell_holy_sealofmight"], 
-        maxRank: 3, 
-        reqPoints: 15, 
-        description: talentText`Reduces the cooldown of your Hammer of Justice spell by ${[
-          5,
-          10,
-          15,
-        ]} sec.`, 
-      },
       "Toughness": {
         name: "Toughness", 
-        pos: "d3", 
+        pos: "d2", 
         icon: icons["spell_holy_devotion"], 
         maxRank: 5, 
         reqPoints: 15,
@@ -395,6 +383,18 @@ export const data: TalentData = {
           8,
           10,
         ]}%.`, 
+      },
+      "Improved Hammer of Justice": {
+        name: "Improved Hammer of Justice", 
+        pos: "d3", 
+        icon: icons["spell_holy_sealofmight"], 
+        maxRank: 3, 
+        reqPoints: 15, 
+        description: talentText`Reduces the cooldown of your Hammer of Justice spell by ${[
+          5,
+          10,
+          15,
+        ]} sec.`, 
       },
       "Spell Warding": {
         name: "Spell Warding", 

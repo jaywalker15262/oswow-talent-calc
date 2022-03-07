@@ -569,6 +569,17 @@ export const data: TalentData = {
           70,
         ]}% chance to avoid interruption caused by damage while casting any healing spell.`, 
       },
+      "Totemic Mastery": {
+        name: "Totemic Mastery", 
+        pos: "b4", 
+        icon: icons["spell_nature_nullward"], 
+        maxRank: 2, 
+        reqPoints: 5, 
+        description: talentText`The radius of your totems that affect friendly targets is increased to ${[
+          25,
+          30,
+        ]} yd.`, 
+      },
       "Nature's Guidance": {
         name: "Nature's Guidance", 
         pos: "c1", 
@@ -595,13 +606,13 @@ export const data: TalentData = {
           5,
         ]}%.`, 
       },
-      "Totemic Mastery": {
-        name: "Totemic Mastery", 
+      "Water Shield": {
+        name: "Water Shield", 
         pos: "c3", 
-        icon: icons["spell_nature_nullward"], 
+        icon: icons["ability_shaman_watershield"], 
         maxRank: 1, 
         reqPoints: 10, 
-        description: talentText`The radius of your totems that affect friendly targets is increased to 30 yd.`, 
+        description: talentText`TThe target is surrounded by 6 globes of water, granting 16 mana per 5 sec.  When a spell, melee or ranged attack hits the target, 60 health is restored to the target. This expends one water globe.  Only one globe will activate every few seconds.  Lasts 10 min.  Water Shield can only be placed on one target at a time and only one Elemental Shield can be active on a target at a time.`, 
       },
       "Nature Grace": {
         name: "Nature Grace", 

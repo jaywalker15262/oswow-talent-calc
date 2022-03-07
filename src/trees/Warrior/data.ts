@@ -453,7 +453,7 @@ This chance is increased to ${[
         name: "Improved Slam",
         pos: "e1",
         icon: icons["ability_warrior_decisivestrike"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 20,
         description: talentText`Decreases the casting time of your Slam ability by ${[
           0.25,
@@ -515,7 +515,10 @@ This chance is increased to ${[
         icon: icons["ability_whirlwind"],
         maxRank: 2,
         reqPoints: 25,
-        description: talentText`Reduces the cooldown of your Whirlwind ability by ${[
+        description: talentText`Increases the damage of your Whirlwind ability by ${[
+          5,
+          10,
+        ]}% and reduces the cooldown of your Whirlwind by ${[
           1,
           2,
         ]} sec.`,

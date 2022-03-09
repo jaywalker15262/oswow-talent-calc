@@ -612,7 +612,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_crusade"], 
         maxRank: 3, 
         reqPoints: 15,
-        description: talentText`Increases the damage done by your Judgement, Crusader Strike, and Hammer of Wrath spells by ${[
+        description: talentText`Increases the damage done by your Crusader Strike, Hammer of Wrath and the effectiveness of Judgement spells by ${[
           4,
           7,
           10,

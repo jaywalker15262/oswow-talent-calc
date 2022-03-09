@@ -687,10 +687,10 @@ export const data: TalentData = {
         icon: icons["ability_racial_avatar"], 
         maxRank: 5, 
         reqPoints: 25, 
-        description: talentText`Gives your a ${[
-          4,
-          6,
-          8,
+        description: talentText`Gives you a ${[
+          2,
+          5,
+          7,
           10,
           12,
         ]}% bonus to Physical and Holy damage you deal and reduces the casting time of your Exorcism by ${[

@@ -664,7 +664,7 @@ Only one Corruption spell per Warlock can be active on any one target.`,
       },
       Emberstorm: {
         name: "Emberstorm",
-        pos: "f3",
+        pos: "f2",
         icon: icons["spell_fire_selfdestruct"],
         maxRank: 5,
         reqPoints: 25,

@@ -640,9 +640,9 @@ Only one Corruption spell per Warlock can be active on any one target.`,
         prereq: "Intensity",
         arrows: [{ dir: "down", from: "c1", to: "e1" }],
         description: talentText`Gives your Rain of Fire, Hellfire, and Soul Fire spells a ${[
-          13,
-          26,
-        ]}% chance to stun the target for 3 sec.`,
+          30,
+          60,
+        ]}% chance to stun the target for 2 sec.`,
       },
       Conflagrate: {
         name: "Conflagrate",

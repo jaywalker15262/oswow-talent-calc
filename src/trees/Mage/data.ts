@@ -722,7 +722,7 @@ export const data: TalentData = {
           3,
           4,
           5,
-        ]}% and the chance melee and ranged attacks will hit you by ${[
+        ]}% and reduces the chance melee and ranged attacks will hit you by ${[
           1,
           2,
           3,

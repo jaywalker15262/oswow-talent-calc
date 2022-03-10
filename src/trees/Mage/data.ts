@@ -377,7 +377,7 @@ export const data: TalentData = {
         reqPoints: 10, 
         description: talentText`Gives your Fire spells a ${[
           35,
-          75,
+          70,
         ]}% chance not to lose casting time when you take damage and reduces the threat caused by your Fire spells by ${[
           10,
           20,

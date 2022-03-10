@@ -596,7 +596,7 @@ Only one Corruption spell per Warlock can be active on any one target.`,
       },
       "Improved Immolate": {
         name: "Improved Immolate",
-        pos: d2",
+        pos: "d2",
         icon: icons["spell_fire_immolation"],
         maxRank: 3,
         reqPoints: 15,
